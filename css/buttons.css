@@ -1,0 +1,33 @@
+/* buttons.css */
+
+/* BUTTON */
+.button,
+.button-floating,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #eee;
+  border: solid 2px #eee;
+  border-radius: 4px;
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.button:hover,
+.button-floating:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+/* FLOATING BUTTON */
+.button-floating {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+}

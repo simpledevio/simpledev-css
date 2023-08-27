@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A mostly classless CSS framework | simpledev.css</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="../css/_simpledev.css">
+</head>
+
+<body>
+<div class="navbar-message">Test navbar message.</div>
+<!-- Navbar -->
+<nav class="navbar">
+    <div>
+      <a href="" style="font-weight: bold;">Simple Dev</a>
+      <button>Menu</button>
+    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+  <h1>simpledev.css</h1>
+  <p>The goal of simpledev.css is to create a <b>mostly classless CSS framework</b>. We are starting off with working on a handful of components and will add the classless code later.</p>
+
+
+
+  <!-- NAVBAR -->
+  <h2>Navbar</h2>
+  <nav class="navbar" style="position: static;">
+      <div>
+        <a href="">Brand</a>
+        <button>Menu</button>
+      </div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+  </nav>
+  <pre><code class="language-html">
+    &lt;nav class=&quot;navbar&quot;&gt;
+      &lt;div&gt;
+        &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
+        &lt;button&gt;Menu&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  </code></pre>
+  <p>The navbar uses the <code>navbar</code> class. You can add more links by adding more <code>li</code> elements.</p>
+
+  <h3>Non-sticky navbar</h3>
+  <pre><code class="language-css">
+    .navbar {
+      position: static;
+    }
+  </code></pre>
+  <p>Add this code to your custom CSS file to remove the sticky feature from the navbar.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
+
+
+
+  <!-- NAVBAR MESSAGE -->
+  <h2>Navbar Message</h2>
+  <div class="navbar-message">Test navbar message.</div>
+
+  <pre><code class="language-html">
+    &lt;div class=&quot;navbar-message&quot;&gt;Test navbar message.&lt;/div&gt;
+    &lt;nav class=&quot;navbar&quot;&gt;...&lt;/nav&gt;
+  </code></pre>
+  <p>You can add a div with the <code>navbar-message</code> class above your nav element with the navbar class. All it does is add a background color and center the text, but you can customize it in your custom CSS file.</p>
+
+
+
+  <!-- CONTAINER -->
+  <h2>Container</h2>
+  <pre><code class="language-html">
+    &lt;div class=&quot;container&quot;&gt;
+
+    &lt;/div&gt;
+  </code></pre>
+  <p>Use the container class with a <code>div</code> element to apply a max width and center the contents.</p>
+
+
+
+  <!-- BUTTONS -->
+  <h2>Buttons</h2>
+  <a href="" class="button">Anchor</a>
+  <button type="button">Button</button>
+  <input type="button" value="Input">
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+
+  <pre><code class="language-html">
+    &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Anchor&lt;/a&gt;
+    &lt;button type=&quot;button&quot;&gt;Button&lt;/button&gt;
+    &lt;input type=&quot;button&quot; value=&quot;Input&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+  </code></pre>
+  <p>You can use the <code>button</code> class on an <code>a</code> element to make it look like a button. The other elements that look like buttons do not need a class.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
+
+
+
+  <!-- FLOATING BUTTON -->
+  <h2>Floating Button</h2>
+  <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;button-floating&quot;&gt;Float&lt;/a&gt;</code></pre>
+  <p>You can see an example of our floating button in the lower right-hand corner. It can be applied to an <code>a</code> element or a <code>button</code> element.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
+
+<a href="#" class="button-floating">Float</a>
+</div>
+
+  <!-- JS -->
+  <script src="../js/navbar.js"></script>
+  <script src="prism.js"></script>
+</body>
+</html>

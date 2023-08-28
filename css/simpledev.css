@@ -39,6 +39,13 @@ input[type="reset"]:hover {
   max-width: 900px;
   margin: auto;
 }
+/* footer.css */
+
+.footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 12px;
+}
 /* navbar.css */
 
 /* NAVBAR MESSAGE */

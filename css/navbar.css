@@ -1,31 +1,38 @@
 /* navbar.css */
 
 /* NAVBAR MESSAGE */
+/* A message that goes above the navbar */
 .navbar-message {
-  /* padding-left: 8px; */
   padding-block: 4px;
   text-align: center;
   background-color: #ddd;
 }
 
 /* NAVBAR */
+/* for the navbar */
 .navbar {
   background-color: #eee;
   padding-top: 12px;
   padding-bottom: 10px;
+  position: sticky;
+  top: 0;
   z-index: 11;
 }
 
+/* for the navbar on mobile */
 .navbar div {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+/* for the navbar brand */
 .navbar div a {
+  font-weight: bold;
   margin: 8px;
 }
 
+/* for the navbar links */
 .navbar ul {
   list-style: none;
   display: none;
@@ -48,6 +55,7 @@
   background-color: #ddd;
 }
 
+/* for the navbar menu button */
 .navbar button {
   margin-right: 8px;
 }
@@ -57,6 +65,7 @@ ul.block {
   display: block;
 }
 
+/* for the navbar on bigger screens */
 @media screen and (min-width: 768px) {
   .navbar ul {
     display: flex;
@@ -72,11 +81,4 @@ ul.block {
     display: flex;
     justify-content: space-between;
   }
-}
-
-/* NAVBAR POWER UPS */
-
-.navbar {
-  position: sticky;
-  top: 0;
 }

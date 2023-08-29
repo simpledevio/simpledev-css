@@ -11,6 +11,8 @@ input[type="reset"] {
   border: solid 2px #eee;
   border-radius: 4px;
   color: #000;
+  display: inline-block;
+  margin-bottom: 6px;
   padding: 8px;
   text-decoration: none;
 }

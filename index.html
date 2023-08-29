@@ -121,12 +121,14 @@
 
   <!-- FLOATING BUTTON -->
   <h2>Floating Button</h2>
+  <a href="#" class="button-floating">Float</a>
   <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;button-floating&quot;&gt;Float&lt;/a&gt;</code></pre>
   <p>You can see an example of our floating button in the lower right-hand corner. It can be applied to an <code>a</code> element or a <code>button</code> element.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam eaque, deleniti magnam neque, ullam omnis expedita nihil recusandae autem ad est ipsum nam sed necessitatibus sequi quod, quis voluptatum!</p>
 
-<a href="#" class="button-floating">Float</a>
+
+
 
   <!-- FOOTER -->
   <h2>Footer</h2>
@@ -139,14 +141,73 @@
     &lt;/footer&gt;
   </code></pre>
   <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text.</p>
+
+
+
+  <!-- IMAGES -->
+  <h2>Images</h2>
+  <p>You can use images without a class. We apply a max width of 100% to the img element so the image stays inside the container. (Photo by <a href="https://unsplash.com/@goshua13?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Aragon</a> on <a href="https://unsplash.com/photos/EaB4Ml7C7fE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash.)</a>
+  </p>
+  <img src="joshua-aragon-EaB4Ml7C7fE-unsplash.jpg" alt="">
+
+
+
+  <!-- FORMS -->
+  <h2>Forms</h2>
+  <p>You can use form elements without classes. We set the display property to block for the inputs so each one takes up its own line.</p>
+  <form onsubmit="return false;">
+
+  <label for="select-id">Select</label>
+  <select name="" id="select-id">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+  </select>
+
+  <label for='email'>Email</label>
+  <input type='email' name='email' id='email' placeholder='john.doe@gmail.com'>
+
+  <label for='id'>User id (read only)</label>
+  <input readonly name='id' id='id' value='04D6H89Z'>
+
+  <label for='disabled'>Random disabled input</label>
+  <input disabled name='disabled' id='disabled' placeholder='Because why not?'>
+
+  <label for='about'>About me</label>
+  <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
+
+  <label>Choose a radio:</label>
+  <div>
+    <input type='radio' id='john' name='drone' value='john' checked>
+    <label for='john'>John Doe</label>
+  </div>
+  <div>
+    <input type='radio' id='jane' name='drone' value='jane' checked>
+    <label for='jane'>Jane Doe</label>
+  </div>
+  <div>
+    <input type='radio' id='johnny' name='drone' value='johnny' checked>
+    <label for='johnny'>Johnny Doe</label>
+  </div>
+
+  <br>
+
+  <label>Checkboxes</label>
+  <div>
+    <input type='checkbox' name='unchecked' id='unchecked'>
+    <label for='unchecked'>Unchecked</label>
+    <input type='checkbox' name='remember' id='remember' checked>
+    <label for='remember'>Remember me</label>
+  </div>
+  </form>
 </div>
+
 
 <footer class="footer">
   <small class="">© 2023 Javier Alvarado.</small>
 </footer>
 
-  <!-- JS -->
-  <script src="prism.js"></script>
-  <script src="js/navbar.js"></script>
+<!-- JS -->
+<script src="prism.js"></script>
+<script src="js/navbar.js"></script>
 </body>
 </html>

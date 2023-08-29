@@ -1,0 +1,28 @@
+/* base.css */
+
+/* images */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* forms */
+input, select, textarea {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: initial;
+}
+
+textarea:not([cols]) {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 4px;
+}

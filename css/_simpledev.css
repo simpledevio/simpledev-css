@@ -1,5 +1,6 @@
 /* _simpledev.css */
 
+@import "base.css";
 @import "buttons.css";
 @import "container.css";
 @import "footer.css";

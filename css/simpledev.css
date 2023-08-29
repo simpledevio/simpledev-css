@@ -69,6 +69,14 @@ input[type="reset"]:hover {
   max-width: 900px;
   margin: auto;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
 /* footer.css */
 
 .footer {

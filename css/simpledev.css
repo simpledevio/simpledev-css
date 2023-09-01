@@ -55,6 +55,23 @@ input[type="reset"]:hover {
   border-color: #ddd;
 }
 
+/* BUTTON OUTLINE */
+.button-outline {
+  border: solid 2px #eee;
+  border-radius: 4px;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.button-outline:hover {
+  background-color: #eee;
+  /* border-color: #ddd; */
+  color: #000;
+}
+
 /* FLOATING BUTTON */
 .button-floating {
   position: fixed;

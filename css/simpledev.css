@@ -27,6 +27,11 @@ label {
   display: inline-block;
   margin-bottom: 4px;
 }
+
+h2 {
+  scroll-margin-top: 5rem;
+  /* whatever is a nice number that gets you past the header */
+}
 /* buttons.css */
 
 /* BUTTON */

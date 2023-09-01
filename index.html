@@ -31,10 +31,21 @@
 <div class="container">
   <h1 class="text-center">simpledev.css</h1>
   <p>The goal of simpledev.css is to create a <b>mostly classless CSS framework</b>. We are starting off with working on a handful of components and will add the classless code later.</p>
-
+  <ul>
+    <li><a href="#navbar">Navbar</a></li>
+    <li><a href="#navbar-message">Navbar Message</a></li>
+    <li><a href="#container">Container</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#text-align">Text Align</a></li>
+    <li><a href="#floating-button">Floating Button</a></li>
+    <li><a href="#footer">Footer</a></li>
+    <li><a href="#images">Images</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#smooth-scrolling">Smooth Scrolling</a></li>
+  </ul>
 
   <!-- NAVBAR -->
-  <h2>Navbar</h2>
+  <h2 id="navbar">Navbar</h2>
   <nav class="navbar" style="position: static;">
       <div>
         <a href="">Brand</a>
@@ -74,7 +85,7 @@
 
 
   <!-- NAVBAR MESSAGE -->
-  <h2>Navbar Message</h2>
+  <h2 id="navbar-message">Navbar Message</h2>
   <div class="navbar-message">Test navbar message.</div>
 
   <pre><code class="language-html">
@@ -86,7 +97,7 @@
 
 
   <!-- CONTAINER -->
-  <h2>Container</h2>
+  <h2 id="container">Container</h2>
   <pre><code class="language-html">
     &lt;div class=&quot;container&quot;&gt;
 
@@ -97,7 +108,7 @@
 
 
   <!-- BUTTONS -->
-  <h2>Buttons</h2>
+  <h2 id="buttons">Buttons</h2>
   <a href="" class="button">Anchor</a>
   <button type="button">Button</button>
   <input type="button" value="Input">
@@ -132,7 +143,7 @@
 
 
   <!-- TEXT ALIGN -->
-  <h2>Text Align</h2>
+  <h2 id="text-align">Text Align</h2>
   <div class="text-center">
     <h3>Test heading</h3>
     <a href="" class="button">Test Link</a>
@@ -157,7 +168,7 @@
 
 
   <!-- FLOATING BUTTON -->
-  <h2>Floating Button</h2>
+  <h2 id="floating-button">Floating Button</h2>
   <a href="#" class="button-floating">Float</a>
   <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;button-floating&quot;&gt;Float&lt;/a&gt;</code></pre>
   <p>You can see an example of our floating button in the lower right-hand corner. It can be applied to an <code>a</code> element or a <code>button</code> element.</p>
@@ -165,7 +176,7 @@
 
 
   <!-- FOOTER -->
-  <h2>Footer</h2>
+  <h2 id="footer">Footer</h2>
   <footer class="footer">
     <small class="">© 2023 Business Name.</small>
   </footer>
@@ -179,7 +190,7 @@
 
 
   <!-- IMAGES -->
-  <h2>Images</h2>
+  <h2 id="images">Images</h2>
   <p>You can use images without a class. We apply a max width of 100% to the img element so the image stays inside the container. (Photo by <a href="https://unsplash.com/@goshua13?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Aragon</a> on <a href="https://unsplash.com/photos/EaB4Ml7C7fE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash.)</a>
   </p>
   <img src="joshua-aragon-EaB4Ml7C7fE-unsplash.jpg" alt="">
@@ -187,7 +198,7 @@
 
 
   <!-- FORMS -->
-  <h2>Forms</h2>
+  <h2 id="forms">Forms</h2>
   <p>You can use form elements without classes. We set the display property to block for the inputs so each one takes up its own line.</p>
   <form onsubmit="return false;">
 
@@ -237,7 +248,7 @@
 
 
   <!-- SMOOTH SCROLLING -->
-  <h2>Smooth Scrolling</h2>
+  <h2 id="smooth-scrolling">Smooth Scrolling</h2>
   <p>Smooth scrolling is not enabled by default. If you want to enable smooth scrolling, you can add the following code snippet to your custom CSS file.</p>
   <pre><code class="lang-css">
     html {

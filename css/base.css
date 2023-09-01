@@ -11,6 +11,7 @@ video {
 input, select, textarea {
   display: block;
   margin-bottom: 6px;
+  padding: 6px;
 }
 
 input[type='checkbox'],

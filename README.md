@@ -18,6 +18,11 @@ If you're going to use the navbar, make sure you also include the CDN link for o
 ```
 
 ## Contributing
+
+Use the Discussions feature to propose new features/components.
+
+Use the Issues feature if you find any bugs or accessibility issues with the current codebase.
+
 Use the file `_simpledev.css` when you're testing out new code. This file uses import statements.
 
 ```html

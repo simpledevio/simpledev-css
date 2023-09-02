@@ -1,6 +1,6 @@
 # simpledev.css
 
-The goal of simpledev.css is to create a mostly classless CSS framework. We are starting off with working on a handful of components and will add the classless code later. This project is inspired by Water.css, Pico, and Bootstrap.
+The goal of simpledev.css is to create a **mostly classless CSS framework**. We are starting off with working on a handful of components and will add the classless code later. This project is inspired by Water.css, Pico, and Bootstrap.
 
 ## Getting Started
 
@@ -18,7 +18,6 @@ If you're going to use the navbar, make sure you also include the CDN link for o
 ```
 
 ## Contributing
-
 Use the file `_simpledev.css` when you're testing out new code. This file uses import statements.
 
 ```html
@@ -28,5 +27,5 @@ Use the file `_simpledev.css` when you're testing out new code. This file uses i
 When you're done testing out your code and you're ready to submit your work, use the following command to combine the individual CSS files into one final CSS file.
 
 ```
-cat base.css buttons.css container.css footer.css navbar.css > simpledev.css
+cat base.css buttons.css code.css container.css footer.css navbar.css > simpledev.css
 ```

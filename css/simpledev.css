@@ -85,6 +85,14 @@ input[type="reset"]:hover {
   right: 12px;
   z-index: 11;
 }
+/* code.css */
+
+.code {
+  background-color: #222;
+  color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+}
 /* container.css */
 
 /* CONTAINER */

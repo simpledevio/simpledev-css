@@ -6,3 +6,8 @@
   padding: 12px;
   border-radius: 4px;
 }
+
+.code code {
+  background-color: inherit;
+  color: #fff;
+}

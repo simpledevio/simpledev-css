@@ -21,7 +21,7 @@ h2 {
   /* whatever is a nice number that gets you past the header */
 }
 
-p, ul, ol, div {
+p, ul, ol {
   line-height: 1.5;
 }
 

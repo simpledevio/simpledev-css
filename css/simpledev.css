@@ -1,5 +1,13 @@
 /* base.css */
 
+a {
+  color: rgb(13, 110, 253);
+}
+
+a:hover {
+  color: rgb(10, 88, 202);
+}
+
 code {
   background-color: #eee;
   border-radius: 4px;

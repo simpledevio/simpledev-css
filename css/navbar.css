@@ -23,6 +23,7 @@
 .navbar div {
   display: flex;
   justify-content: space-between;
+  line-height: 1.15;
   width: 100%;
 }
 

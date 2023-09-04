@@ -21,8 +21,8 @@ h2 {
   /* whatever is a nice number that gets you past the header */
 }
 
-p {
-  line-height: 1.3;
+p, ul, ol, div {
+  line-height: 1.5;
 }
 
 /* images */

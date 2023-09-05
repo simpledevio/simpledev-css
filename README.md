@@ -19,9 +19,9 @@ If you're going to use the navbar, make sure you also include the CDN link for o
 
 ### Adding custom CSS
 
-Lastly, we encourage adding your own custom CSS using your own CSS file. You can technically just stick with the defaults styles, but we recommend adding your own colors and fonts to make your site unique.
+Lastly, we encourage adding your own custom CSS using your own CSS file. You can technically just stick with the default styles, but we recommend adding your own colors and fonts to make your site unique.
 
-For example, if you had a file called `custom.css` inside your `css` folder, you should add the following link element after the other two link elements we listed above. You can always name the file something else or put it in a different folder (just make sure the path is right).
+For example, if you have a file called `custom.css` inside your `css` folder, you should add the following link element after the other two link elements we listed above. You can always name the file something else or put it in a different folder (just make sure the path is right).
 
 ```html
 <link rel="stylesheet" href="css/custom.css">

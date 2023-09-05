@@ -11,10 +11,20 @@ These components were developed using modern-normalize.css. It's recommended tha
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/simpledev.css">
 ```
 
-If you're going to use the navbar, make sure you also include the CDN link for our JS file.
+If you're going to use the navbar, make sure you also include the CDN link for our JS file. It should go just above the closing body tag.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/js/navbar.js"></script>
+```
+
+### Adding custom CSS
+
+Lastly, we encourage adding your own custom CSS using your own CSS file. You can technically just stick with the defaults styles, but we recommend adding your own colors and fonts to make your site unique.
+
+For example, if you had a file called `custom.css` inside your `css` folder, you should add the following link element after the other two link elements we listed above. You can always name the file something else or put it in a different folder (just make sure the path is right).
+
+```html
+<link rel="stylesheet" href="css/custom.css">
 ```
 
 ## Contributing
@@ -29,7 +39,13 @@ Use the file `_simpledev.css` when you're testing out new code. This file uses i
 <link rel="stylesheet" href="css/_simpledev.css">
 ```
 
-When you're done testing out your code and you're ready to submit your work, use the following command to combine the individual CSS files into one final CSS file.
+When you're done testing out your code and you're ready to submit your work, `cd` into the `css` folder.
+
+```
+cd css
+```
+
+Then use the following command to combine the individual CSS files into one final CSS file.
 
 ```
 cat base.css buttons.css code.css container.css footer.css navbar.css > simpledev.css

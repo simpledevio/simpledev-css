@@ -39,6 +39,10 @@ input, select, textarea {
   padding: 6px;
 }
 
+input, textarea {
+  border-radius: 4px;
+}
+
 input[type='checkbox'],
 input[type='radio'] {
   display: initial;
@@ -51,6 +55,11 @@ textarea:not([cols]) {
 label {
   display: inline-block;
   margin-bottom: 4px;
+}
+
+/* from sanitize.css */
+:where(button, input, textarea) {
+  border: 1px solid WindowFrame;
 }
 /* buttons.css */
 

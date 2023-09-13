@@ -193,11 +193,16 @@ input[type="reset"]:hover {
   text-decoration: none;
   padding: 8px;
   display: block;
-  color: #333;
+  color: #000;
+}
+
+.navbar li a {
+  color: #555;
 }
 
 .navbar li a:hover {
-  background-color: #ddd;
+  /* background-color: #ddd; */
+  color: #000;
 }
 
 /* for the navbar menu button */

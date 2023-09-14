@@ -5,3 +5,20 @@
   background-color: #eee;
   padding: 12px;
 }
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  /* color: #555; */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

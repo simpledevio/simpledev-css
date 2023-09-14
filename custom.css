@@ -1,0 +1,14 @@
+/* custom.css */
+/* This CSS code is just for the docs site */
+
+h2 {
+  margin-top: 50px;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+code[class*="language-"] {
+  padding-inline: 0;
+}

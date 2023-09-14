@@ -67,9 +67,9 @@ label {
 .button,
 .button-floating,
 button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+[type="button"],
+[type="submit"],
+[type="reset"] {
   background-color: #eee;
   border: solid 2px #eee;
   border-radius: 4px;
@@ -84,9 +84,9 @@ input[type="reset"] {
 .button:hover,
 .button-floating:hover,
 button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+[type="button"]:hover,
+[type="submit"]:hover,
+[type="reset"]:hover {
   background-color: #ddd;
   border-color: #ddd;
   color: #000;
@@ -106,7 +106,7 @@ input[type="reset"]:hover {
 
 .button-outline:hover {
   background-color: #eee;
-  /* border-color: #ddd; */
+  border-color: #eee;
   color: #000;
 }
 

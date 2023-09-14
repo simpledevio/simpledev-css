@@ -65,6 +65,10 @@
   margin-right: 8px;
 }
 
+.navbar .active {
+  color: #000;
+}
+
 /* for navbar.js */
 ul.block {
   display: block;

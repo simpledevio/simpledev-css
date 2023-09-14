@@ -16,7 +16,7 @@ code {
   /* color: #e2777a; */
 }
 
-h2 {
+h2, h3 {
   scroll-margin-top: 5rem;
   /* whatever is a nice number that gets you past the header */
 }

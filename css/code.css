@@ -11,3 +11,11 @@
   background-color: inherit;
   color: #fff;
 }
+
+.bash::before {
+  content: '$ ';
+}
+
+.zsh::before {
+  content: '% ';
+}

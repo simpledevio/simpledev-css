@@ -7,11 +7,11 @@
 }
 
 .footer-links {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 16px;
   flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
   padding-left: 0;
 }
 

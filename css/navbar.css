@@ -3,9 +3,9 @@
 /* NAVBAR MESSAGE */
 /* A message that goes above the navbar */
 .navbar-message {
+  background-color: #ddd;
   padding-block: 4px;
   text-align: center;
-  background-color: #ddd;
 }
 
 /* NAVBAR */
@@ -35,10 +35,10 @@
 
 /* for the navbar links */
 .navbar ul {
-  list-style: none;
   display: none;
-  text-align: left;
+  list-style: none;
   padding-left: 0;
+  text-align: left;
   /* line-height: 1.15; */
 
 }
@@ -49,10 +49,10 @@
 }
 
 .navbar a {
-  text-decoration: none;
-  padding: 8px;
-  display: block;
   color: #000;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
 }
 
 .navbar li a {
@@ -66,9 +66,9 @@
 
 /* for the navbar menu button */
 .navbar button {
+  border: 0;
   margin-right: 8px;
   margin-block: 8px;
-  border: 0;
 }
 
 .navbar .active {

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
   <link rel="stylesheet" href="prism.css">
   <link rel="stylesheet" href="css/simpledev.css">
+  <link rel="stylesheet" href="css/dark.css">
   <link rel="stylesheet" href="custom.css">
 </head>
 
@@ -33,6 +34,7 @@
     <ul>
       <li><a href="#css">Add CSS</a></li>
       <li><a href="#js">Add JS</a></li>
+      <li><a href="#dark">Dark mode</a></li>
       <li><a href="#custom-css">Add custom CSS</a></li>
       <li><a href="#basic-template">Basic template</a></li>
       <li><a href="#advanced-template">Advanced template</a></li>
@@ -62,6 +64,12 @@
 
 
 
+    <!-- DARK -->
+    <h3 id="dark">Dark Mode</h3>
+    <p>We are experimenting with adding dark mode support to simpledev.css. To add dark mode to your HTML file, just copy the link element below and put it underneath the 2 link elements from above. For now the plan is to keep it as a separate link element since not everyone wants dark mode.</p>
+    <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/dark.css&quot;&gt;</code></pre>
+
+
     <!-- ADD CUSTOM CSS -->
     <h3 id="custom-css">Add custom CSS</h3>
     <p>Lastly, we encourage adding your own custom CSS using your own CSS file. You can technically just stick with the default styles, but we recommend adding your own colors and fonts to make your site unique.</p>
@@ -74,7 +82,7 @@
 
     <!-- BASIC TEMPLATE -->
     <h2 id="basic-template">Basic Template</h2>
-    <p>You can copy and paste this into an empty HTML file to get started. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
+    <p>You can copy and paste this into an empty HTML file to quickly get started. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;en&quot;&gt;
@@ -87,6 +95,7 @@
         &lt;!-- CSS --&gt;
         &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css&quot;&gt;
         &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/simpledev.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/dark.css&quot;&gt;
       &lt;/head&gt;
 
       &lt;body&gt;
@@ -102,47 +111,48 @@
 
     <!-- ADVANCED TEMPLATE -->
     <h2 id="advanced-template">Advanced Template</h2>
-    <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer.</p>
+    <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      &lt;html lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
-  &lt;title&gt;Advanced Template&lt;/title&gt;
+        &lt;title&gt;Advanced Template&lt;/title&gt;
 
-  &lt;!-- CSS --&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/simpledev.css&quot;&gt;
-&lt;/head&gt;
+        &lt;!-- CSS --&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/simpledev.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/dark.css&quot;&gt;
+      &lt;/head&gt;
 
-&lt;body&gt;
-  &lt;nav class=&quot;navbar&quot;&gt;
-    &lt;div&gt;
-      &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
-      &lt;button type=&quot;button&quot;&gt;Menu&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
+      &lt;body&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+          &lt;div&gt;
+            &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
+            &lt;button type=&quot;button&quot;&gt;Menu&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
 
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;h1&gt;Advanced Template&lt;/h1&gt;
-  &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;h1&gt;Advanced Template&lt;/h1&gt;
+        &lt;/div&gt;
 
-  &lt;footer class=&quot;footer&quot;&gt;
-    &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
-  &lt;/footer&gt;
+        &lt;footer class=&quot;footer&quot;&gt;
+          &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
+        &lt;/footer&gt;
 
-  &lt;!-- JS --&gt;
-  &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/js/navbar.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+        &lt;!-- JS --&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/js/navbar.js&quot;&gt;&lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
     </code></pre>
 
 

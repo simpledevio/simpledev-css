@@ -12,6 +12,7 @@
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .footer-links a {

@@ -61,6 +61,21 @@ label {
 :where(button, input, textarea) {
   border: 1px solid WindowFrame;
 }
+
+/* tables */
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+td, th {
+  border: solid 1px #aaa;
+  padding: 12px;
+}
+
+caption {
+  margin-top: 8px;
+}
 /* buttons.css */
 
 /* BUTTON */

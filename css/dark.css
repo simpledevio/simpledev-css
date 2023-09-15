@@ -1,0 +1,115 @@
+/* dark.css */
+
+@media (prefers-color-scheme: dark) {
+
+  /* BASE */
+  body {
+    /* background-color: #111; */
+    background-color: #212529;
+    color: #fff;
+    color: rgb(222, 226, 230);
+  }
+
+  a {
+    color: rgb(110, 168, 254);
+  }
+
+  a:hover {
+    color: rgb(139, 185, 254);
+  }
+
+  code {
+    background-color: rgb(222, 226, 230);
+  }
+
+  input, textarea {
+    background-color: #212529;
+    background-color: #2b3035;
+    color: #fff;
+  }
+
+
+
+  /* BUTTONS */
+  .button,
+  .button-floating,
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    background-color: #555;
+    border-color: #555;
+    color: #fff;
+  }
+
+  .button:hover,
+  .button-floating:hover,
+  button:hover,
+  [type="button"]:hover,
+  [type="submit"]:hover,
+  [type="reset"]:hover {
+    background-color: #666;
+    border-color: #666;
+    color: #fff;
+    /* border-color: #000; */
+  }
+
+  .button-outline {
+    border-color: #555;
+    color: #fff;
+  }
+
+  .button-outline:hover {
+    background-color: #555;
+    border-color: #555;
+    color: #fff;
+  }
+
+
+
+  /* CODE */
+  .code {
+    background-color: #2b3035;
+  }
+
+
+
+  /* FOOTER */
+  .footer {
+    background-color: #111;
+    background-color: #2b3035;
+    color: #fff;
+  }
+
+
+
+  /* NAVBAR */
+  .navbar {
+    background-color: #222;
+    background-color: rgb(43, 48, 53);
+    background-color: #2b3035;
+    color: #fff;
+  }
+
+  .navbar a {
+    color: #fff;
+  }
+
+  .navbar li a {
+    color: #ddd;
+  }
+
+  .navbar li a:hover {
+    /* background-color: #fff; */
+    color: #fff;
+  }
+
+  .navbar .active {
+    color: #fff;
+  }
+
+  .navbar-message {
+    /* background-color: #111; */
+    background-color: #495057;
+  }
+}

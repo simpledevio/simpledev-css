@@ -1,4 +1,11 @@
 /* _simpledev.css */
+/*
+Use this file during development.
+
+Just change simpledev.css to _simpledev.css in index.html and start.html.
+
+Make sure you change it back simpledev.css before committing.
+*/
 
 @import "base.css";
 @import "buttons.css";

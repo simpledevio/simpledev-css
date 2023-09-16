@@ -1,4 +1,5 @@
 /* base.css */
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css");
 
 a {
   color: rgb(13, 110, 253);

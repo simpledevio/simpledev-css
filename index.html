@@ -58,7 +58,7 @@
 
   <!-- NAVBAR -->
   <h2 id="navbar">Navbar</h2>
-  <nav class="navbar" style="position: static;">
+  <nav class="navbar" style="position: static;" id="navbar">
       <div>
         <a href="">Brand</a>
         <button type="button">Menu</button>
@@ -340,5 +340,10 @@
 <!-- JS -->
 <script src="prism.js"></script>
 <script src="js/navbar.js"></script>
+<script>
+  document.querySelector('#navbar button').addEventListener('click', function() {
+    document.querySelector('#navbar ul').classList.toggle('block');
+  });
+</script>
 </body>
 </html>

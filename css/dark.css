@@ -112,4 +112,8 @@
     /* background-color: #111; */
     background-color: #495057;
   }
+
+  .grid > div {
+    background-color: #555;
+  }
 }

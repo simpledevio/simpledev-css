@@ -20,6 +20,15 @@ code[class*="language-"] {
   margin-bottom: 16px;
 }
 
+.grid > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #2b3035;
+}
+
 @media (prefers-color-scheme: dark) {
   :not(pre)>code[class*="language-"], pre[class*="language-"] {
     background-color: #2b3035;

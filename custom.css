@@ -16,7 +16,6 @@ code[class*="language-"] {
 /* Grid showcase container */
 .grid-container {
   margin: auto;
-  max-width: 400px;
   margin-bottom: 16px;
 }
 
@@ -26,7 +25,8 @@ code[class*="language-"] {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #2b3035;
+  background-color: #fff;
+  border: 1px solid #111;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -78,6 +78,7 @@
   color: #fff;
   display: inline-block;
   margin-bottom: 0;
+  margin-left: 8px;
   /* text-align: center; */
 }
 
@@ -101,6 +102,10 @@ ul.block {
 
   .navbar button {
     display: none;
+  }
+
+  .navbar .button {
+    margin-left: 0;
   }
 
   .navbar {

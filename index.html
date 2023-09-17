@@ -144,13 +144,27 @@
     .button-floating,
     .button-outline,
     button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"] {
+    [type="button"],
+    [type="submit"],
+    [type="reset"] {
       border-radius: 0;
     }
   </code></pre>
   <p>Add this code to your custom CSS file if you want square corners instead of rounded corners.</p>
+
+  <h3>Pill buttons</h3>
+  <pre><code class="lang-css">
+    .button,
+    .button-floating,
+    .button-outline,
+    button,
+    [type="button"],
+    [type="submit"],
+    [type="reset"] {
+      border-radius: 9999px;
+    }
+  </code></pre>
+  <p>Add this code to your custom CSS file if you want pill buttons. You may want to increase the <code>padding-inline</code> property as well.</p>
 
 
 

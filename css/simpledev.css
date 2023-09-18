@@ -212,6 +212,12 @@ button:hover,
 .footer-links a:hover {
   text-decoration: underline;
 }
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
 /* navbar.css */
 
 /* NAVBAR MESSAGE */
@@ -327,22 +333,4 @@ ul.block {
     display: flex;
     justify-content: space-between;
   }
-}
-/* Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-
-/* Grid Item */
-.grid > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 5px;
-  min-height: 50px;
-  background-color: #eee;
 }

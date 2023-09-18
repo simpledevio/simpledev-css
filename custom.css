@@ -13,6 +13,22 @@ code[class*="language-"] {
   padding-inline: 0;
 }
 
+/* Grid showcase container */
+.grid-container {
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #111;
+}
+
 @media (prefers-color-scheme: dark) {
   :not(pre)>code[class*="language-"], pre[class*="language-"] {
     background-color: #2b3035;

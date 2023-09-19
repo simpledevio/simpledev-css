@@ -310,6 +310,18 @@ code {
   /* color: #e2777a; */
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  /* font-size: 1.75rem; */
+}
+
 h2, h3 {
   scroll-margin-top: 5rem;
   /* whatever is a nice number that gets you past the header */
@@ -321,6 +333,10 @@ p, ul, ol {
 
 ul, ol {
   padding-left: 24px;
+}
+
+.lead {
+  font-size: 1.25rem;
 }
 
 /* images */
@@ -393,8 +409,10 @@ button,
   color: #000;
   cursor: pointer;
   display: inline-block;
+  line-height: 1.5;
   margin-bottom: 6px;
   padding: 8px;
+  padding: 6px 12px;
   text-decoration: none;
 }
 
@@ -416,8 +434,9 @@ button:hover,
   border-radius: 4px;
   color: #000;
   display: inline-block;
+  line-height: 1.5;
   margin-bottom: 6px;
-  padding: 8px;
+  padding: 8px 12px;
   text-decoration: none;
 }
 
@@ -467,7 +486,7 @@ button:hover,
 /* CONTAINER */
 .container {
   padding: 0 12px;
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -508,7 +527,7 @@ button:hover,
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -548,12 +567,14 @@ button:hover,
 .navbar div a {
   font-weight: bold;
   margin: 8px;
+  margin-left: 12px;
 }
 
 /* for the navbar links */
 .navbar ul {
   display: none;
   list-style: none;
+  margin-right: 4px;
   padding-left: 0;
   text-align: left;
 }

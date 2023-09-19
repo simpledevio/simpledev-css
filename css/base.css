@@ -17,6 +17,18 @@ code {
   /* color: #e2777a; */
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  /* font-size: 1.75rem; */
+}
+
 h2, h3 {
   scroll-margin-top: 5rem;
   /* whatever is a nice number that gets you past the header */
@@ -28,6 +40,10 @@ p, ul, ol {
 
 ul, ol {
   padding-left: 24px;
+}
+
+.lead {
+  font-size: 1.25rem;
 }
 
 /* images */

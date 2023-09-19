@@ -13,8 +13,10 @@ button,
   color: #000;
   cursor: pointer;
   display: inline-block;
+  line-height: 1.5;
   margin-bottom: 6px;
   padding: 8px;
+  padding: 6px 12px;
   text-decoration: none;
 }
 
@@ -36,8 +38,9 @@ button:hover,
   border-radius: 4px;
   color: #000;
   display: inline-block;
+  line-height: 1.5;
   margin-bottom: 6px;
-  padding: 8px;
+  padding: 8px 12px;
   text-decoration: none;
 }
 

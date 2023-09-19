@@ -30,12 +30,14 @@
 .navbar div a {
   font-weight: bold;
   margin: 8px;
+  margin-left: 12px;
 }
 
 /* for the navbar links */
 .navbar ul {
   display: none;
   list-style: none;
+  margin-right: 4px;
   padding-left: 0;
   text-align: left;
 }

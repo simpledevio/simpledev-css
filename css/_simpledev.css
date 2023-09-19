@@ -7,6 +7,7 @@ Just change simpledev.css to _simpledev.css in index.html and start.html.
 Make sure you change it back simpledev.css before committing.
 */
 
+@import "modern-normalize.css";
 @import "base.css";
 @import "buttons.css";
 @import "code.css";

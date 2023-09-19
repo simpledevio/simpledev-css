@@ -52,5 +52,5 @@ cd css
 Then use the following command to combine the individual CSS files into one final CSS file.
 
 ```
-cat base.css buttons.css code.css container.css footer.css grid.css navbar.css > simpledev.css
+cat modern-normalize.css base.css buttons.css code.css container.css footer.css grid.css navbar.css > simpledev.css
 ```

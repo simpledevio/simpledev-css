@@ -8,10 +8,9 @@ We are starting off with working on a handful of components and will add the cla
 
 ## Getting Started
 
-These components were developed using modern-normalize.css. It's recommended that you include modern-normalize.css in your project if you're going to use this framework. Then you can add the CDN link for simpledev.css from jsDelivr.
+Add the following link element to add simpledev.css to your HTML file. This element should go inside your head element. Our CSS file includes modern-normalize.css to help with any browser compatibility issues.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/css/simpledev.css">
 ```
 

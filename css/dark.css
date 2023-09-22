@@ -6,6 +6,7 @@
   body {
     /* background-color: #111; */
     background-color: #212529;
+    /* background-color: #212529; */
     color: #fff;
     color: rgb(222, 226, 230);
   }
@@ -38,7 +39,9 @@
   [type="submit"],
   [type="reset"] {
     background-color: #555;
+    background-color: #495057;
     border-color: #555;
+    border-color: #495057;
     color: #fff;
   }
 
@@ -48,20 +51,20 @@
   [type="button"]:hover,
   [type="submit"]:hover,
   [type="reset"]:hover {
-    background-color: #666;
-    border-color: #666;
+    background-color: #343a40;
+    border-color: #343a40;
     color: #fff;
     /* border-color: #000; */
   }
 
   .button-outline {
-    border-color: #555;
+    border-color: #495057;
     color: #fff;
   }
 
   .button-outline:hover {
-    background-color: #555;
-    border-color: #555;
+    background-color: #495057;
+    border-color: #495057;
     color: #fff;
   }
 
@@ -111,9 +114,10 @@
   .navbar-message {
     /* background-color: #111; */
     background-color: #495057;
+    background-color: #212529;
   }
 
-  .grid-container > div {
+  .grid-container>div {
     color: #212529;
   }
 }

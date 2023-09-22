@@ -8,7 +8,9 @@ button,
 [type="submit"],
 [type="reset"] {
   background-color: #eee;
+  background-color: #f1f3f5;
   border: solid 2px #eee;
+  border: solid 2px #f1f3f5;
   border-radius: 4px;
   color: #000;
   cursor: pointer;
@@ -27,7 +29,9 @@ button:hover,
 [type="submit"]:hover,
 [type="reset"]:hover {
   background-color: #ddd;
+  background-color: #e9ecef;
   border-color: #ddd;
+  border-color: #e9ecef;
   color: #000;
 }
 
@@ -35,6 +39,7 @@ button:hover,
 .button-outline {
   background-color: transparent;
   border: solid 2px #eee;
+  border: solid 2px #f1f3f5;
   border-radius: 4px;
   color: #000;
   display: inline-block;
@@ -46,7 +51,9 @@ button:hover,
 
 .button-outline:hover {
   background-color: #eee;
+  background-color: #f1f3f5;
   border-color: #eee;
+  border-color: #f1f3f5;
   color: #000;
 }
 
@@ -56,13 +63,13 @@ button:hover,
   bottom: 12px;
   right: 12px;
   z-index: 11;
-  background-color: #ddd;
-  border-color: #ddd;
+  background-color: #dee2e6;
+  border-color: #dee2e6;
 }
 
 .button-floating:hover {
-  background-color: #ccc;
-  border-color: #ccc;
+  background-color: #ced4da;
+  border-color: #ced4da;
 }
 
 .large {

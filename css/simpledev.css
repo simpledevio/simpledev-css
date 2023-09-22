@@ -460,6 +460,12 @@ button:hover,
   background-color: #ccc;
   border-color: #ccc;
 }
+
+.large {
+  padding-block: 8px;
+  padding-inline: 16px;
+  font-size: 1.25rem;
+}
 /* code.css */
 
 .code {

@@ -20,17 +20,32 @@ code[class*="language-"] {
 }
 
 .grid > div {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   background-color: #fff;
-  border: 1px solid #111;
+  border: 1px solid #111; */
 }
 
 @media (prefers-color-scheme: dark) {
-  :not(pre)>code[class*="language-"], pre[class*="language-"] {
+  :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background-color: #2b3035;
   }
+}
+
+/* .navbar, .hero {
+  background-color: darkseagreen;
+  border-color: aliceblue;
+  color: white;
+}
+
+.button {
+  background-color: white;
+  border-color: white;
+} */
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
 }

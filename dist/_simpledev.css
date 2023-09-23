@@ -1,0 +1,18 @@
+/* _simpledev.css */
+/*
+Use this file during development.
+
+Just change simpledev.css to _simpledev.css in index.html and start.html.
+
+Make sure you change it back simpledev.css before committing.
+*/
+
+@import "../css/_modern-normalize.css";
+@import "../css/base.css";
+@import "../css/buttons.css";
+@import "../css/code.css";
+@import "../css/container.css";
+@import "../css/footer.css";
+@import "../css/navbar.css";
+@import "../css/dark.css";
+@import "../css/grid.css";

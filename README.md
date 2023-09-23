@@ -14,10 +14,10 @@ Add the following link element to add simpledev.css to your HTML file. This elem
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/simpledev.css">
 ```
 
-If you're going to use the navbar, make sure you also include the CDN link for our JS file. It should go just above the closing body tag.
+If you're going to use the navbar, make sure you also include the CDN link for our JS file. It can go inside the head element since it has the defer attribute.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/navbar.js" defer></script>
 ```
 
 ### Adding custom CSS

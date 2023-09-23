@@ -42,14 +42,8 @@ Use the file `_simpledev.css` when you're testing out new code. This file uses i
 <link rel="stylesheet" href="css/_simpledev.css">
 ```
 
-When you're done testing out your code and you're ready to submit your work, `cd` into the `css` folder.
+Then use the following command in your terminal to combine the individual CSS files into one final CSS file. (You don't have to `cd` into your CSS folder.)
 
 ```
-cd css
-```
-
-Then use the following command to combine the individual CSS files into one final CSS file.
-
-```
-cat modern-normalize.css base.css buttons.css code.css container.css footer.css grid.css navbar.css > simpledev.css
+cat css/*.css > dist/simpledev.css
 ```

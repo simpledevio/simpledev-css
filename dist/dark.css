@@ -29,7 +29,10 @@
     color: #fff;
   }
 
-
+  /* BACKGROUND */
+  .background {
+    background-color: #2b3035;
+  }
 
   /* BUTTONS */
   .button,
@@ -117,7 +120,7 @@
     background-color: #212529;
   }
 
-  .grid-container>div {
+  .grid-container > div {
     color: #212529;
   }
 }

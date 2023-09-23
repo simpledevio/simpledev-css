@@ -517,6 +517,10 @@ button:hover,
 .text-end {
   text-align: end;
 }
+
+.background {
+  background-color: #e9ecef;
+}
 /* footer.css */
 
 .footer {

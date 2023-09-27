@@ -6,7 +6,6 @@
   body {
     /* background-color: #111; */
     background-color: #212529;
-    /* background-color: #212529; */
     color: #fff;
     color: rgb(222, 226, 230);
   }
@@ -21,6 +20,8 @@
 
   code {
     background-color: rgb(222, 226, 230);
+    background-color: #495057;
+    color: rgb(222, 226, 230);
   }
 
   input, textarea {

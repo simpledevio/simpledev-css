@@ -80,7 +80,9 @@
     color: #fff;
   }
 
-
+  .footer-links a {
+    color: rgb(222, 226, 230);
+  }
 
   /* NAVBAR */
   .navbar {

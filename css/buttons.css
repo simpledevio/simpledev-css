@@ -7,9 +7,7 @@ button,
 [type="button"],
 [type="submit"],
 [type="reset"] {
-  background-color: #eee;
   background-color: #f1f3f5;
-  border: solid 2px #eee;
   border: solid 2px #f1f3f5;
   border-radius: 4px;
   color: #000;
@@ -28,9 +26,7 @@ button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
 [type="reset"]:hover {
-  background-color: #ddd;
   background-color: #e9ecef;
-  border-color: #ddd;
   border-color: #e9ecef;
   color: #000;
 }
@@ -38,7 +34,6 @@ button:hover,
 /* BUTTON OUTLINE */
 .button-outline {
   background-color: transparent;
-  border: solid 2px #eee;
   border: solid 2px #f1f3f5;
   border-radius: 4px;
   color: #000;
@@ -50,9 +45,7 @@ button:hover,
 }
 
 .button-outline:hover {
-  background-color: #eee;
   background-color: #f1f3f5;
-  border-color: #eee;
   border-color: #f1f3f5;
   color: #000;
 }

@@ -303,7 +303,6 @@ a:hover {
 }
 
 code {
-  background-color: #eee;
   background-color: #f1f3f5;
   border-radius: 4px;
   padding-inline: 4px;
@@ -404,9 +403,7 @@ button,
 [type="button"],
 [type="submit"],
 [type="reset"] {
-  background-color: #eee;
   background-color: #f1f3f5;
-  border: solid 2px #eee;
   border: solid 2px #f1f3f5;
   border-radius: 4px;
   color: #000;
@@ -425,9 +422,7 @@ button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
 [type="reset"]:hover {
-  background-color: #ddd;
   background-color: #e9ecef;
-  border-color: #ddd;
   border-color: #e9ecef;
   color: #000;
 }
@@ -435,7 +430,6 @@ button:hover,
 /* BUTTON OUTLINE */
 .button-outline {
   background-color: transparent;
-  border: solid 2px #eee;
   border: solid 2px #f1f3f5;
   border-radius: 4px;
   color: #000;
@@ -447,9 +441,7 @@ button:hover,
 }
 
 .button-outline:hover {
-  background-color: #eee;
   background-color: #f1f3f5;
-  border-color: #eee;
   border-color: #f1f3f5;
   color: #000;
 }
@@ -525,7 +517,6 @@ button:hover,
 
 .footer {
   text-align: center;
-  background-color: #eee;
   background-color: #f1f3f5;
   padding: 12px;
 }
@@ -540,7 +531,7 @@ button:hover,
 }
 
 .footer-links a {
-  /* color: #555; */
+  color: #555;
   text-decoration: none;
 }
 
@@ -565,7 +556,6 @@ button:hover,
 /* NAVBAR MESSAGE */
 /* A message that goes above the navbar */
 .navbar-message {
-  background-color: #ddd;
   background-color: #e9ecef;
   background-color: #dee2e6;
   padding-block: 4px;
@@ -575,7 +565,6 @@ button:hover,
 /* NAVBAR */
 /* for the navbar */
 .navbar {
-  background-color: #eee;
   background-color: rgb(248, 249, 250);
   background-color: #f1f3f5;
   padding-top: 10px;
@@ -640,7 +629,6 @@ button:hover,
 }
 
 .navbar .button {
-  background-color: #555;
   background-color: #495057;
   border: 0;
   /* border-radius: 8px; */
@@ -652,7 +640,6 @@ button:hover,
 }
 
 .navbar .button:hover {
-  background-color: #444;
   background-color: #343a40;
   color: #fff;
 }

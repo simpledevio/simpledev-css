@@ -409,6 +409,7 @@ button,
   color: #000;
   cursor: pointer;
   display: inline-block;
+  font-weight: 400;
   line-height: 1.5;
   margin-bottom: 6px;
   /* padding: 8px; */

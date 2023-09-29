@@ -15,7 +15,7 @@ code[class*="language-"] {
 
 /* Grid showcase container */
 .grid-container {
-  margin: auto;
+  /* margin: auto; */
   margin-bottom: 16px;
 }
 
@@ -24,8 +24,7 @@ code[class*="language-"] {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  border-radius: 5px;
-  /* background-color: #fff; */
+  border-radius: 4px;
   border: 1px solid #111;
 }
 
@@ -40,14 +39,3 @@ code[class*="language-"] {
     background-color: #2b3035;
   }
 }
-
-/* .navbar, .hero {
-  background-color: darkseagreen;
-  border-color: aliceblue;
-  color: white;
-}
-
-.button {
-  background-color: white;
-  border-color: white;
-} */

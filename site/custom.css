@@ -25,11 +25,17 @@ code[class*="language-"] {
   justify-content: center;
   align-items: center; */
   border-radius: 5px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid #111;
 }
 
+
 @media (prefers-color-scheme: dark) {
+  .grid > div {
+    border-color: #fff;
+    color: #fff;
+  }
+
   :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background-color: #2b3035;
   }
@@ -45,7 +51,3 @@ code[class*="language-"] {
   background-color: white;
   border-color: white;
 } */
-
-body {
-  /* font-family: 'Roboto', sans-serif; */
-}

@@ -39,7 +39,7 @@ Use the Issues feature if you find any bugs or accessibility issues with the cur
 Use the file `_simpledev.css` when you're testing out new code. This file uses import statements.
 
 ```html
-<link rel="stylesheet" href="css/_simpledev.css">
+<link rel="stylesheet" href="dist/_simpledev.css">
 ```
 
 Then use the following command in your terminal to combine the individual CSS files into one final CSS file. (You don't have to `cd` into your CSS folder.)

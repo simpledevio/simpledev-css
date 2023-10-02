@@ -8,6 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="dist/simpledev.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="site/prism.css">
   <link rel="stylesheet" href="dist/dark.css">
   <link rel="stylesheet" href="site/custom.css">
@@ -88,6 +89,7 @@
   </ul>
 
 
+
   <!-- NAVBAR -->
   <h2 id="navbar">Navbar</h2>
   <nav class="navbar" style="position: static;" id="navbar">
@@ -150,6 +152,7 @@
   <p>Use the container class with a <code>div</code> element to apply a max width and center the contents.</p>
 
 
+
 <!-- HERO -->
 <h2 id="hero">Hero</h2>
 <div class="hero text-center">
@@ -165,6 +168,7 @@
 &lt;/div&gt;
 </code></pre>
 <p>Use the <code>hero</code> class on a div element to create a section with extra padding on the top or bottom. Use the class <code>lead</code> to make regular text bigger. Use the class <code>large</code> to make a button look bigger.</p>
+
 
 
 <!-- BACKGROUND -->
@@ -186,6 +190,7 @@
 &lt;/div&gt;
 </code></pre>
 <p>If you want a background color that spans the whole width of the page, wrap your container in another div with the <code>background</code> class. If you only want the background to be on a certain section of the page, you will need to use multiple container divs on your page.</p>
+
 
 
   <!-- BUTTONS -->
@@ -283,8 +288,10 @@
   <p>Use the <code>code</code> class to create a code snippet. You can also add the classes <code>bash</code> and <code>zsh</code> to add a dollar sign or percent symbol to the beginning of the snippet. If you're going to have a lot of code snippets, I recommend using Prism or a similar library.</p>
 
 
+
   <!-- FOOTER -->
   <h2 id="footer">Footer</h2>
+
   <footer class="footer">
     <ul class="footer-links">
       <li><a href="">Facebook </a></li>
@@ -295,6 +302,18 @@
     </ul>
     <small class="">© 2023 Business Name.</small>
   </footer>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href=""><i class="bi bi-facebook"></i></a></li>
+      <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+      <li><a href=""><i class="bi bi-instagram"></i></a></li>
+      <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+      <li><a href=""><i class="bi bi-youtube"></i></a></li>
+    </ul>
+    <small class="">© 2023 Business Name.</small>
+  </footer>
+
   <pre><code class="language-html">
     &lt;footer class=&quot;footer&quot;&gt;
       &lt;ul class=&quot;footer-links&quot;&gt;
@@ -306,8 +325,22 @@
       &lt;/ul&gt;
       &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
     &lt;/footer&gt;
+
+    &lt;footer class=&quot;footer&quot;&gt;
+    &lt;ul class=&quot;footer-links&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-twitter-x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
+  &lt;/footer&gt;
   </code></pre>
-  <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text. You can also add an unordered list with a list of links add use the class <code>footer-links</code> to create a row of links.</p>
+
+  <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text. You can also add an unordered list with a list of links add use the class <code>footer-links</code> to create a row of links. The <code>footer-links</code> class should also work with SVG icons or icon fonts like <a href="https://icons.getbootstrap.com/#install" target="_blank">Bootstrap Icons</a>.</p>
+
+
 
   <!-- GRID -->
   <h2 id="grid">Grid</h2>
@@ -332,6 +365,7 @@
     </code>
   </pre>
   <p>A simple responsive layout using CSS grid with auto layout columns.</p>
+
 
 
   <!-- IMAGES -->

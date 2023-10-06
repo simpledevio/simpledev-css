@@ -587,6 +587,8 @@ button:hover,
   font-weight: bold;
   margin: 8px;
   margin-left: 12px;
+  /* margin-block: 0px;
+  padding-block: 0px; */
 }
 
 /* for the navbar links */
@@ -594,12 +596,14 @@ button:hover,
   display: none;
   list-style: none;
   margin-right: 4px;
-  padding-left: 0;
+  margin-top: 0;
+  padding-left: 6px;
   text-align: left;
 }
 
 .navbar li {
   margin: 8px;
+  margin-top: 0px;
 }
 
 .navbar a {

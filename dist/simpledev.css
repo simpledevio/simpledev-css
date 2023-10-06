@@ -603,7 +603,7 @@ button:hover,
 
 .navbar li {
   margin: 8px;
-  margin-top: 0px;
+  /* margin-top: 0px; */
 }
 
 .navbar a {

@@ -32,7 +32,7 @@
 .navbar div a {
   font-weight: bold;
   margin: 8px;
-  margin-left: 12px;
+  margin-left: 4px;
   /* margin-block: 0px;
   padding-block: 0px; */
 }
@@ -43,7 +43,7 @@
   list-style: none;
   margin-right: 4px;
   margin-top: 0;
-  padding-left: 6px;
+  padding-left: 0px;
   text-align: left;
 }
 
@@ -61,6 +61,11 @@
 
 .navbar li a {
   color: #555;
+  /* padding-left: 4px; */
+}
+
+.navbar li a:not(.button) {
+  padding-left: 4px;
 }
 
 .navbar li a:hover {
@@ -70,8 +75,8 @@
 
 /* for the navbar menu button */
 .navbar button {
-  border: 0;
-  margin-right: 8px;
+  border: solid 1px #dee2e6;
+  margin-right: 12px;
   margin-block: 8px;
 }
 
@@ -85,7 +90,7 @@
   color: #fff;
   display: inline-block;
   margin-bottom: 0;
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .navbar .button:hover {
@@ -100,6 +105,11 @@ ul.block {
 
 /* for the navbar on bigger screens */
 @media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .navbar ul {
     display: flex;
     margin-top: 0;
@@ -114,8 +124,7 @@ ul.block {
     margin-left: 0;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
+  .navbar li a:not(.button) {
+    padding-left: 8px;
   }
 }

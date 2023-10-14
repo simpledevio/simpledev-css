@@ -485,8 +485,15 @@
     tr:nth-child(even) {
       background-color: #f1f3f5;
     }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      tr:nth-child(even) {
+        background-color: #495057;
+      }
+    }
   </code></pre>
-  <p>If you want every other row to be striped, add the CSS rule above to your custom CSS file.</p>
+  <p>If you want every other row to be striped, add the CSS rules above to your custom CSS  (the second rule is only necessary if you're supporting dark mode). This snippet will make the even rows striped. If you want the odd rows to be striped, change <code>even</code> to <code>odd</code>.</p>
 
 
   <!-- SMOOTH SCROLLING -->

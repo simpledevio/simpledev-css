@@ -16,9 +16,9 @@
   background-color: #f1f3f5;
   padding-top: 10px;
   padding-bottom: 10px;
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 11;
+  z-index: 11; */
 }
 
 /* for the navbar on mobile */

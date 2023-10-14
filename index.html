@@ -19,6 +19,7 @@
 </head>
 
 <body>
+<!-- <a href="#navbar" class="skip-link">Skip to main content</a> -->
 <div class="navbar-message">Test navbar message.</div>
 <!-- Navbar -->
 <nav class="navbar">
@@ -120,13 +121,15 @@
   </code></pre>
   <p>The navbar uses the <code>navbar</code> class. You can add more links by adding more <code>li</code> elements. You can add an <code>active</code> class to whichever link is currently active. You can also use the <code>button</code> class to make one of the links look like a button.</p>
 
-  <h3>Non-sticky navbar</h3>
+  <h3>Sticky navbar</h3>
   <pre><code class="language-css">
     .navbar {
-      position: static;
+      position: sticky;
+      top: 0px;
+      z-index: 11;
     }
   </code></pre>
-  <p>Add this code to your custom CSS file to remove the sticky feature from the navbar.</p>
+  <p>Add this code to your custom CSS file to make the navbar stick to the top of the browser.</p>
 
 
 
@@ -139,6 +142,43 @@
     &lt;nav class=&quot;navbar&quot;&gt;...&lt;/nav&gt;
   </code></pre>
   <p>You can add a div with the <code>navbar-message</code> class above your nav element with the navbar class. All it does is add a background color and center the text, but you can customize it in your custom CSS file.</p>
+
+  <h3>Sticky navbar message</h3>
+  <pre><code class="language-css">
+    .navbar-message {
+      position: sticky;
+      top: 0px;
+      z-index: 11;
+    }
+  </code></pre>
+  <p>Add this code to your custom CSS file to make the navbar message stick to the top of the browser.</p>
+
+  <h3>Sticky navbar and navbar message</h3>
+  <pre><code class="language-html">
+    &lt;div class=&quot;navbar-group&quot;&gt;
+      &lt;div class=&quot;navbar-message&quot;&gt;Test navbar message.&lt;/div&gt;
+      &lt;nav class=&quot;navbar&quot;&gt;
+        &lt;div&gt;
+          &lt;a href=&quot;./&quot;&gt;simpledev.css&lt;/a&gt;
+          &lt;button type=&quot;button&quot;&gt;Menu&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;./&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;./start.html&quot;&gt;Get Started&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/simpledevio/simpledev-css&quot; target=&quot;_blank&quot; class=&quot;button&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  </code></pre>
+
+  <pre><code class="language-css">
+    .navbar-group {
+      position: sticky;
+      top: 0px;
+      z-index: 11;
+    }
+  </code></pre>
+  <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap it in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rule to your custom CSS file.</p>
 
 
 
@@ -439,7 +479,13 @@
       <td>Cell 2</td>
     </tr>
   </table>
-
+  <h3>Striped tables</h3>
+  <pre><code class="lang-css">
+    tr:nth-child(even) {
+      background-color: #f1f3f5;
+    }
+  </code></pre>
+  <p>If you want every other row to be striped, add the CSS rule above to your custom CSS file.</p>
 
 
   <!-- SMOOTH SCROLLING -->

@@ -8,6 +8,7 @@ Make sure you change it back simpledev.css before committing.
 */
 
 @import "../css/_modern-normalize.css";
+@import "../css/accessibility.css";
 @import "../css/base.css";
 @import "../css/buttons.css";
 @import "../css/code.css";

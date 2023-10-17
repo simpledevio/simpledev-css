@@ -201,8 +201,8 @@ Remove the inner border and padding in Firefox.
 */
 
 ::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+  /* border-style: none; */
+  /* padding: 0; */
 }
 
 /**
@@ -210,7 +210,7 @@ Restore the focus styles unset by the previous rule.
 */
 
 :-moz-focusring {
-  outline: 1px dotted ButtonText;
+  /* outline: 1px dotted ButtonText; */
 }
 
 /**

@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="site/prism.css">
   <link rel="stylesheet" href="dist/simpledev.css">
-  <link rel="stylesheet" href="dist/dark.css">
+  <link rel="stylesheet" href="dist/dark.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="site/custom.css">
 
   <!-- JS -->
@@ -63,28 +63,20 @@
     <h3 id="js">Add JS</h3>
     <p>If you're going to use the navbar, make sure you also include the CDN link for our JS file. It can go inside the head element since it has the <code>defer</code> attribute. You can also <a href="dist/navbar.js" download>download the latest version of our JS file</a> if you want to host the file yourself.</p>
 
-    <pre><code class="lang-html">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/navbar.js&quot; defer&gt;&lt;/script&gt;</code></pre>
+    <pre><code class="lang-html">
+      &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
+    </code></pre>
 
 
 
     <!-- DARK -->
     <h3 id="dark">Dark Mode</h3>
     <p>We are experimenting with adding dark mode support to simpledev.css. To add dark mode to your HTML file, just copy the link element below and put it underneath the link element from above. For now the plan is to keep it as a separate link element since not everyone wants dark mode. You can also <a href="dist/dark.css" download>download the latest version of dark.css</a> if you want to host the file yourself.</p>
-    <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/dark.css&quot;&gt;</code></pre>
+    <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;</code></pre>
 
     <h3>Permanent Dark Mode</h3>
-    <p>If you want your site to always have a dark theme, download the file using the link above and save it inside your project folder. Then delete the media query wrapping all of the CSS code (don't forget to delete the curly brace at the end).</p>
-
-    <pre><code class="lang-css">
-      /* Delete the media query */
-      @media (prefers-color-scheme: dark) {
-        /* Keep everything inside the media query */
-      }
-      /* Don't forget to delete the closing brace */
-    </code></pre>
-
-    <p>Lastly, you can link to the CSS file in your HTML file. In the example below, the file is inside a folder called <code>css</code>.</p>
-    <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/dark.css&quot;&gt;</code></pre>
+    <p>If you want your site to always have a dark theme, delete the media attribute from the link element from above.</p>
+    <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@latest/dist/dark.css&quot;&gt;</code></pre>
 
     <!-- ADD CUSTOM CSS -->
     <h3 id="custom-css">Add custom CSS</h3>

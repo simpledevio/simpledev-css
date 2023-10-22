@@ -1,6 +1,21 @@
 /* custom.css */
 /* This CSS code is just for the docs site */
 
+/* STICKY NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 11;
+}
+
+h2, h3 {
+  /* whatever is a nice number that gets you past the header */
+  scroll-margin-top: 5rem;
+}
+
+
+
+/* SPACING */
 h2 {
   margin-top: 50px;
 }
@@ -9,26 +24,34 @@ h2 {
   margin-top: 50px;
 }
 
+
+
+/* PRISM.JS */
 code[class*="language-"] {
   padding-inline: 0;
+  margin-top: 120px !important;
 }
 
-/* Grid showcase container */
+pre[class*="language-"] {
+  padding-inline: 0;
+  margin-top: 20px;
+}
+
+
+
+/* GRID SHOWCASE CONTAINER */
 .grid-container {
-  /* margin: auto; */
   margin-bottom: 16px;
 }
 
 .grid > div {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   border-radius: 4px;
   border: 1px solid #111;
 }
 
 
+
+/* DARK */
 @media (prefers-color-scheme: dark) {
   .grid > div {
     border-color: #fff;
@@ -40,19 +63,9 @@ code[class*="language-"] {
   }
 }
 
+/* OTHER */
 /* .footer-links img {
   width: 24px;
   height: 24px;
   color: #555;
 } */
-
-.navbar {
-  position: sticky;
-  top: 0px;
-  z-index: 11;
-}
-
-h2, h3 {
-  /* whatever is a nice number that gets you past the header */
-  scroll-margin-top: 5rem;
-}

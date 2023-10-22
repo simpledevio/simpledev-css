@@ -503,9 +503,11 @@ button:hover,
 
 .code {
   background-color: #2b3035;
-  color: #fff;
-  padding: 12px;
   border-radius: 4px;
+  color: #fff;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: 12px;
 }
 
 .code code {

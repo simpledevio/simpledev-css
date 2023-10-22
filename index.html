@@ -20,6 +20,7 @@
 
 <body>
 <a href="#navbar" class="skip-link">Skip to main content</a>
+
 <div class="navbar-message">Test navbar message.</div>
 <!-- Navbar -->
 <nav class="navbar">
@@ -129,6 +130,10 @@
       top: 0px;
       z-index: 11;
     }
+
+    h2, h3 {
+      scroll-margin-top: 5rem;
+    }
   </code></pre>
   <p>Add this code to your custom CSS file to make the navbar stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
 
@@ -150,6 +155,10 @@
       position: sticky;
       top: 0px;
       z-index: 11;
+    }
+
+    h2, h3 {
+      scroll-margin-top: 2rem;
     }
   </code></pre>
   <p>Add this code to your custom CSS file to make the navbar message stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
@@ -179,8 +188,12 @@
       top: 0px;
       z-index: 11;
     }
+
+    h2, h3 {
+      scroll-margin-top: 7rem;
+    }
   </code></pre>
-  <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap them in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rule to your custom CSS file. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
+  <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap them in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rules to your custom CSS file. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
 
 
 

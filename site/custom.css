@@ -51,3 +51,8 @@ code[class*="language-"] {
   top: 0px;
   z-index: 11;
 }
+
+h2, h3 {
+  /* whatever is a nice number that gets you past the header */
+  scroll-margin-top: 5rem;
+}

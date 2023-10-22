@@ -359,11 +359,6 @@ h3 {
   /* font-size: 1.75rem; */
 }
 
-h2, h3 {
-  scroll-margin-top: 5rem;
-  /* whatever is a nice number that gets you past the header */
-}
-
 p, ul, ol {
   line-height: 1.5;
 }

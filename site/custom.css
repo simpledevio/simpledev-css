@@ -29,12 +29,12 @@ h2 {
 /* PRISM.JS */
 code[class*="language-"] {
   padding-inline: 0;
-  margin-top: 120px !important;
+  /* margin-top: 120px !important; */
 }
 
 pre[class*="language-"] {
-  padding-inline: 0;
-  margin-top: 20px;
+  /* padding-inline: 0; */
+  /* margin-top: 20px; */
 }
 
 

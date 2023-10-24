@@ -11,13 +11,13 @@ We are starting off with working on a handful of components and will add the cla
 Add the following link element to add simpledev.css to your HTML file. This element should go inside your head element. Our CSS file includes modern-normalize.css to help with any browser compatibility issues.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.0/dist/simpledev.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.3/dist/simpledev.css">
 ```
 
 If you're going to use the navbar, make sure you also include the CDN link for our JS file. It can go inside the head element since it has the defer attribute.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.0/dist/navbar.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.3/dist/navbar.js" defer></script>
 ```
 
 ### Adding custom CSS

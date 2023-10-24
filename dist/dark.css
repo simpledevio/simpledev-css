@@ -1,6 +1,5 @@
 /* dark.css */
 
-
 /* BASE */
 body {
   background-color: #212529;
@@ -25,10 +24,14 @@ input, textarea {
   color: #fff;
 }
 
+
+
 /* BACKGROUND */
 .background {
   background-color: #2b3035;
 }
+
+
 
 /* BUTTONS */
 .button,
@@ -83,10 +86,17 @@ button:hover,
   color: rgb(222, 226, 230);
 }
 
+
+
 /* NAVBAR */
 .navbar {
   background-color: #2b3035;
   color: #fff;
+}
+
+.navbar button {
+  background-color: #2b3035;
+  border-color: #495057;
 }
 
 .navbar a {
@@ -107,10 +117,6 @@ button:hover,
 
 .navbar-message {
   background-color: #212529;
-}
-
-.grid-container > div {
-  color: #212529;
 }
 
 /* select {

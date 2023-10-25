@@ -29,6 +29,9 @@ input:disabled, textarea:disabled {
   background-color: #2b3035;
 }
 
+td, th {
+  border-color: rgb(73, 80, 87);
+}
 
 
 /* BACKGROUND */

@@ -425,7 +425,7 @@ table {
 }
 
 td, th {
-  border: solid 1px #aaa;
+  border: solid 1px rgb(222, 226, 230);
   padding: 12px;
 }
 

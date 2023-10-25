@@ -64,6 +64,10 @@ input[type='radio'] {
   display: initial;
 }
 
+input:disabled, textarea:disabled {
+  background-color: #e9ecef;
+}
+
 textarea:not([cols]) {
   width: 100%;
 }

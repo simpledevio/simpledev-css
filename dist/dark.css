@@ -20,8 +20,12 @@ code {
 }
 
 input, textarea {
-  background-color: #2b3035;
+  background-color: #212529;
   color: #fff;
+}
+
+input:disabled, textarea:disabled {
+  background-color: #2b3035;
 }
 
 
@@ -92,6 +96,7 @@ button:hover,
 .navbar {
   background-color: #2b3035;
   color: #fff;
+  /* border-bottom: solid 1px #f8fafc0f; */
 }
 
 .navbar button {

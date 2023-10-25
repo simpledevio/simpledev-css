@@ -37,8 +37,7 @@
     <p>This guide will go over how to add the proper link and script elements, and how to add custom CSS.</p>
     <ul>
       <li><a href="#css">Add CSS</a></li>
-      <li><a href="#js">Add JS</a></li>
-      <li><a href="#dark">Dark mode</a></li>
+      <li><a href="#dark">Permanent dark mode</a></li>
       <li><a href="#custom-css">Add custom CSS</a></li>
       <li><a href="#basic-template">Basic template</a></li>
       <li><a href="#advanced-template">Advanced template</a></li>
@@ -49,35 +48,29 @@
 
 
 
-    <!-- ADD CSS -->
+    <!-- ADD CSS AND JS -->
     <h2>Quick Start</h2>
-    <h3 id="css">Add CSS</h3>
-    <p>Add the following link element to add simpledev.css to your HTML file. This element should go inside your head element. Our CSS file includes modern-normalize.css to help with any browser compatibility issues. You can also <a href="dist/simpledev.css" download>download the latest version of simpledev.css</a> if you want to host the file yourself.</p>
+    <h3 id="css">Add CSS and JS</h3>
+    <p>Add the following link elements and script element inside your head element to add simpledev.css to your HTML file. Our main CSS file includes modern-normalize.css to help with any browser compatibility issues. Our JS file lets you open and close the navbar on smaller screens.</p>
 
+    <p>If you don't want dark mode on your site, you can delete the second link element. If you want to host the files yourself, you can <a href="dist/simpledev.css" download>download the latest version of simpledev.css</a>, <a href="dist/navbar.js" download>download the latest version of our JS file</a>, and <a href="dist/dark.css" download>download the latest version of dark.css</a>.</p>
     <pre><code class="lang-html">
+      &lt;!-- CSS --&gt;
       &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.4/dist/simpledev.css&quot;&gt;
-    </code></pre>
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.4/dist/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;
 
-
-
-    <!-- ADD JS -->
-    <h3 id="js">Add JS</h3>
-    <p>If you're going to use the navbar, make sure you also include the CDN link for our JS file. It can go inside the head element since it has the <code>defer</code> attribute. You can also <a href="dist/navbar.js" download>download the latest version of our JS file</a> if you want to host the file yourself.</p>
-
-    <pre><code class="lang-html">
+      &lt;!-- JS --&gt;
       &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.4/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
     </code></pre>
 
 
 
-    <!-- DARK -->
-    <h3 id="dark">Dark Mode</h3>
-    <p>We are experimenting with adding dark mode support to simpledev.css. To add dark mode to your HTML file, just copy the link element below and put it underneath the link element from above. For now the plan is to keep it as a separate link element since not everyone wants dark mode. You can also <a href="dist/dark.css" download>download the latest version of dark.css</a> if you want to host the file yourself.</p>
-    <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.4/dist/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;</code></pre>
-
-    <h3>Permanent Dark Mode</h3>
+    <!-- PERMANENT DARK MODE -->
+    <h3 id="dark">Permanent Dark Mode</h3>
     <p>If you want your site to always have a dark theme, delete the media attribute from the link element from above.</p>
     <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.4/dist/dark.css&quot;&gt;</code></pre>
+
+
 
     <!-- ADD CUSTOM CSS -->
     <h3 id="custom-css">Add custom CSS</h3>

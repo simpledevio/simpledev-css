@@ -76,6 +76,7 @@ textarea:not([cols]) {
 
 textarea {
   resize: vertical;
+  min-height: 32px;
 }
 
 label {

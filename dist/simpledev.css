@@ -378,6 +378,18 @@ video {
   height: auto;
 }
 
+/* details + summary */
+details {
+  border: solid 1px #666;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+summary {
+  margin-bottom: 8px;
+}
+
 /* forms */
 input, select, textarea {
   display: block;
@@ -526,6 +538,18 @@ button:hover,
   padding-block: 8px;
   padding-inline: 16px;
   font-size: 1.25rem;
+}
+
+.link {
+  background-color: transparent;
+  border: 0;
+  color: rgb(13, 110, 253);
+  text-decoration: underline;
+}
+
+.link:hover {
+  background-color: transparent;
+  color: rgb(10, 88, 202);
 }
 /* code.css */
 

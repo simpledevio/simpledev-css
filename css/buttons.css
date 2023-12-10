@@ -71,3 +71,15 @@ button:hover,
   padding-inline: 16px;
   font-size: 1.25rem;
 }
+
+.link {
+  background-color: transparent;
+  border: 0;
+  color: rgb(13, 110, 253);
+  text-decoration: underline;
+}
+
+.link:hover {
+  background-color: transparent;
+  color: rgb(10, 88, 202);
+}

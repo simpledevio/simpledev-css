@@ -48,6 +48,18 @@ video {
   height: auto;
 }
 
+/* details + summary */
+details {
+  border: solid 1px #666;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+summary {
+  margin-bottom: 8px;
+}
+
 /* forms */
 input, select, textarea {
   display: block;

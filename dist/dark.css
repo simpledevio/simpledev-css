@@ -128,6 +128,16 @@ button:hover,
   background-color: #212529;
 }
 
+.link {
+  background-color: transparent;
+  color: rgb(110, 168, 254);
+}
+
+.link:hover {
+  background-color: transparent;
+  color: rgb(139, 185, 254);
+}
+
 /* select {
     background-color: #2b3035;
     color: #fff;

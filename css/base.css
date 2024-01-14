@@ -57,6 +57,7 @@ details {
 }
 
 summary {
+  cursor: pointer;
   margin-bottom: 8px;
 }
 

@@ -11,14 +11,14 @@
 /* NAVBAR */
 /* for the navbar */
 .navbar {
-  background-color: #f1f3f5;
+  background-color: #fff;
   /* border-bottom: solid 1px #999; */
   /* background-color: #fff; */
   padding-top: 10px;
   padding-bottom: 10px;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
   /* box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15); */
-  /* border-bottom: solid 1px #0f172a1a; */
+  border-bottom: solid 1px #0f172a1a;
 }
 
 /* for the navbar on mobile */
@@ -76,7 +76,7 @@
 /* for the navbar menu button */
 .navbar button {
   border: solid 1px #dee2e6;
-  /* background-color: initial; */
+  background-color: initial;
   /* color: #000; */
   margin-right: 12px;
   margin-block: 8px;

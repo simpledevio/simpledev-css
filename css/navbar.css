@@ -11,9 +11,7 @@
 /* NAVBAR */
 /* for the navbar */
 .navbar {
-  background-color: #fff;
   padding-block: .625rem;
-  border-bottom: solid 1px #0f172a1a;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
   /* box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15); */
 }

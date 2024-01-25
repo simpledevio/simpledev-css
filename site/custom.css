@@ -6,6 +6,8 @@
   position: sticky;
   top: 0px;
   z-index: 11;
+  background-color: #fff;
+  border-bottom: solid 1px #0f172a1a;
 }
 
 h2, h3 {

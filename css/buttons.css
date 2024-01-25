@@ -9,15 +9,14 @@ button,
 [type="reset"] {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #000;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 6px;
-  /* padding: 8px; */
-  padding: 6px 12px;
+  margin-bottom: .375rem;
+  padding: .375rem .75rem;
   text-decoration: none;
 }
 
@@ -36,12 +35,12 @@ button:hover,
 .button-outline {
   background-color: transparent;
   border: solid 2px #f1f3f5;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #000;
   display: inline-block;
   line-height: 1.5;
-  margin-bottom: 6px;
-  padding: 6px 12px;
+  margin-bottom: .375rem;
+  padding: .375rem .75rem;
   text-decoration: none;
 }
 
@@ -54,8 +53,8 @@ button:hover,
 /* FLOATING BUTTON */
 .button-floating {
   position: fixed;
-  bottom: 12px;
-  right: 12px;
+  bottom: .75rem;
+  right: .75rem;
   z-index: 11;
   background-color: #dee2e6;
   border-color: #dee2e6;
@@ -67,8 +66,8 @@ button:hover,
 }
 
 .large {
-  padding-block: 8px;
-  padding-inline: 16px;
+  padding-block: .5rem;
+  padding-inline: 1rem;
   font-size: 1.25rem;
 }
 

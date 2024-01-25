@@ -2,14 +2,13 @@
 
 /* CONTAINER */
 .container {
-  padding: 0 12px;
+  padding: 0 .75rem;
   max-width: 960px;
   margin: auto;
 }
 
 .section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-block: 2.5rem;
 }
 
 .text-center {

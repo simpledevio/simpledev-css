@@ -11,8 +11,8 @@ a:hover {
 
 code {
   background-color: #f1f3f5;
-  border-radius: 4px;
-  padding-inline: 4px;
+  border-radius: .25rem;
+  padding-inline: .25rem;
   color: #666;
   /* color: #e2777a; */
 }
@@ -37,7 +37,7 @@ p, ul, ol {
 }
 
 ul, ol {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .lead {
@@ -54,27 +54,27 @@ video {
 /* details + summary */
 details {
   border: solid 1px #666;
-  border-radius: 6px;
-  padding: 8px;
-  margin-top: 8px;
+  border-radius: .25rem;
+  padding: .5rem;
+  margin-top: .5rem;
 }
 
 summary {
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
 }
 
 /* forms */
 input, select, textarea {
   display: block;
-  margin-bottom: 6px;
-  padding: 6px;
+  margin-bottom: .5rem;
+  padding: .375rem;
   /* border-width: 2px; */
 }
 
 input, textarea {
   border-color: #dee2e6;
-  border-radius: 4px;
+  border-radius: .25rem;
 }
 
 input[type='checkbox'],
@@ -92,12 +92,12 @@ textarea:not([cols]) {
 
 textarea {
   resize: vertical;
-  min-height: 32px;
+  min-height: 2rem;
 }
 
 label {
   display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: .25rem;
 }
 
 /* from sanitize.css */
@@ -113,11 +113,11 @@ table {
 
 td, th {
   border: solid 1px rgb(222, 226, 230);
-  padding: 12px;
+  padding: .75rem;
 }
 
 caption {
-  margin-top: 8px;
+  margin-top: .5rem;
 }
 
 /* utilities */

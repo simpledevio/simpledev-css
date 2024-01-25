@@ -3,13 +3,13 @@
 .footer {
   text-align: center;
   background-color: #f1f3f5;
-  padding: 12px;
+  padding: .75rem;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
   list-style: none;
   padding-left: 0;

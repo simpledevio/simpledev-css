@@ -297,7 +297,7 @@ summary {
   background: #fff;
   /* height: 30px; */
   /* left: 50%; */
-  padding: 8px;
+  padding: .5rem;
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;
@@ -341,8 +341,8 @@ a:hover {
 
 code {
   background-color: #f1f3f5;
-  border-radius: 4px;
-  padding-inline: 4px;
+  border-radius: .25rem;
+  padding-inline: .25rem;
   color: #666;
   /* color: #e2777a; */
 }
@@ -367,7 +367,7 @@ p, ul, ol {
 }
 
 ul, ol {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .lead {
@@ -384,27 +384,27 @@ video {
 /* details + summary */
 details {
   border: solid 1px #666;
-  border-radius: 6px;
-  padding: 8px;
-  margin-top: 8px;
+  border-radius: .25rem;
+  padding: .5rem;
+  margin-top: .5rem;
 }
 
 summary {
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
 }
 
 /* forms */
 input, select, textarea {
   display: block;
-  margin-bottom: 6px;
-  padding: 6px;
+  margin-bottom: .5rem;
+  padding: .375rem;
   /* border-width: 2px; */
 }
 
 input, textarea {
   border-color: #dee2e6;
-  border-radius: 4px;
+  border-radius: .25rem;
 }
 
 input[type='checkbox'],
@@ -422,12 +422,12 @@ textarea:not([cols]) {
 
 textarea {
   resize: vertical;
-  min-height: 32px;
+  min-height: 2rem;
 }
 
 label {
   display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: .25rem;
 }
 
 /* from sanitize.css */
@@ -443,11 +443,11 @@ table {
 
 td, th {
   border: solid 1px rgb(222, 226, 230);
-  padding: 12px;
+  padding: .75rem;
 }
 
 caption {
-  margin-top: 8px;
+  margin-top: .5rem;
 }
 
 /* utilities */
@@ -481,15 +481,14 @@ button,
 [type="reset"] {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #000;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 6px;
-  /* padding: 8px; */
-  padding: 6px 12px;
+  margin-bottom: .375rem;
+  padding: .375rem .75rem;
   text-decoration: none;
 }
 
@@ -508,12 +507,12 @@ button:hover,
 .button-outline {
   background-color: transparent;
   border: solid 2px #f1f3f5;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #000;
   display: inline-block;
   line-height: 1.5;
-  margin-bottom: 6px;
-  padding: 6px 12px;
+  margin-bottom: .375rem;
+  padding: .375rem .75rem;
   text-decoration: none;
 }
 
@@ -526,8 +525,8 @@ button:hover,
 /* FLOATING BUTTON */
 .button-floating {
   position: fixed;
-  bottom: 12px;
-  right: 12px;
+  bottom: .75rem;
+  right: .75rem;
   z-index: 11;
   background-color: #dee2e6;
   border-color: #dee2e6;
@@ -539,8 +538,8 @@ button:hover,
 }
 
 .large {
-  padding-block: 8px;
-  padding-inline: 16px;
+  padding-block: .5rem;
+  padding-inline: 1rem;
   font-size: 1.25rem;
 }
 
@@ -559,11 +558,11 @@ button:hover,
 
 .code {
   background-color: #2b3035;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #fff;
   line-height: 1.5;
   overflow-x: auto;
-  padding: 12px;
+  padding: .75rem;
 }
 
 .code code {
@@ -582,14 +581,13 @@ button:hover,
 
 /* CONTAINER */
 .container {
-  padding: 0 12px;
+  padding: 0 .75rem;
   max-width: 960px;
   margin: auto;
 }
 
 .section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-block: 2.5rem;
 }
 
 .text-center {
@@ -608,13 +606,13 @@ button:hover,
 .footer {
   text-align: center;
   background-color: #f1f3f5;
-  padding: 12px;
+  padding: .75rem;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
   list-style: none;
   padding-left: 0;
@@ -633,7 +631,7 @@ button:hover,
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -647,7 +645,7 @@ button:hover,
 /* A message that goes above the navbar */
 .navbar-message {
   background-color: #dee2e6;
-  padding-block: 4px;
+  padding-block: .25rem;
   text-align: center;
 }
 
@@ -655,13 +653,10 @@ button:hover,
 /* for the navbar */
 .navbar {
   background-color: #fff;
-  /* border-bottom: solid 1px #999; */
-  /* background-color: #fff; */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-block: .625rem;
+  border-bottom: solid 1px #0f172a1a;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
   /* box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15); */
-  border-bottom: solid 1px #0f172a1a;
 }
 
 /* for the navbar on mobile */
@@ -674,8 +669,8 @@ button:hover,
 /* for the navbar brand */
 .navbar div a {
   font-weight: bold;
-  margin: 8px;
-  margin-left: 4px;
+  margin: .5rem;
+  margin-left: .25rem;
   /* margin-block: 0px;
   padding-block: 0px; */
 }
@@ -684,14 +679,14 @@ button:hover,
 .navbar ul {
   display: none;
   list-style: none;
-  margin-right: 4px;
+  margin-right: .25rem;
   margin-top: 0;
-  padding-left: 0px;
+  padding-left: 0;
   text-align: left;
 }
 
 .navbar li {
-  margin: 8px;
+  margin: .5rem
   /* margin-top: 0px; */
 }
 
@@ -699,6 +694,7 @@ button:hover,
   color: #000;
   display: block;
   padding: 8px;
+  padding: .5rem;
   text-decoration: none;
 }
 
@@ -708,7 +704,7 @@ button:hover,
 }
 
 .navbar li a:not(.button) {
-  padding-left: 4px;
+  padding-left: .25rem;
 }
 
 .navbar li a:hover {
@@ -720,9 +716,8 @@ button:hover,
 .navbar button {
   border: solid 1px #dee2e6;
   background-color: initial;
-  /* color: #000; */
-  margin-right: 12px;
-  margin-block: 8px;
+  margin-right: .75rem;
+  margin-block: .5rem;
 }
 
 .navbar .active {
@@ -735,7 +730,7 @@ button:hover,
   color: #fff;
   display: inline-block;
   margin-bottom: 0;
-  margin-left: 4px;
+  margin-left: .25rem;
 }
 
 .navbar .button-outline {
@@ -745,8 +740,8 @@ button:hover,
   border-color: #dee2e6;
   display: inline-block;
   margin-bottom: 0;
-  margin-left: 4px;
-  padding-block: 6px;
+  margin-left: .25rem;
+  padding-block: .375rem;
 }
 
 .navbar .button:hover {
@@ -781,6 +776,6 @@ ul.block {
   }
 
   .navbar li a:not(.button) {
-    padding-left: 8px;
+    padding-left: .5rem;
   }
 }

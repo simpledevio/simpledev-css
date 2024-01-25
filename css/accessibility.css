@@ -4,7 +4,7 @@
   background: #fff;
   /* height: 30px; */
   /* left: 50%; */
-  padding: 8px;
+  padding: .5rem;
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;

@@ -2,11 +2,11 @@
 
 .code {
   background-color: #2b3035;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #fff;
   line-height: 1.5;
   overflow-x: auto;
-  padding: 12px;
+  padding: .75rem;
 }
 
 .code code {

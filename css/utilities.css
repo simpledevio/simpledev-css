@@ -1,0 +1,19 @@
+/* utilities.css */
+
+/* text-transform */
+.uppercase { text-transform: uppercase !important; }
+.lowercase { text-transform: lowercase !important; }
+.capitalize { text-transform: capitalize !important; }
+
+/* font-style */
+.italic { font-style: italic !important; }
+
+/* font-weight */
+.bold { font-weight: bold !important; }
+.bolder { font-weight: bolder !important; }
+.lighter { font-weight: lighter !important; }
+
+/* text-align */
+.text-center { text-align: center !important; }
+.text-start { text-align: start !important; }
+.text-end { text-align: end !important; }

@@ -1,42 +1,59 @@
 /* dark.css */
 
+:root {
+  --white: #fff;
+  --light-gray: rgb(222, 226, 230);
+  --light-bg: #495057;
+  --dark-bg: #343a40;
+  --darker-bg: #2b3035;
+  --darkest-bg: #212529;
+
+  --a-color: rgb(110, 168, 254);
+  --a-color-hover: rgb(139, 185, 254);
+  /* --button-color: ;
+  --button-color-hover: ;
+  --button-outline-color-hover: ;
+  --navbar-bg: ;
+  --body-bg: ; */
+}
+
 /* BASE */
 body {
-  background-color: #212529;
-  color: rgb(222, 226, 230);
+  background-color: var(--darkest-bg);
+  color: var(--light-gray);
 }
 
 a {
-  color: rgb(110, 168, 254);
+  color: var(--a-color);
 }
 
 a:hover {
-  color: rgb(139, 185, 254);
+  color: var(--a-color-hover);
 }
 
 code {
-  background-color: #495057;
-  color: rgb(222, 226, 230);
+  background-color: var(--light-bg);
+  color: var(--light-gray);
 }
 
 input, textarea {
-  background-color: #212529;
-  border-color: #495057;
-  color: #fff;
+  background-color: var(--darkest-bg);
+  border-color: var(--light-bg);
+  color: var(--white);
 }
 
 input:disabled, textarea:disabled {
-  background-color: #2b3035;
+  background-color: var(--darker-bg);
 }
 
 td, th {
-  border-color: rgb(73, 80, 87);
+  border-color: var(--light-bg);
 }
 
 
 /* BACKGROUND */
 .background {
-  background-color: #2b3035;
+  background-color: var(--darker-bg);
 }
 
 
@@ -48,9 +65,9 @@ button,
 [type="button"],
 [type="submit"],
 [type="reset"] {
-  background-color: #495057;
-  border-color: #495057;
-  color: #fff;
+  background-color: var(--light-bg);
+  border-color: var(--light-bg);
+  color: var(--white);
 }
 
 .button:hover,
@@ -59,83 +76,84 @@ button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
 [type="reset"]:hover {
-  background-color: #343a40;
-  border-color: #343a40;
-  color: #fff;
+  background-color: var(--dark-bg);
+  border-color: var(--dark-bg);
+  color: var(--white);
 }
 
 .button-outline {
-  border-color: #495057;
-  color: #fff;
+  border-color: var(--light-bg);
+  color: var(--white);
 }
 
 .button-outline:hover {
-  background-color: #495057;
-  border-color: #495057;
-  color: #fff;
+  background-color: var(--light-bg);
+  border-color: var(--light-bg);
+  color: var(--white);
+}
+
+.link {
+  background-color: transparent;
+  color: var(--a-color);
+}
+
+.link:hover {
+  background-color: transparent;
+  color: var(--a-color-hover);
 }
 
 
 
 /* CODE */
 .code {
-  background-color: #2b3035;
+  background-color: var(--darker-bg);
 }
 
 
 
 /* FOOTER */
 .footer {
-  background-color: #2b3035;
-  color: #fff;
+  background-color: var(--darker-bg);
+  color: var(--white);
 }
 
 .footer-links a {
-  color: rgb(222, 226, 230);
+  color: var(--light-gray);
 }
 
 
 
 /* NAVBAR */
 .navbar {
-  background-color: #2b3035;
-  color: #fff;
-  /* border-bottom: solid 1px #f8fafc0f; */
+  background-color: var(--darkest-bg);
+  color: var(--white);
+  border-bottom: solid 1px #f8fafc0f;
 }
 
 .navbar button {
-  background-color: #2b3035;
-  border-color: #495057;
+  background-color: var(--darkest-bg);
+  border-color: var(--light-bg);
 }
 
 .navbar a {
-  color: #fff;
+  color: var(--white);
 }
 
 .navbar li a {
   color: #ddd;
+  color: var(--light-gray);
 }
 
 .navbar li a:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .navbar .active {
-  color: #fff;
+  color: var(--white);
 }
 
 .navbar-message {
-  background-color: #212529;
-}
-
-.link {
-  background-color: transparent;
-  color: rgb(110, 168, 254);
-}
-
-.link:hover {
-  background-color: transparent;
-  color: rgb(139, 185, 254);
+  background-color: var(--darker-bg);
 }
 
 /* select {

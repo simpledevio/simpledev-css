@@ -628,7 +628,7 @@ button:hover,
 }
 
 /* for the brand-menu bar on mobile */
-.navbar div, .navbar-bar {
+.navbar-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -636,20 +636,20 @@ button:hover,
 }
 
 /* for the navbar brand */
-.navbar div a, .navbar-brand {
+.navbar-brand {
   font-weight: bold;
   padding-left: .25rem;
 }
 
 /* for the navbar menu button */
-.navbar button, .navbar-menu {
+.navbar-menu {
   border: solid 1px #dee2e6;
   background-color: initial;
   margin-bottom: 0;
 }
 
 /* for the navbar links */
-.navbar ul, .navbar-links {
+.navbar-links {
   display: none;
   list-style: none;
   padding-left: 0;

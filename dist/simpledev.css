@@ -769,14 +769,14 @@ ul.block {
   }
 
   /* put navbar links in row */
-  .navbar ul {
+  .navbar .navbar-links {
     display: flex;
     margin-block: 0;
     align-items: center;
   }
 
   /* hide menu button */
-  .navbar button {
+  .navbar .navbar-menu {
     display: none;
   }
 

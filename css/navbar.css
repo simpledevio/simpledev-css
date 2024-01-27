@@ -24,7 +24,7 @@
 }
 
 /* for the navbar brand */
-.navbar-brand {
+.navbar .navbar-brand {
   font-weight: bold;
   padding-left: .25rem;
 }
@@ -34,6 +34,7 @@
   border: solid 1px #dee2e6;
   background-color: initial;
   margin-bottom: 0;
+  margin-right: .25rem;
 }
 
 /* for the navbar links */

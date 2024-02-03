@@ -3,10 +3,7 @@
 /* BUTTON */
 .button,
 .button-floating,
-button,
-[type="button"],
-[type="submit"],
-[type="reset"] {
+button {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
   border-radius: .25rem;
@@ -22,10 +19,7 @@ button,
 
 .button:hover,
 .button-floating:hover,
-button:hover,
-[type="button"]:hover,
-[type="submit"]:hover,
-[type="reset"]:hover {
+button:hover {
   background-color: #e9ecef;
   border-color: #e9ecef;
   color: #000;

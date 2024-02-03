@@ -109,9 +109,9 @@
 }
 
 .navbar .button {
-  background-color: #495057;
+  /* background-color: #495057; */
   border: 0;
-  color: #fff;
+  color: #000;
   display: inline-block;
   margin-top: .5rem;
   margin-bottom: 0;
@@ -132,8 +132,8 @@
 }
 
 .navbar .button:hover {
-  background-color: #343a40;
-  color: #fff;
+  /* background-color: #343a40; */
+  /* color: #fff; */
 }
 
 /* active class for links */

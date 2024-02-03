@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+
   <title>A mostly classless CSS framework | simpledev.css</title>
 
   <!-- CSS -->
@@ -34,12 +35,6 @@
     <li><a href="https://github.com/simpledevio/simpledev-css" target="_blank" class="button">GitHub</a></li>
   </ul>
 </nav>
-
-<!-- <nav class="navbar-simple">
-  <a href="">simpledev.css</a>
-    <a href="./" class="active">Home</a>
-    <a href="./start.html" class="">Get Started</a>
-</nav> -->
 
 <div class="container">
   <div class="section text-center">
@@ -117,10 +112,10 @@
   <pre><code class="language-html">
     &lt;nav class=&quot;navbar&quot;&gt;
       &lt;div&gt;
-        &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
-        &lt;button type=&quot;button&quot;&gt;Menu&lt;/button&gt;
+        &lt;a href=&quot;&quot; class=&quot;navbar-brand&quot;&gt;Brand&lt;/a&gt;
+        &lt;button type=&quot;button&quot; class=&quot;navbar-menu&quot;&gt;Menu&lt;/button&gt;
       &lt;/div&gt;
-      &lt;ul&gt;
+      &lt;ul class=&quot;navbar-links&quot;&gt;
         &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
@@ -203,6 +198,20 @@
   <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap them in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rules to your custom CSS file. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
 
 
+  <!-- NAVBAR SIMPLE -->
+  <!-- <h2 id="navbar-simple">Simple Navbar</h2>
+  <nav class="navbar-simple">
+    <a href="">simpledev.css</a>
+      <a href="./" class="active">Home</a>
+      <a href="./start.html" class="">Get Started</a>
+  </nav>
+  <pre><code class="lang-html">
+  &lt;nav class="navbar-simple"&gt;
+    &lt;a href=""&gt;simpledev.css&lt;/a&gt;
+    &lt;a href="" class="active"&gt;Home&lt;/a&gt;
+    &lt;a href="" class=""&gt;About&lt;/a&gt;
+  &lt;/nav&gt;
+  </code></pre> -->
 
   <!-- CONTAINER -->
   <h2 id="container">Container</h2>

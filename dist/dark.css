@@ -113,7 +113,7 @@ button:hover,
 
 /* FOOTER */
 .footer {
-  background-color: var(--darker-bg);
+  /* background-color: var(--darker-bg); */
   color: var(--white);
 }
 
@@ -133,6 +133,10 @@ button:hover,
 .navbar button {
   background-color: var(--darkest-bg);
   border-color: var(--light-bg);
+}
+
+.navbar .button {
+  color: #fff;
 }
 
 .navbar a {

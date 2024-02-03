@@ -454,10 +454,7 @@ caption {
 /* BUTTON */
 .button,
 .button-floating,
-button,
-[type="button"],
-[type="submit"],
-[type="reset"] {
+button {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
   border-radius: .25rem;
@@ -473,10 +470,7 @@ button,
 
 .button:hover,
 .button-floating:hover,
-button:hover,
-[type="button"]:hover,
-[type="submit"]:hover,
-[type="reset"]:hover {
+button:hover {
   background-color: #e9ecef;
   border-color: #e9ecef;
   color: #000;
@@ -576,7 +570,8 @@ button:hover,
 
 .footer {
   text-align: center;
-  background-color: #f1f3f5;
+  /* background-color: #f1f3f5; */
+  /* border-top: solid 1px #0f172a1a; */
   padding: .75rem;
 }
 
@@ -721,9 +716,9 @@ button:hover,
 }
 
 .navbar .button {
-  background-color: #495057;
+  /* background-color: #495057; */
   border: 0;
-  color: #fff;
+  color: #000;
   display: inline-block;
   margin-top: .5rem;
   margin-bottom: 0;
@@ -744,8 +739,8 @@ button:hover,
 }
 
 .navbar .button:hover {
-  background-color: #343a40;
-  color: #fff;
+  /* background-color: #343a40; */
+  /* color: #fff; */
 }
 
 /* active class for links */

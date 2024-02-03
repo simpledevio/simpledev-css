@@ -113,8 +113,7 @@ button:hover,
 
 /* FOOTER */
 .footer {
-  /* background-color: var(--darker-bg); */
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 .footer-links a {

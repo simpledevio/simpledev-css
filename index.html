@@ -259,32 +259,23 @@
   <h2 id="buttons">Buttons</h2>
   <a href="" class="button">Anchor</a>
   <button type="button">Button</button>
-  <input type="button" value="Input">
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
   <a href="" class="button-outline">Anchor</a>
   <button type="button" class="link">Button</button>
 
   <pre><code class="language-html">
     &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Anchor&lt;/a&gt;
     &lt;button type=&quot;button&quot;&gt;Button&lt;/button&gt;
-    &lt;input type=&quot;button&quot; value=&quot;Input&quot;&gt;
-    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-    &lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
     &lt;a href=&quot;&quot; class=&quot;button-outline&quot;&gt;Anchor&lt;/a&gt;
     &lt;button type=&quot;button&quot; class=&quot;link&quot;&gt;Button&lt;/button&gt;
   </code></pre>
-  <p>You can use the <code>button</code> class on an <code>a</code> element to make it look like a button. The other elements that look like buttons do not need a class. Use the class <code>button-outline</code> to create a button with an outline style.</p>
+  <p>You can use the <code>button</code> class on an <code>a</code> element to make it look like a button. Use the class <code>button-outline</code> to create a button with an outline style. Use the <code>link</code> class to make a button look like a link.</p>
 
   <h3>Square corners</h3>
   <pre><code class="lang-css">
     .button,
     .button-floating,
     .button-outline,
-    button,
-    [type="button"],
-    [type="submit"],
-    [type="reset"] {
+    button {
       border-radius: 0;
     }
   </code></pre>
@@ -295,10 +286,7 @@
     .button,
     .button-floating,
     .button-outline,
-    button,
-    [type="button"],
-    [type="submit"],
-    [type="reset"] {
+    button {
       border-radius: 9999px;
     }
   </code></pre>
@@ -578,9 +566,11 @@
   <h2 id="smooth-scrolling">Smooth Scrolling</h2>
   <p>Smooth scrolling is not enabled by default. If you want to enable smooth scrolling, you can add the following code snippet to your custom CSS file.</p>
   <pre><code class="lang-css">
+  @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
     }
+  }
   </code></pre>
 </div>
 

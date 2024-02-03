@@ -457,7 +457,7 @@ caption {
 button {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
-  border-radius: .25rem;
+  border-radius: .375rem;
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -466,6 +466,7 @@ button {
   margin-bottom: .375rem;
   padding: .375rem .75rem;
   text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .button:hover,
@@ -480,13 +481,14 @@ button:hover {
 .button-outline {
   background-color: transparent;
   border: solid 2px #f1f3f5;
-  border-radius: .25rem;
+  border-radius: .375rem;
   color: #000;
   display: inline-block;
   line-height: 1.5;
   margin-bottom: .375rem;
   padding: .375rem .75rem;
   text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .button-outline:hover {
@@ -569,9 +571,8 @@ button:hover {
 /* footer.css */
 
 .footer {
-  text-align: center;
-  /* background-color: #f1f3f5; */
   /* border-top: solid 1px #0f172a1a; */
+  text-align: center;
   padding: .75rem;
 }
 

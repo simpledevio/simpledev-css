@@ -68,11 +68,11 @@ button:hover {
 .link {
   background-color: transparent;
   border: 0;
-  color: rgb(13, 110, 253);
+  color: #0d6efd;
   text-decoration: underline;
 }
 
 .link:hover {
   background-color: transparent;
-  color: rgb(10, 88, 202);
+  color: #0a58ca;
 }

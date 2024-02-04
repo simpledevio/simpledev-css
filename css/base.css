@@ -2,11 +2,11 @@
 /* This file contains all of the classless CSS rules */
 
 a {
-  color: rgb(13, 110, 253);
+  color: #0d6efd;
 }
 
 a:hover {
-  color: rgb(10, 88, 202);
+  color: #0a58ca;
 }
 
 code {
@@ -105,7 +105,7 @@ table {
 }
 
 td, th {
-  border: solid 1px rgb(222, 226, 230);
+  border: solid 1px #dee2e6;
   padding: .75rem;
 }
 

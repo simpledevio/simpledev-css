@@ -1,6 +1,10 @@
 /* footer.css */
 
 .footer {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse; */
   text-align: center;
   padding: .75rem;
 }

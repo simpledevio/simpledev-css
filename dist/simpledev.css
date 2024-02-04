@@ -556,6 +556,10 @@ button:hover {
 /* footer.css */
 
 .footer {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse; */
   text-align: center;
   padding: .75rem;
 }
@@ -671,7 +675,7 @@ button:hover {
   display: none;
   list-style: none;
   padding-left: 0;
-  text-align: left;
+  /* text-align: left; */
   margin-block: 0;
 }
 
@@ -710,7 +714,7 @@ button:hover {
 }
 
 .navbar .button-outline {
-  border-color: #dee2e6;
+  /* border-color: #dee2e6; */
   display: inline-block;
   margin-top: .5rem;
   margin-bottom: 0;
@@ -757,6 +761,9 @@ ul.block {
     margin-top: 0;
   }
 
+  .navbar li:last-child .button, .navbar li:last-child .button-outline {
+    margin-right: .25rem;
+  }
   .navbar li a:not(.button, .button-outline) {
     padding-left: 1rem;
   }

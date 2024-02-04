@@ -10,11 +10,6 @@
 
   --a-color: rgb(110, 168, 254);
   --a-color-hover: rgb(139, 185, 254);
-  /* --button-color: ;
-  --button-color-hover: ;
-  --button-outline-color-hover: ;
-  --navbar-bg: ;
-  --body-bg: ; */
 }
 
 /* BASE */
@@ -112,10 +107,6 @@ button:hover,
 
 
 /* FOOTER */
-.footer {
-  /* color: var(--white); */
-}
-
 .footer-links a {
   color: var(--light-gray);
 }
@@ -158,8 +149,3 @@ button:hover,
 .navbar-message {
   background-color: var(--darker-bg);
 }
-
-/* select {
-    background-color: #2b3035;
-    color: #fff;
-  } */

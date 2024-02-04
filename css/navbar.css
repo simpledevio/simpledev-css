@@ -108,8 +108,6 @@
 }
 
 .navbar .button {
-  /* background-color: #495057; */
-  /* border: 0; */
   color: #000;
   display: inline-block;
   margin-top: .5rem;
@@ -128,11 +126,6 @@
   margin-right: .25rem;
   padding: .375rem;
   padding-inline: .375rem;
-}
-
-.navbar .button:hover {
-  /* background-color: #343a40; */
-  /* color: #fff; */
 }
 
 /* active class for links */

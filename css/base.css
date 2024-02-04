@@ -14,7 +14,6 @@ code {
   border-radius: .25rem;
   padding-inline: .25rem;
   color: #666;
-  /* color: #e2777a; */
 }
 
 h1 {
@@ -27,9 +26,6 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  /* font-size: 1.625rem; */
-  /* font-size: 1.75rem; */
-  /* font-size: 1.875rem; */
 }
 
 p, ul, ol {
@@ -54,7 +50,6 @@ video {
 /* details + summary */
 details {
   border: solid 1px #666;
-  /* border-radius: .25rem; */
   padding: .5rem;
   margin-top: .5rem;
 }
@@ -69,12 +64,10 @@ input, select, textarea {
   display: block;
   margin-bottom: .5rem;
   padding: .375rem;
-  /* border-width: 2px; */
 }
 
 input, textarea {
   border-color: #dee2e6;
-  /* border-radius: .25rem; */
 }
 
 input[type='checkbox'],

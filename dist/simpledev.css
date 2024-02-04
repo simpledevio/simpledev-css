@@ -295,8 +295,6 @@ summary {
 
 .skip-link {
   background: #fff;
-  /* height: 30px; */
-  /* left: 50%; */
   padding: .5rem;
   position: absolute;
   transform: translateY(-100%);
@@ -306,9 +304,6 @@ summary {
 }
 
 .skip-link:focus {
-  /* left: 50%;
-  transform: translateX(-50%);
-  opacity: 1; */
   transform: translateY(10%);
 }
 
@@ -344,7 +339,6 @@ code {
   border-radius: .25rem;
   padding-inline: .25rem;
   color: #666;
-  /* color: #e2777a; */
 }
 
 h1 {
@@ -357,9 +351,6 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  /* font-size: 1.625rem; */
-  /* font-size: 1.75rem; */
-  /* font-size: 1.875rem; */
 }
 
 p, ul, ol {
@@ -384,7 +375,6 @@ video {
 /* details + summary */
 details {
   border: solid 1px #666;
-  /* border-radius: .25rem; */
   padding: .5rem;
   margin-top: .5rem;
 }
@@ -399,12 +389,10 @@ input, select, textarea {
   display: block;
   margin-bottom: .5rem;
   padding: .375rem;
-  /* border-width: 2px; */
 }
 
 input, textarea {
   border-color: #dee2e6;
-  /* border-radius: .25rem; */
 }
 
 input[type='checkbox'],
@@ -456,8 +444,7 @@ caption {
 .button-floating,
 button {
   background-color: #f1f3f5;
-  border: solid 2px #f1f3f5;
-  /* border-radius: .375rem; */
+  border: solid 1px #f1f3f5;
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -480,8 +467,7 @@ button:hover {
 /* BUTTON OUTLINE */
 .button-outline {
   background-color: transparent;
-  border: solid 2px #f1f3f5;
-  /* border-radius: .375rem; */
+  border: solid 1px #dee2e6;
   color: #000;
   display: inline-block;
   line-height: 1.5;
@@ -533,7 +519,6 @@ button:hover {
 
 .code {
   background-color: #2b3035;
-  /* border-radius: .25rem; */
   color: #fff;
   line-height: 1.5;
   overflow-x: auto;
@@ -571,7 +556,6 @@ button:hover {
 /* footer.css */
 
 .footer {
-  /* border-top: solid 1px #0f172a1a; */
   text-align: center;
   padding: .75rem;
 }
@@ -716,15 +700,13 @@ button:hover {
 }
 
 .navbar .button {
-  /* background-color: #495057; */
-  border: 0;
   color: #000;
   display: inline-block;
   margin-top: .5rem;
   margin-bottom: 0;
   margin-left: .25rem;
   margin-right: .25rem;
-  padding: .5rem;
+  padding: .375rem .5rem;
 }
 
 .navbar .button-outline {
@@ -736,11 +718,6 @@ button:hover {
   margin-right: .25rem;
   padding: .375rem;
   padding-inline: .375rem;
-}
-
-.navbar .button:hover {
-  /* background-color: #343a40; */
-  /* color: #fff; */
 }
 
 /* active class for links */

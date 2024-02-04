@@ -2,8 +2,6 @@
 
 .skip-link {
   background: #fff;
-  /* height: 30px; */
-  /* left: 50%; */
   padding: .5rem;
   position: absolute;
   transform: translateY(-100%);
@@ -13,9 +11,6 @@
 }
 
 .skip-link:focus {
-  /* left: 50%;
-  transform: translateX(-50%);
-  opacity: 1; */
   transform: translateY(10%);
 }
 

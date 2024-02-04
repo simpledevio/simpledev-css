@@ -6,7 +6,7 @@
 button {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
-  border-radius: .375rem;
+  /* border-radius: .375rem; */
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -30,7 +30,7 @@ button:hover {
 .button-outline {
   background-color: transparent;
   border: solid 2px #f1f3f5;
-  border-radius: .375rem;
+  /* border-radius: .375rem; */
   color: #000;
   display: inline-block;
   line-height: 1.5;

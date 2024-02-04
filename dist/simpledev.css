@@ -384,7 +384,7 @@ video {
 /* details + summary */
 details {
   border: solid 1px #666;
-  border-radius: .25rem;
+  /* border-radius: .25rem; */
   padding: .5rem;
   margin-top: .5rem;
 }
@@ -404,7 +404,7 @@ input, select, textarea {
 
 input, textarea {
   border-color: #dee2e6;
-  border-radius: .25rem;
+  /* border-radius: .25rem; */
 }
 
 input[type='checkbox'],
@@ -457,7 +457,7 @@ caption {
 button {
   background-color: #f1f3f5;
   border: solid 2px #f1f3f5;
-  border-radius: .375rem;
+  /* border-radius: .375rem; */
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -481,7 +481,7 @@ button:hover {
 .button-outline {
   background-color: transparent;
   border: solid 2px #f1f3f5;
-  border-radius: .375rem;
+  /* border-radius: .375rem; */
   color: #000;
   display: inline-block;
   line-height: 1.5;
@@ -533,7 +533,7 @@ button:hover {
 
 .code {
   background-color: #2b3035;
-  border-radius: .25rem;
+  /* border-radius: .25rem; */
   color: #fff;
   line-height: 1.5;
   overflow-x: auto;

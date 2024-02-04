@@ -12,7 +12,6 @@
 .navbar-simple {
   display: flex;
   justify-content: space-between;
-  background-color: lightgray;
   line-height: 1.5;
   padding-block: .625rem;
   padding-inline: .25rem;

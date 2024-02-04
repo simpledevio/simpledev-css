@@ -18,10 +18,12 @@
 
 h2, h3 {
   /* whatever is a nice number that gets you past the header */
-  scroll-margin-top: 5rem;
+  /* scroll-margin-top: 5rem; */
 }
 
-
+html {
+  scroll-padding-top: 5rem;
+}
 
 /* SPACING */
 h2 {
@@ -53,7 +55,6 @@ pre[class*="language-"] {
 }
 
 .grid > div {
-  /* border-radius: 4px; */
   border: 1px solid #111;
 }
 

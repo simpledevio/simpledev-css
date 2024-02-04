@@ -142,7 +142,19 @@ button:hover,
   color: var(--white);
 }
 
-.navbar .active {
+.navbar .active, .navbar-simple .active {
+  color: var(--white);
+}
+
+.navbar-simple a:first-child {
+  color: var(--white);
+}
+
+.navbar-simple a {
+  color: var(--light-gray);
+}
+
+.navbar-simple a:hover {
   color: var(--white);
 }
 

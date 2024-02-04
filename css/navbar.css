@@ -19,12 +19,17 @@
 }
 
 .navbar-simple a {
-  color: #000;
+  color: #555;
   text-decoration: none;
   padding: 1rem;
 }
 
+.navbar-simple a:hover {
+  color: #000;
+}
+
 .navbar-simple a:first-child {
+  color: #000;
   margin-right: auto;
   font-weight: bold;
   padding-left: .5rem;
@@ -129,7 +134,7 @@
 }
 
 /* active class for links */
-.navbar .active {
+.navbar .active, .navbar-simple .active {
   color: #000;
 }
 

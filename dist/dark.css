@@ -2,14 +2,14 @@
 
 :root {
   --white: #fff;
-  --light-gray: rgb(222, 226, 230);
+  --light-gray: #dee2e6;
   --light-bg: #495057;
   --dark-bg: #343a40;
   --darker-bg: #2b3035;
   --darkest-bg: #212529;
 
-  --a-color: rgb(110, 168, 254);
-  --a-color-hover: rgb(139, 185, 254);
+  --a-color: #6ea8fe;
+  --a-color-hover: #8bb9fe;
 }
 
 /* BASE */

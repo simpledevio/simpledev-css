@@ -464,6 +464,8 @@ button:hover {
   color: #000;
 }
 
+
+
 /* BUTTON OUTLINE */
 .button-outline {
   background-color: transparent;
@@ -482,6 +484,8 @@ button:hover {
   border-color: #f1f3f5;
   color: #000;
 }
+
+
 
 /* FLOATING BUTTON */
 .button-floating {
@@ -504,6 +508,9 @@ button:hover {
   font-size: 1.25rem;
 }
 
+
+
+/* LINK */
 .link {
   background-color: transparent;
   border: 0;
@@ -637,14 +644,10 @@ button:hover {
 
 .navbar-simple .button {
   border: 0;
-  background-color: #495057;
-  color: #fff;
   padding: .5rem;
   margin-bottom: 0;
   margin-right: .5rem;
 }
-
-
 
 /* NAVBAR */
 /* for the navbar */
@@ -680,7 +683,6 @@ button:hover {
   display: none;
   list-style: none;
   padding-left: 0;
-  /* text-align: left; */
   margin-block: 0;
 }
 
@@ -699,7 +701,6 @@ button:hover {
 
 /* link hover color */
 .navbar li a:hover {
-  /* background-color: #ddd; */
   color: #000;
 }
 
@@ -719,7 +720,6 @@ button:hover {
 }
 
 .navbar .button-outline {
-  /* border-color: #dee2e6; */
   display: inline-block;
   margin-top: .5rem;
   margin-bottom: 0;

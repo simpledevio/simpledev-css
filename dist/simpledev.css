@@ -388,11 +388,12 @@ summary {
 input, select, textarea {
   display: block;
   margin-bottom: .5rem;
-  padding: .375rem;
+  padding: .375rem .75rem;
 }
 
 input, textarea {
   border-color: #dee2e6;
+  line-height: 1.5;
 }
 
 input[type='checkbox'],
@@ -450,7 +451,7 @@ button {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: .375rem;
+  margin-bottom: .5rem;
   padding: .375rem .75rem;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -492,6 +493,7 @@ button:hover {
   position: fixed;
   bottom: .75rem;
   right: .75rem;
+  /* margin-bottom: .375rem; */
   z-index: 11;
   background-color: #dee2e6;
   border-color: #dee2e6;

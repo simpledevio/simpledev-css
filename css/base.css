@@ -63,11 +63,12 @@ summary {
 input, select, textarea {
   display: block;
   margin-bottom: .5rem;
-  padding: .375rem;
+  padding: .375rem .75rem;
 }
 
 input, textarea {
   border-color: #dee2e6;
+  line-height: 1.5;
 }
 
 input[type='checkbox'],

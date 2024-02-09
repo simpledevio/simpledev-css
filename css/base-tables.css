@@ -1,0 +1,16 @@
+/* base-tables.css */
+
+/* tables */
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+td, th {
+  border: solid 1px;
+  padding: .75rem;
+}
+
+caption {
+  margin-top: .5rem;
+}

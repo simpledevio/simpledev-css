@@ -1,0 +1,40 @@
+/* base-forms.css */
+
+/* forms */
+input, select, textarea {
+  display: block;
+  margin-bottom: .5rem;
+  padding: .375rem .75rem;
+}
+
+input, textarea {
+  line-height: 1.5;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: initial;
+}
+
+input:disabled, textarea:disabled {
+  background-color: #e9ecef;
+}
+
+textarea:not([cols]) {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .25rem;
+}
+
+/* from sanitize.css */
+:where(button, input, textarea) {
+  border: 1px solid WindowFrame;
+}

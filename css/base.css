@@ -49,7 +49,7 @@ video {
 
 /* details + summary */
 details {
-  border: solid 1px #666;
+  border: solid 1px;
   padding: .5rem;
   margin-top: .5rem;
 }
@@ -57,59 +57,4 @@ details {
 summary {
   cursor: pointer;
   margin-bottom: .5rem;
-}
-
-/* forms */
-input, select, textarea {
-  display: block;
-  margin-bottom: .5rem;
-  padding: .375rem .75rem;
-}
-
-input, textarea {
-  border-color: #dee2e6;
-  line-height: 1.5;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  display: initial;
-}
-
-input:disabled, textarea:disabled {
-  background-color: #e9ecef;
-}
-
-textarea:not([cols]) {
-  width: 100%;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 2rem;
-}
-
-label {
-  display: inline-block;
-  margin-bottom: .25rem;
-}
-
-/* from sanitize.css */
-:where(button, input, textarea) {
-  border: 1px solid WindowFrame;
-}
-
-/* tables */
-table {
-  border-collapse: collapse;
-  caption-side: bottom;
-}
-
-td, th {
-  border: solid 1px #dee2e6;
-  padding: .75rem;
-}
-
-caption {
-  margin-top: .5rem;
 }

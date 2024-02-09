@@ -10,17 +10,6 @@
   border-bottom: solid 1px #0f172a1a;
 }
 
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    /* background-color: var(--darkest-bg); */
-  }
-}
-
-h2, h3 {
-  /* whatever is a nice number that gets you past the header */
-  /* scroll-margin-top: 5rem; */
-}
-
 html {
   scroll-padding-top: 5rem;
 }
@@ -42,13 +31,6 @@ code[class*="language-"] {
   /* margin-top: 120px !important; */
 }
 
-pre[class*="language-"] {
-  /* padding-inline: 0; */
-  /* margin-top: 20px; */
-}
-
-
-
 /* GRID SHOWCASE CONTAINER */
 .grid-container {
   margin-bottom: 16px;
@@ -57,8 +39,6 @@ pre[class*="language-"] {
 .grid > div {
   border: 1px solid #111;
 }
-
-
 
 /* DARK */
 @media (prefers-color-scheme: dark) {
@@ -70,6 +50,10 @@ pre[class*="language-"] {
   :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background-color: #2b3035;
   }
+
+  .navbar {
+    background-color: var(--darkest-bg);
+  }
 }
 
 /* OTHER */
@@ -77,4 +61,15 @@ pre[class*="language-"] {
   width: 24px;
   height: 24px;
   color: #555;
+} */
+
+/* .button,
+.button-floating,
+.button-outline,
+button,
+.code,
+input,
+textarea,
+details {
+  border-radius: .375rem;
 } */

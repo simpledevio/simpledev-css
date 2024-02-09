@@ -13,12 +13,6 @@
   transform: translateY(10%);
 }
 
-@media (prefers-color-scheme: dark) {
-  .skip-link {
-    background: #212529;
-  }
-}
-
 /* VISUALLY HIDDEN */
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);

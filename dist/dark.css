@@ -45,6 +45,9 @@ td, th {
   border-color: var(--light-bg);
 }
 
+.skip-link {
+  background: #212529;
+}
 
 /* BACKGROUND */
 .background {
@@ -115,7 +118,7 @@ button:hover,
 
 /* NAVBAR */
 .navbar {
-  background-color: var(--darkest-bg);
+  /* background-color: var(--darkest-bg); */
   color: var(--white);
   border-bottom: solid 1px #f8fafc0f;
 }

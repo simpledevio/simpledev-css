@@ -6,7 +6,6 @@
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;
-
   z-index: 999;
 }
 

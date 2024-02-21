@@ -105,6 +105,11 @@ button:hover,
 /* CODE */
 .code {
   background-color: var(--darker-bg);
+  color: var(--light-gray);
+}
+
+.code code {
+  color: var(--light-gray);
 }
 
 

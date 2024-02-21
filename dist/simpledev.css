@@ -299,18 +299,11 @@ summary {
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;
-
   z-index: 999;
 }
 
 .skip-link:focus {
   transform: translateY(10%);
-}
-
-@media (prefers-color-scheme: dark) {
-  .skip-link {
-    background: #212529;
-  }
 }
 
 /* VISUALLY HIDDEN */
@@ -322,6 +315,62 @@ summary {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+/* base-forms.css */
+
+/* forms */
+input, select, textarea {
+  display: block;
+  margin-bottom: .5rem;
+  padding: .375rem .75rem;
+}
+
+input, textarea {
+  line-height: 1.5;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: initial;
+}
+
+input:disabled, textarea:disabled {
+  background-color: #e9ecef;
+}
+
+textarea:not([cols]) {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .25rem;
+}
+
+/* from sanitize.css */
+:where(button, input, textarea) {
+  border: 1px solid WindowFrame;
+}
+/* base-tables.css */
+
+/* tables */
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+td, th {
+  border: solid 1px;
+  padding: .75rem;
+}
+
+caption {
+  margin-top: .5rem;
 }
 /* base.css */
 /* This file contains all of the classless CSS rules */
@@ -374,7 +423,7 @@ video {
 
 /* details + summary */
 details {
-  border: solid 1px #666;
+  border: solid 1px;
   padding: .5rem;
   margin-top: .5rem;
 }
@@ -382,61 +431,6 @@ details {
 summary {
   cursor: pointer;
   margin-bottom: .5rem;
-}
-
-/* forms */
-input, select, textarea {
-  display: block;
-  margin-bottom: .5rem;
-  padding: .375rem .75rem;
-}
-
-input, textarea {
-  border-color: #dee2e6;
-  line-height: 1.5;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  display: initial;
-}
-
-input:disabled, textarea:disabled {
-  background-color: #e9ecef;
-}
-
-textarea:not([cols]) {
-  width: 100%;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 2rem;
-}
-
-label {
-  display: inline-block;
-  margin-bottom: .25rem;
-}
-
-/* from sanitize.css */
-:where(button, input, textarea) {
-  border: 1px solid WindowFrame;
-}
-
-/* tables */
-table {
-  border-collapse: collapse;
-  caption-side: bottom;
-}
-
-td, th {
-  border: solid 1px #dee2e6;
-  padding: .75rem;
-}
-
-caption {
-  margin-top: .5rem;
 }
 /* buttons.css */
 
@@ -527,8 +521,8 @@ button:hover {
 /* code.css */
 
 .code {
-  background-color: #2b3035;
-  color: #fff;
+  background-color: #e9ecef;
+  color: #000;
   line-height: 1.5;
   overflow-x: auto;
   padding: .75rem;
@@ -536,7 +530,7 @@ button:hover {
 
 .code code {
   background-color: inherit;
-  color: #fff;
+  color: #000;
 }
 
 .bash::before {

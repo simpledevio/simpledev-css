@@ -115,29 +115,32 @@
       &lt;/html&gt;
     </code></pre>
 
-
-
     <!-- ADVANCED TEMPLATE -->
     <h2 id="advanced-template">Advanced Template</h2>
     <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;en&quot;&gt;
+
       &lt;head&gt;
         &lt;meta charset=&quot;UTF-8&quot;&gt;
         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
-        &lt;title&gt;Advanced Template&lt;/title&gt;
+
+        &lt;title&gt;Demo Site | simpledev.css&lt;/title&gt;
 
         &lt;!-- CSS --&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.3/dist/simpledev.css&quot;&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.3/dist/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.10/dist/simpledev.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.10/dist/dark.css&quot;
+          media=&quot;(prefers-color-scheme: dark)&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
 
         &lt;!-- JS --&gt;
-        &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.3/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.1.10/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
       &lt;/head&gt;
 
       &lt;body&gt;
+        &lt;div class=&quot;navbar-message&quot;&gt;Test navbar message.&lt;/div&gt;
         &lt;nav class=&quot;navbar&quot;&gt;
           &lt;div&gt;
             &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
@@ -147,25 +150,77 @@
             &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
           &lt;/ul&gt;
         &lt;/nav&gt;
 
         &lt;div class=&quot;container&quot;&gt;
-          &lt;h1&gt;Advanced Template&lt;/h1&gt;
+          &lt;div class=&quot;text-center section&quot;&gt;
+            &lt;h1&gt;Business Name&lt;/h1&gt;
+            &lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+            &lt;a href=&quot;&quot; class=&quot;button large&quot;&gt;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;h2&gt;Services&lt;/h2&gt;
+          &lt;div class=&quot;grid&quot;&gt;
+            &lt;img src=&quot;joshua-aragon-EaB4Ml7C7fE-unsplash.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;order-1&quot;&gt;
+              &lt;h3&gt;Test&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis consequatur eius error
+                excepturi veniam facere eos ut quia voluptate, ipsam, suscipit voluptas numquam molestias impedit eligendi
+                repellat velit quaerat.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div style=&quot;height: 80px;&quot;&gt;&lt;/div&gt;
+
+          &lt;div class=&quot;grid&quot;&gt;
+            &lt;div&gt;
+              &lt;h3&gt;Test&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis consequatur eius error
+                excepturi veniam facere eos ut quia voluptate, ipsam, suscipit voluptas numquam molestias impedit eligendi
+                repellat velit quaerat.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;img src=&quot;joshua-aragon-EaB4Ml7C7fE-unsplash.jpg&quot; alt=&quot;&quot;&gt;
+          &lt;/div&gt;
+
+          &lt;h2&gt;Features&lt;/h2&gt;
+          &lt;div class=&quot;grid&quot;&gt;
+            &lt;div&gt;
+              &lt;h3&gt;Feature 1&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae natus voluptatem voluptates esse libero
+                hic, maiores temporibus aperiam necessitatibus aut sequi quia cumque voluptas tempore provident ab, eum
+                praesentium?&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+              &lt;h3&gt;Feature 2&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae natus voluptatem voluptates esse libero
+                hic, maiores temporibus aperiam necessitatibus aut sequi quia cumque voluptas tempore provident ab, eum
+                praesentium?&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+              &lt;h3&gt;Feature 3&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae natus voluptatem voluptates esse libero
+                hic, maiores temporibus aperiam necessitatibus aut sequi quia cumque voluptas tempore provident ab, eum
+                praesentium?&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
 
         &lt;footer class=&quot;footer&quot;&gt;
           &lt;ul class=&quot;footer-links&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Facebook &lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-twitter-x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
           &lt;/ul&gt;
-          &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
+          &lt;small class=&quot;&quot;&gt;© 2023 Business Name.&lt;/small&gt;
         &lt;/footer&gt;
       &lt;/body&gt;
+
       &lt;/html&gt;
     </code></pre>
 

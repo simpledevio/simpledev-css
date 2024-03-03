@@ -122,51 +122,58 @@
     <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
-      &lt;html lang=&quot;en&quot;&gt;
-      &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
-        &lt;title&gt;Advanced Template&lt;/title&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
-        &lt;!-- CSS --&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.3/dist/simpledev.css&quot;&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.3/dist/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;
+  &lt;title&gt;Advanced Template&lt;/title&gt;
 
-        &lt;!-- JS --&gt;
-        &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.3/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
-      &lt;/head&gt;
+  &lt;!-- CSS --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.2/dist/simpledev.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.2/dist/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom.css&quot;&gt;
 
-      &lt;body&gt;
-        &lt;nav class=&quot;navbar&quot;&gt;
-          &lt;div&gt;
-            &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
-            &lt;button type=&quot;button&quot;&gt;Menu&lt;/button&gt;
-          &lt;/div&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
+  &lt;!-- JS --&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.2/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
 
-        &lt;div class=&quot;container&quot;&gt;
-          &lt;h1&gt;Advanced Template&lt;/h1&gt;
-        &lt;/div&gt;
+&lt;body&gt;
+  &lt;nav class=&quot;navbar&quot;&gt;
+    &lt;div class=&quot;navbar-bar&quot;&gt;
+      &lt;a href=&quot;&quot; class=&quot;navbar-brand&quot;&gt;Brand&lt;/a&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-menu&quot;&gt;Menu&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;navbar-links&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
 
-        &lt;footer class=&quot;footer&quot;&gt;
-          &lt;ul class=&quot;footer-links&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Facebook &lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-          &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
-        &lt;/footer&gt;
-      &lt;/body&gt;
-      &lt;/html&gt;
+  &lt;div class=&quot;container&quot; style=&quot;min-height: 88vh;&quot;&gt;
+    &lt;div class=&quot;section text-center&quot;&gt;
+      &lt;h1&gt;Advanced Template&lt;/h1&gt;
+      &lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit.&lt;/p&gt;
+      &lt;a href=&quot;&quot; class=&quot;button large&quot;&gt;Learn More&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;footer class=&quot;footer&quot;&gt;
+    &lt;ul class=&quot;footer-links&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Facebook &lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;small class=&quot;&quot;&gt;© 2023 Business Name.&lt;/small&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;
+&lt;/pre&gt;
     </code></pre>
 
 

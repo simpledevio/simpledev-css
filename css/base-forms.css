@@ -38,3 +38,8 @@ label {
 :where(button, input, textarea) {
   border: 1px solid WindowFrame;
 }
+
+input[type="file"] {
+  border: 0;
+  padding: .375rem 0;
+}

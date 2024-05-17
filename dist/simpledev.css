@@ -356,6 +356,11 @@ label {
 :where(button, input, textarea) {
   border: 1px solid WindowFrame;
 }
+
+input[type="file"] {
+  border: 0;
+  padding: .375rem 0;
+}
 /* base-tables.css */
 
 /* tables */
@@ -459,7 +464,10 @@ button:hover {
   color: #000;
 }
 
-
+button:disabled {
+  opacity: .65;
+  pointer-events: none;
+}
 
 /* BUTTON OUTLINE */
 .button-outline {

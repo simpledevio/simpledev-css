@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<a href="#navbar" class="skip-link">Skip to main content</a>
+<a href="#accessibility" class="skip-link">Skip to main content</a>
 
 <div class="navbar-message">Test navbar message.</div>
 
@@ -39,7 +39,7 @@
 <div class="container">
   <div class="section text-center">
     <h1>simpledev.css</h1>
-    <p class="lead">The goal of simpledev.css is to create a <b>mostly classless CSS framework</b>.</p>
+    <p class="lead">simpledev.css is a <b>mostly classless CSS framework</b>.</p>
     <a href="./start.html" class="button large">Get Started</a>
   </div>
 </div>
@@ -50,9 +50,7 @@
 
 
   <h2 class="text-center">Inspiration</h2>
-  <p>We are starting off with working on a handful of components and will add the classless code later. This project is inspired by Water.css, Pico, and Bootstrap.</p>
-
-  <p>Pico is the closest framework to this project, but there are a few differences between simpledev.css and Pico. For example, all of the source code is written in plain CSS and there are more classes available.</p>
+  <p>This project is inspired by Water.css, Pico, and Bootstrap. Pico is the closest framework to this project, but there are a few differences between simpledev.css and Pico. For example, all of the source code is written in plain CSS and there are more classes available.</p>
 
   <!-- <h2>Features</h2>
   <div class="grid">
@@ -72,8 +70,9 @@
     </div>
   </div> -->
 
-
+  <h3>Classes</h3>
   <ul>
+    <li><a href="#accessibility">Accessibility</a></li>
     <li><a href="#navbar">Navbar</a></li>
     <li><a href="#navbar-message">Navbar Message</a></li>
     <li><a href="#navbar-simple">Simple Navbar</a></li>
@@ -81,20 +80,33 @@
     <li><a href="#section">Section</a></li>
     <li><a href="#background">Background</a></li>
     <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#floating-button">Floating Button</a></li>
     <li><a href="#text-align">Text Align</a></li>
     <li><a href="#text-utilities">Text Utilities</a></li>
-    <li><a href="#floating-button">Floating Button</a></li>
     <li><a href="#code">Code</a></li>
-    <li><a href="#footer">Footer</a></li>
     <li><a href="#grid">Grid</a></li>
-    <li><a href="#accessibility">Accessibility</a></li>
     <li><a href="#bottom-banner">Bottom Banner</a></li>
+    <li><a href="#footer">Footer</a></li>
+  </ul>
+
+  <h3>Classless</h3>
+  <ul>
     <li><a href="#images">Images</a></li>
+    <li><a href="#inline-text">Inline Text</a></li>
     <li><a href="#details">Details and Summary</a></li>
     <li><a href="#forms">Forms</a></li>
     <li><a href="#tables">Tables</a></li>
     <li><a href="#smooth-scrolling">Smooth Scrolling</a></li>
   </ul>
+
+
+
+  <!-- ACCESSIBILITY -->
+  <h2 id="accessibility">Accessibility</h2>
+  <pre><code class="lang-html">&lt;a href=&quot;#main&quot; class=&quot;skip-link&quot;&gt;Skip to main content&lt;/a&gt;
+  </code></pre>
+  <p>You can add a link right after the opening body tag with the class <code>skip-link</code> to add a skip to content link above your navbar. You can try it on this page by pressing the Tab key to access it.</p>
+
 
 
   <!-- NAVBAR -->
@@ -314,6 +326,14 @@
 
 
 
+  <!-- FLOATING BUTTON -->
+  <h2 id="floating-button">Floating Button</h2>
+  <a href="#" class="button-floating">Float</a>
+  <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;button-floating&quot;&gt;Float&lt;/a&gt;</code></pre>
+  <p>You can see an example of our floating button in the lower right-hand corner. It can be applied to an <code>a</code> element or a <code>button</code> element.</p>
+
+
+
   <!-- TEXT ALIGN -->
   <h2 id="text-align">Text Align</h2>
   <div class="text-center">
@@ -344,23 +364,22 @@
   <p class="uppercase">This is uppercase.</p>
   <p class="lowercase">This is lowercase.</p>
   <p class="capitalize">This is capitalized.</p>
+  <p class="nocase">This has no text transform.</p>
   <p class="italic">This is italic.</p>
+  <em class="not-italic">This is not italic.</em>
   <p class="bold">This is bold.</p>
+  <b class="not-bold">This is not bold.</b>
   <pre><code class="lang-html">
     &lt;p class=&quot;uppercase&quot;&gt;This is uppercase.&lt;/p&gt;
     &lt;p class=&quot;lowercase&quot;&gt;This is lowercase.&lt;/p&gt;
     &lt;p class=&quot;capitalize&quot;&gt;This is capitalized.&lt;/p&gt;
+    &lt;p class=&quot;nocase&quot;&gt;This has no text transform.&lt;/p&gt;
     &lt;p class=&quot;italic&quot;&gt;This is italic.&lt;/p&gt;
-    &lt;p class=&quot;bold&quot;&gt;This is bold.&lt;/p&gt;</code></pre>
-    <p>You can use the <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code>, <code>italic</code>, and <code>bold</code> classes to change how a section of text looks.</p>
-
-
-
-  <!-- FLOATING BUTTON -->
-  <h2 id="floating-button">Floating Button</h2>
-  <a href="#" class="button-floating">Float</a>
-  <pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;button-floating&quot;&gt;Float&lt;/a&gt;</code></pre>
-  <p>You can see an example of our floating button in the lower right-hand corner. It can be applied to an <code>a</code> element or a <code>button</code> element.</p>
+    &lt;em class=&quot;not-italic&quot;&gt;This is not italic.&lt;/em&gt;
+    &lt;p class=&quot;bold&quot;&gt;This is bold.&lt;/p&gt;
+    &lt;b class=&quot;not-bold&quot;&gt;This is not bold.&lt;/b&gt;
+  </code></pre>
+    <p>You can use the <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code>, <code>nocase</code>, <code>italic</code>, <code>not-italic</code>, <code>bold</code> and <code>not-bold</code> classes to change how a section of text looks.</p>
 
 
 
@@ -375,59 +394,6 @@
     &lt;pre class=&quot;code zsh&quot;&gt;&lt;code&gt;echo &quot;hello world&quot;&lt;/code&gt;&lt;/pre&gt;
   </code></pre>
   <p>Use the <code>code</code> class to create a code snippet. You can also add the classes <code>bash</code> and <code>zsh</code> to add a dollar sign or percent symbol to the beginning of the snippet. If you're going to have a lot of code snippets, I recommend using Prism or a similar library.</p>
-
-
-
-  <!-- FOOTER -->
-  <h2 id="footer">Footer</h2>
-
-  <footer class="footer">
-    <ul class="footer-links">
-      <li><a href="">Facebook </a></li>
-      <li><a href="">Twitter</a></li>
-      <li><a href="">Instagram</a></li>
-      <li><a href="">LinkedIn</a></li>
-      <li><a href="">YouTube</a></li>
-    </ul>
-    <small class="">© 2023 Business Name.</small>
-  </footer>
-
-  <footer class="footer">
-    <ul class="footer-links">
-      <li><a href=""><i class="bi bi-facebook"></i></a></li>
-      <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
-      <li><a href=""><i class="bi bi-instagram"></i></a></li>
-      <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-      <li><a href=""><i class="bi bi-youtube"></i></a></li>
-    </ul>
-    <small class="">© 2023 Business Name.</small>
-  </footer>
-
-  <pre><code class="language-html">
-    &lt;footer class=&quot;footer&quot;&gt;
-      &lt;ul class=&quot;footer-links&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Facebook &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
-    &lt;/footer&gt;
-
-    &lt;footer class=&quot;footer&quot;&gt;
-    &lt;ul class=&quot;footer-links&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-twitter-x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
-  &lt;/footer&gt;
-  </code></pre>
-
-  <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text. You can also add an unordered list with a list of links add use the class <code>footer-links</code> to create a row of links. The <code>footer-links</code> class should also work with SVG icons or icon fonts like <a href="https://icons.getbootstrap.com/#install" target="_blank">Bootstrap Icons</a>.</p>
 
 
 
@@ -457,14 +423,6 @@
 
 
 
-  <!-- ACCESSIBILITY -->
-  <h2 id="accessibility">Accessibility</h2>
-  <pre><code class="lang-html">&lt;a href=&quot;#main&quot; class=&quot;skip-link&quot;&gt;Skip to main content&lt;/a&gt;
-  </code></pre>
-  <p>You can add a link right after the opening body tag with the class <code>skip-link</code> to add a skip to content link above your navbar. You can try it on this page by pressing the Tab key to access it.</p>
-
-
-
   <!-- BOTTOM BANNER -->
   <h2 id="bottom-banner">Bottom Banner</h2>
   <pre><code class="lang-html">
@@ -472,6 +430,59 @@
       &lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
     &lt;/div&gt;</code></pre>
   <p>You can use the <code>bottom-banner</code> class with a div to create a sticky bottom banner. You will need to write your own JS if you want to dismiss it. (This component is not visible on this page since it would interfere with out floating button demo.)</p>
+
+
+
+    <!-- FOOTER -->
+    <h2 id="footer">Footer</h2>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a href="">Facebook </a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">YouTube</a></li>
+      </ul>
+      <small class="">© 2023 Business Name.</small>
+    </footer>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a href=""><i class="bi bi-facebook"></i></a></li>
+        <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+        <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+        <li><a href=""><i class="bi bi-youtube"></i></a></li>
+      </ul>
+      <small class="">© 2023 Business Name.</small>
+    </footer>
+
+    <pre><code class="language-html">
+      &lt;footer class=&quot;footer&quot;&gt;
+        &lt;ul class=&quot;footer-links&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Facebook &lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
+      &lt;/footer&gt;
+
+      &lt;footer class=&quot;footer&quot;&gt;
+      &lt;ul class=&quot;footer-links&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-twitter-x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;bi bi-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;small class=&quot;&quot;&gt;&copy; 2023 Business Name.&lt;/small&gt;
+    &lt;/footer&gt;
+    </code></pre>
+
+    <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text. You can also add an unordered list with a list of links add use the class <code>footer-links</code> to create a row of links. The <code>footer-links</code> class should also work with SVG icons or icon fonts like <a href="https://icons.getbootstrap.com/#install" target="_blank">Bootstrap Icons</a>.</p>
 
 
 
@@ -483,7 +494,7 @@
 
 
   <!-- INLINE TEXT ELEMENTS -->
-  <h2>Inline Text Elements</h2>
+  <h2 id="inline-text">Inline Text Elements</h2>
   <p>Use the mark tag to <mark>highlight</mark> text.</p>
   <p>Use the <code>code</code> tag for inline code.</p>
   <p>Use the kbd tag for keyboard shortcuts, like <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>.</p>

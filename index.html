@@ -88,6 +88,7 @@
     <li><a href="#footer">Footer</a></li>
     <li><a href="#grid">Grid</a></li>
     <li><a href="#accessibility">Accessibility</a></li>
+    <li><a href="#bottom-banner">Bottom Banner</a></li>
     <li><a href="#images">Images</a></li>
     <li><a href="#details">Details and Summary</a></li>
     <li><a href="#forms">Forms</a></li>
@@ -270,14 +271,16 @@
 
   <!-- BUTTONS -->
   <h2 id="buttons">Buttons</h2>
-  <a href="" class="button">Anchor</a>
-  <a href="" class="button-outline">Anchor</a>
-  <button type="button" class="button">Button</button>
-  <button type="button" class="button" disabled>Button</button>
-  <button type="button" class="button-outline">Button</button>
-  <button type="button" class="button-outline" disabled>Button</button>
-  <button type="button" class="link">Button</button>
-  <button type="button" class="link" disabled>Button</button>
+  <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+    <a href="" class="button">Anchor</a>
+    <a href="" class="button-outline">Anchor</a>
+    <button type="button" class="button">Button</button>
+    <button type="button" class="button" disabled>Button</button>
+    <button type="button" class="button-outline">Button</button>
+    <button type="button" class="button-outline" disabled>Button</button>
+    <button type="button" class="link">Button</button>
+    <button type="button" class="link" disabled>Button</button>
+  </div>
 
   <pre><code class="language-html">
     &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Anchor&lt;/a&gt;
@@ -462,6 +465,16 @@
 
 
 
+  <!-- BOTTOM BANNER -->
+  <h2 id="bottom-banner">Bottom Banner</h2>
+  <pre><code class="lang-html">
+    &lt;div class=&quot;bottom-banner&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
+    &lt;/div&gt;</code></pre>
+  <p>You can use the <code>bottom-banner</code> class with a div to create a sticky bottom banner. You will need to write your own JS if you want to dismiss it. (This component is not visible on this page since it would interfere with out floating button demo.)</p>
+
+
+
   <!-- IMAGES -->
   <h2 id="images">Images</h2>
   <p>You can use images without a class. We apply a max width of 100% to the img element so the image stays inside the container. (Photo by <a href="https://unsplash.com/@goshua13?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Joshua Aragon</a> on <a href="https://unsplash.com/photos/EaB4Ml7C7fE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>.)</p>
@@ -511,6 +524,12 @@
     <option value="">Option 2</option>
   </select>
 
+  <label for="select-disabled">Select (disabled)</label>
+  <select name="" id="select-disabled" disabled>
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+  </select>
+
   <label for='email'>Email</label>
   <div style="display: flex; gap: .25rem;">
     <input type='email' name='email' id='email' placeholder='john.doe@gmail.com'>
@@ -520,15 +539,23 @@
   <label for='id'>User id (read only)</label>
   <input readonly name='id' id='id' value='04D6H89Z'>
 
-  <label for='disabled'>Random disabled input</label>
+  <label for='disabled'>Input (disabled)</label>
   <input disabled name='disabled' id='disabled' placeholder='Because why not?'>
 
-  <label for='about'>About me</label>
+  <label for='about'>Text Area</label>
   <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
 
+  <label for='textarea-disabled'>Text Area (disabled)</label>
+  <textarea name='about' id='textarea-disabled' placeholder='I am a textarea...' disabled></textarea>
+
+  <!-- file -->
   <label for="file">Choose a file</label>
   <input type="file" name="" id="file">
 
+  <label for="file-disabled">Choose a file (disabled)</label>
+  <input type="file" name="" id="file-disabled" disabled>
+
+  <!-- radio -->
   <label>Choose a radio:</label>
   <div>
     <input type='radio' id='john' name='drone' value='john' disabled>
@@ -545,6 +572,7 @@
 
   <br>
 
+  <!-- checkboxes -->
   <label>Checkboxes</label>
   <div>
     <input type='checkbox' name='disabled' id='disabled1' disabled>
@@ -610,6 +638,34 @@
   </ul>
   <small class="">© 2023 Javier Alvarado.</small>
 </footer>
+
+<!-- <dialog id="myDialog">
+  <p>This is a dialog</p>
+  <button id="closeDialog">Close</button>
+</dialog>
+
+<button id="openDialog">Open Dialog</button> -->
+
+
+
+<!-- <div class="bottom-banner">
+  <p>Lorem ipsum dolor.</p>
+</div> -->
+
+
+<script>
+  const dialog = document.getElementById('myDialog');
+  const openDialogButton = document.getElementById('openDialog');
+  const closeDialogButton = document.getElementById('closeDialog');
+
+  //openDialogButton.addEventListener('click', () => {
+    //dialog.showModal();
+  //});
+
+  //closeDialogButton.addEventListener('click', () => {
+    //dialog.close();
+  //});
+</script>
 
 <!-- JS -->
 <script>

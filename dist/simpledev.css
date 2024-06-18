@@ -454,7 +454,6 @@ button {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  /* margin-bottom: .5rem; */
   padding: .375rem .75rem;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -480,7 +479,6 @@ button:disabled {
   color: #000;
   display: inline-block;
   line-height: 1.5;
-  /* margin-bottom: .375rem; */
   padding: .375rem .75rem;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -499,7 +497,6 @@ button:disabled {
   position: fixed;
   bottom: .75rem;
   right: .75rem;
-  /* margin-bottom: .375rem; */
   z-index: 11;
   background-color: #dee2e6;
   border-color: #dee2e6;
@@ -661,7 +658,6 @@ button:disabled {
 .navbar-simple .button {
   border: 0;
   padding: .5rem;
-  margin-bottom: 0;
   margin-right: .5rem;
 }
 
@@ -690,7 +686,6 @@ button:disabled {
 .navbar-menu {
   border: solid 1px #dee2e6;
   background-color: initial;
-  margin-bottom: 0;
   margin-right: .25rem;
 }
 
@@ -729,7 +724,6 @@ button:disabled {
   color: #000;
   display: inline-block;
   margin-top: .5rem;
-  margin-bottom: 0;
   margin-left: .25rem;
   margin-right: .25rem;
   padding: .375rem .5rem;
@@ -738,7 +732,6 @@ button:disabled {
 .navbar .button-outline {
   display: inline-block;
   margin-top: .5rem;
-  margin-bottom: 0;
   margin-left: .25rem;
   margin-right: .25rem;
   padding: .375rem;

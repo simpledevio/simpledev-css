@@ -336,6 +336,10 @@
 
   <!-- TEXT ALIGN -->
   <h2 id="text-align">Text Align</h2>
+  <div class="text-start">
+    <h3>Test heading</h3>
+    <a href="" class="button">Test Link</a>
+  </div>
   <div class="text-center">
     <h3>Test heading</h3>
     <a href="" class="button">Test Link</a>
@@ -345,6 +349,11 @@
     <a href="" class="button">Test Link</a>
   </div>
   <pre><code class="lang-html">
+    &lt;div class=&quot;text-start&quot;&gt;
+      &lt;h3&gt;Test heading&lt;/h3&gt;
+      &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Test Link&lt;/a&gt;
+    &lt;/div&gt;
+
     &lt;div class=&quot;text-center&quot;&gt;
       &lt;h3&gt;Test heading&lt;/h3&gt;
       &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Test Link&lt;/a&gt;
@@ -429,7 +438,7 @@
     &lt;div class=&quot;bottom-banner&quot;&gt;
       &lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
     &lt;/div&gt;</code></pre>
-  <p>You can use the <code>bottom-banner</code> class with a div to create a sticky bottom banner. You will need to write your own JS if you want to dismiss it. (This component is not visible on this page since it would interfere with out floating button demo.)</p>
+  <p>You can use the <code>bottom-banner</code> class with a div to create a sticky bottom banner. You will need to write your own JS if you want to dismiss it. (This component is not visible on this page since it would interfere with our floating button demo.)</p>
 
 
 
@@ -482,7 +491,7 @@
     &lt;/footer&gt;
     </code></pre>
 
-    <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text. You can also add an unordered list with a list of links add use the class <code>footer-links</code> to create a row of links. The <code>footer-links</code> class should also work with SVG icons or icon fonts like <a href="https://icons.getbootstrap.com/#install" target="_blank">Bootstrap Icons</a>.</p>
+    <p>You can add a footer to your site using a footer element with the <code>footer</code> class. We use a <code>footer</code> class since the footer element can be used in different contexts. All it does is add a background color, some padding, and centers the text. You can also add an unordered list with a list of links and use the class <code>footer-links</code> to turn it into a row of links. The <code>footer-links</code> class should also work with SVG icons or icon fonts like <a href="https://icons.getbootstrap.com/#install" target="_blank">Bootstrap Icons</a>.</p>
 
 
 
@@ -516,7 +525,7 @@
     <summary>Summary text</summary>
     Details text
   </details>
-  <details>
+  <details open>
     <summary>Summary text</summary>
     Details text
   </details>

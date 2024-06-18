@@ -43,3 +43,7 @@ input[type="file"] {
   border: 0;
   padding: .375rem 0;
 }
+
+input[type="file"]:disabled {
+  background-color: transparent;
+}

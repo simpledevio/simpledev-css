@@ -14,3 +14,11 @@
 .background {
   background-color: #e9ecef;
 }
+
+.bottom-banner {
+  position: sticky;
+  bottom: 0;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 2px;
+}

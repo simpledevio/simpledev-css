@@ -9,6 +9,7 @@ input, select, textarea {
 
 input, textarea {
   line-height: 1.5;
+  border-radius: 0;
 }
 
 input[type='checkbox'],

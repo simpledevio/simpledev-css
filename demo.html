@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+
+  <title>A mostly classless CSS framework | simpledev.css</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="dist/simpledev.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="site/prism.css">
+  <link rel="stylesheet" href="dist/dark.css" media="(prefers-color-scheme: dark)">
+  <!-- <link rel="stylesheet" href="site/custom.css"> -->
+
+  <style>
+    .display-none {
+      display: none;
+    }
+  </style>
+  <!-- JS -->
+  <script src="site/prism.js"></script>
+  <script src="dist/navbar.js" defer></script>
+</head>
+
+<body>
+  <div class="navbar-message" id="navbar-message">Test navbar message.</div>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-bar">
+      <a href="" class="navbar-brand">Brand</a>
+      <button type="button" class="navbar-menu">Menu</button>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="" class="active">Home</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="" class="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="navbar-simple" id="navbar-simple">
+    <a href="">Brand</a>
+    <a href="" class="active">Home</a>
+    <a href="" class="button">About</a>
+  </nav>
+
+  <div class="container" style="min-height: 100vh;">
+    <h1>Demo</h1>
+    <p>Try checking the checkboxes to hide elements on the page to try different layouts.</p>
+
+    <div>
+      <input type="checkbox" id="checkbox1" data-target="navbar-message">
+      <label for="checkbox1">Hide navbar message</label>
+    </div>
+
+      <div>
+        <input type="checkbox" id="checkbox2" data-target="navbar">
+        <label for="checkbox2">Hide navbar</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="checkbox3" data-target="navbar-simple">
+        <label for="checkbox3">Hide simple navbar</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="checkbox4" data-target="bottom-banner">
+        <label for="checkbox4">Hide bottom banner</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="checkbox5" data-target="button-floating">
+        <label for="checkbox5">Hide floating button</label>
+      </div>
+    <!-- <div id="element1" class="toggle-element">Element 1 Content</div>
+    <div id="element2" class="toggle-element">Element 2 Content</div>
+    <div id="element3" class="toggle-element">Element 3 Content</div> -->
+  </div>
+
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="">Facebook </a></li>
+      <li><a href="">Twitter</a></li>
+      <li><a href="">Instagram</a></li>
+      <li><a href="">LinkedIn</a></li>
+      <li><a href="">YouTube</a></li>
+    </ul>
+    <small class="">© 2023 Javier Alvarado.</small>
+  </footer>
+
+  <div class="bottom-banner" id="bottom-banner">
+    <p>Lorem ipsum dolor.</p>
+  </div>
+
+  <a href="#" class="button-floating" id="button-floating">Float</a>
+
+  <script>
+    document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        if (this.checked) {
+          targetElement.classList.add('display-none');
+        } else {
+          targetElement.classList.remove('display-none');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

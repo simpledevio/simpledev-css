@@ -558,17 +558,17 @@
     <option value="">Option 2</option>
   </select>
 
-  <label for='email'>Email</label>
+  <label for='text'>Text</label>
   <div style="display: flex; gap: .25rem; align-items: baseline;">
-    <input type='email' name='email' id='email' placeholder='john.doe@gmail.com'>
+    <input type='text' name='text' id='text' placeholder='Text'>
     <button>Test</button>
   </div>
 
-  <label for='id'>User id (read only)</label>
+  <label for='id'>Text (read only)</label>
   <input readonly name='id' id='id' value='04D6H89Z'>
 
-  <label for='disabled'>Input (disabled)</label>
-  <input disabled name='disabled' id='disabled' placeholder='Because why not?'>
+  <label for='disabled'>Text (disabled)</label>
+  <input disabled name='disabled' id='disabled' placeholder='Text'>
 
   <label for='about'>Text Area</label>
   <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
@@ -586,18 +586,17 @@
   <!-- radio -->
   <label>Choose a radio:</label>
   <div>
-    <input type='radio' id='john' name='drone' value='john' disabled>
-    <label for='john'>John Doe</label>
+    <input type='radio' id='disabled-radio' name='radios' value='disabled' disabled>
+    <label for='disabled-radio'>Disabled</label>
   </div>
   <div>
-    <input type='radio' id='jane' name='drone' value='jane'>
-    <label for='jane'>Jane Doe</label>
+    <input type='radio' id='unselected-radio' name='radios' value='unselected'>
+    <label for='unselected-radio'>Unselected</label>
   </div>
   <div>
-    <input type='radio' id='johnny' name='drone' value='johnny' checked>
-    <label for='johnny'>Johnny Doe</label>
+    <input type='radio' id='selected-radio' name='radios' value='selected' checked>
+    <label for='selected-radio'>Selected</label>
   </div>
-
   <br>
 
   <!-- checkboxes -->
@@ -628,7 +627,6 @@
 
   <label for="progress">Progress</label>
   <progress id="progress" max="100" value="50">50%</progress>
-
   </form>
 
 

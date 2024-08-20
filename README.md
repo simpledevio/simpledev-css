@@ -1,10 +1,10 @@
 # simpledev.css
 
-The goal of simpledev.css is to create a **mostly classless CSS framework**.
+simpledev.css is a **mostly classless CSS framework**.
 
 The classless part means that most of the CSS code should just work without you having to add classes or IDs to your HTML code. You can just add the CDN link and transform your HTML page. However, we do have a handful of CSS classes that we use for our components, so that's why we call it a mostly classless framework.
 
-We are starting off with working on a handful of components and will add the classless code later. This project is inspired by Water.css, Pico, and Bootstrap.
+This project is inspired by Water.css, Pico, and Bootstrap.
 
 ## Getting Started
 

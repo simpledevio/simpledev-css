@@ -32,6 +32,7 @@
   <ul class="navbar-links">
     <li><a href="./" class="active">Home</a></li>
     <li><a href="./start.html">Get Started</a></li>
+    <li><a href="./recipes.html">Recipes</a></li>
     <li><a href="https://github.com/simpledevio/simpledev-css" target="_blank" class="button">GitHub</a></li>
   </ul>
 </nav>
@@ -140,21 +141,6 @@
   </code></pre>
   <p>The navbar uses the <code>navbar</code> class. You can add more links by adding more <code>li</code> elements. You can add an <code>active</code> class to whichever link is currently active. You can also use the <code>button</code> class to make one of the links look like a button.</p>
 
-  <h3>Sticky navbar</h3>
-  <pre><code class="language-css">
-    .navbar {
-      position: sticky;
-      top: 0px;
-      z-index: 11;
-    }
-
-    h2, h3 {
-      scroll-margin-top: 5rem;
-    }
-  </code></pre>
-  <p>Add this code to your custom CSS file to make the navbar stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
-
-
 
   <!-- NAVBAR MESSAGE -->
   <h2 id="navbar-message">Navbar Message</h2>
@@ -166,51 +152,6 @@
   </code></pre>
   <p>You can add a div with the <code>navbar-message</code> class above your nav element with the navbar class. All it does is add a background color and center the text, but you can customize it in your custom CSS file.</p>
 
-  <h3>Sticky navbar message</h3>
-  <pre><code class="language-css">
-    .navbar-message {
-      position: sticky;
-      top: 0px;
-      z-index: 11;
-    }
-
-    h2, h3 {
-      scroll-margin-top: 2rem;
-    }
-  </code></pre>
-  <p>Add this code to your custom CSS file to make the navbar message stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
-
-  <h3>Sticky navbar and navbar message</h3>
-  <pre><code class="language-html">
-    &lt;div class=&quot;navbar-group&quot;&gt;
-      &lt;div class=&quot;navbar-message&quot;&gt;Test navbar message.&lt;/div&gt;
-      &lt;nav class=&quot;navbar&quot;&gt;
-        &lt;div&gt;
-          &lt;a href=&quot;&quot;&gt;Brand&lt;/a&gt;
-          &lt;button type=&quot;button&quot;&gt;Menu&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-    &lt;/div&gt;
-  </code></pre>
-
-  <pre><code class="language-css">
-    .navbar-group {
-      position: sticky;
-      top: 0px;
-      z-index: 11;
-    }
-
-    h2, h3 {
-      scroll-margin-top: 7rem;
-    }
-  </code></pre>
-  <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap them in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rules to your custom CSS file. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
 
 
   <!-- NAVBAR SIMPLE -->
@@ -239,6 +180,8 @@
     &lt;/div&gt;
   </code></pre>
   <p>Use the container class with a <code>div</code> element to apply a max width and center the contents.</p>
+
+  <p>Visit the <a href="./recipes.html">Recipes page</a> to learn how to customize the container width.</p>
 
 
 
@@ -306,32 +249,7 @@
     &lt;button type=&quot;button&quot; class=&quot;link&quot; disabled&gt;Button&lt;/button&gt;
   </code></pre>
   <p>You can use the <code>button</code> class on an <code>a</code> element to make it look like a button. Use the class <code>button-outline</code> to create a button with an outline style. Use the <code>link</code> class to make a button look like a link.</p>
-
-  <h3>Rounded corners</h3>
-  <pre><code class="lang-css">
-    .button,
-    .button-floating,
-    .button-outline,
-    button,
-    input,
-    textarea,
-    details,
-    .code {
-      border-radius: .375rem;
-    }
-  </code></pre>
-  <p>Add this code to your custom CSS file if you want rounded corners instead of square corners. You can change the value depending on how round you want your corners to be. This snippet will give other elements rounded corners as well. You can delete the bottom four selectors if you only want the buttons to have rounded corners.</p>
-
-  <h3>Pill buttons</h3>
-  <pre><code class="lang-css">
-    .button,
-    .button-floating,
-    .button-outline,
-    button {
-      border-radius: 9999px;
-    }
-  </code></pre>
-  <p>Add this code to your custom CSS file if you want pill buttons. You may want to increase the <code>padding-inline</code> property as well.</p>
+  <p>Visit the <a href="./recipes.html">Recipes page</a> to learn how to make your buttons rounded or pill-shaped.</p>
 
 
 
@@ -640,7 +558,7 @@
 
   <!-- TABLES -->
   <h2 id="tables">Tables</h2>
-  <p>You can use tables without a class.</p>
+  <p>You can use tables without a class. Visit the <a href="./recipes.html">Recipes page</a> to learn how to add stripes to your tables.</p>
   <table>
     <caption>Caption text</caption>
     <tr>
@@ -652,20 +570,6 @@
       <td>Cell 2</td>
     </tr>
   </table>
-  <h3>Striped tables</h3>
-  <pre><code class="lang-css">
-    tr:nth-child(even) {
-      background-color: #f1f3f5;
-    }
-
-    /* Dark mode */
-    @media (prefers-color-scheme: dark) {
-      tr:nth-child(even) {
-        background-color: #495057;
-      }
-    }
-  </code></pre>
-  <p>If you want every other row to be striped, add the CSS rules above to your custom CSS  (the second rule is only necessary if you're supporting dark mode). This snippet will make the even rows striped. If you want the odd rows to be striped, change <code>even</code> to <code>odd</code>.</p>
 
 
 
@@ -693,19 +597,6 @@
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
-
-
-
-  <!-- SMOOTH SCROLLING -->
-  <h2 id="smooth-scrolling">Smooth Scrolling</h2>
-  <p>Smooth scrolling is not enabled by default. If you want to enable smooth scrolling, you can add the following code snippet to your custom CSS file.</p>
-  <pre><code class="lang-css">
-  @media (prefers-reduced-motion: no-preference) {
-    html {
-      scroll-behavior: smooth;
-    }
-  }
-  </code></pre>
 </div>
 
 <footer class="footer">

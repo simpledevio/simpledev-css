@@ -38,8 +38,10 @@
     <h1>Getting Started</h1>
     <p>This guide will go over how to add the proper link and script elements, and how to add custom CSS.</p>
     <ul>
-      <li><a href="#css">Add CSS and JS</a></li>
-      <li><a href="#dark">Permanent dark mode</a></li>
+      <li><a href="#light">Just light mode</a></li>
+      <li><a href="#dark">Just dark mode</a></li>
+      <li><a href="#light-dark">Light and dark mode</a></li>
+      <li><a href="#no-js">No JS</a></li>
       <li><a href="#custom-css">Add custom CSS</a></li>
       <li><a href="#basic-template">Basic template</a></li>
       <li><a href="#advanced-template">Advanced template</a></li>
@@ -48,12 +50,32 @@
       <li><a href="#demo">Demo site</a></li>
     </ul>
 
+    <h2 id="light">Just Light Mode</h2>
+    <p>If you don't want dark mode and want to have a light theme, just add the following code to your head element. Our main CSS file includes modern-normalize.css to help with any browser compatibility issues. Our JS file lets you open and close the navbar on smaller screens.</p>
+    <pre><code class="lang-html">
+      &lt;!-- CSS --&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/simpledev.css&quot;&gt;
 
+      &lt;!-- JS --&gt;
+      &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
+    </code></pre>
+
+    <h2 id="dark">Just Dark Mode</h2>
+    <p>If you don't want light mode and want to have a dark theme, add the following code to your head element.</p>
+    <pre><code class="lang-html">
+      &lt;meta name=&quot;color-scheme&quot; content=&quot;dark&quot;&gt;
+
+      &lt;!-- CSS --&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/simpledev.css&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/dark.css&quot;&gt;
+
+      &lt;!-- JS --&gt;
+      &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
+    </code></pre>
 
     <!-- ADD CSS AND JS -->
-    <h2>Quick Start</h2>
-    <h3 id="css">Add CSS and JS</h3>
-    <p>Add the following meta element, link elements and script element inside your head element to add simpledev.css to your HTML file. Our main CSS file includes modern-normalize.css to help with any browser compatibility issues. Our JS file lets you open and close the navbar on smaller screens.</p>
+    <h2 id="light-dark">Light and Dark Mode</h2>
+    <p>If you want a light and dark mode depending on the user's system preferences, add the following code to your head element. Add the following meta element, link elements and script element inside your head element to add simpledev.css to your HTML file.</p>
 
     <p>If you don't want dark mode on your site, you can delete the second link element and the <code>color-scheme</code> meta element. If you want to host the files yourself, you can <a href="dist/simpledev.css" download>download the latest version of simpledev.css</a>, <a href="dist/navbar.js" download>download the latest version of our JS file</a>, and <a href="dist/dark.css" download>download the latest version of dark.css</a>.</p>
     <pre><code class="lang-html">
@@ -69,19 +91,17 @@
 
 
 
-    <!-- PERMANENT DARK MODE -->
-    <h3 id="dark">Permanent Dark Mode</h3>
-    <p>If you want your site to always have a dark theme, delete the media attribute from the link element from above so it looks like this (or just replace the link element from above with the link element below). Also, delete <code>light</code> from the <code>color-scheme</code> meta element.</p>
+    <h2 id="no-js">No JS</h2>
+    <p>Currently, we only use JS for our navbar element. If you're not using our navbar element, or you're only using our simple navbar element (which doesn't require JS), you can delete the script element from the snippets above.</p>
     <pre><code class="lang-html">
-      &lt;meta name=&quot;color-scheme&quot; content=&quot;dark&quot;&gt;
-      &lt;!-- Other elements go here... --&gt;
-      &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/dark.css&quot;&gt;
+      &lt;!-- DELETE THIS LINE IF YOU'RE NOT USING JS --&gt;
+      &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/navbar.js&quot; defer&gt;&lt;/script&gt;
     </code></pre>
 
 
 
     <!-- ADD CUSTOM CSS -->
-    <h3 id="custom-css">Add custom CSS</h3>
+    <h2 id="custom-css">Add custom CSS</h2>
     <p>Lastly, we encourage adding your own custom CSS using your own CSS file. You can technically just stick with the default styles, but we recommend adding your own colors and fonts to make your site unique.</p>
 
     <p>For example, if you have a file called <code>custom.css</code> inside your css folder, you should add the following link element after the other two link elements we listed above. You can always name the file something else or put it in a different folder (just make sure the path is right).</p>
@@ -92,15 +112,16 @@
 
     <!-- BASIC TEMPLATE -->
     <h2 id="basic-template">Basic Template</h2>
-    <p>You can copy and paste this into an empty HTML file to quickly get started. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
+    <p>You can copy and paste this into an empty HTML file to quickly get started. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element and the color-scheme meta tag. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;en&quot;&gt;
       &lt;head&gt;
         &lt;meta charset=&quot;UTF-8&quot;&gt;
         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
         &lt;title&gt;Template&lt;/title&gt;
+
+        &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
 
         &lt;!-- CSS --&gt;
         &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/simpledev.css&quot;&gt;
@@ -120,15 +141,16 @@
 
     <!-- ADVANCED TEMPLATE -->
     <h2 id="advanced-template">Advanced Template</h2>
-    <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element.</p>
+    <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element and the color-scheme meta tag.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;en&quot;&gt;
       &lt;head&gt;
         &lt;meta charset=&quot;UTF-8&quot;&gt;
         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
         &lt;title&gt;Advanced Template&lt;/title&gt;
+
+        &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
 
         &lt;!-- CSS --&gt;
         &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.6/dist/simpledev.css&quot;&gt;

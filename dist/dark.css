@@ -80,6 +80,7 @@ button:hover,
 }
 
 .button-outline {
+  background-color: transparent;
   border-color: var(--light-bg);
   color: var(--white);
 }

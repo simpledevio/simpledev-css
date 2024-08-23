@@ -72,6 +72,7 @@
     <li><a href="#rounded">Rounded corners</a></li>
     <li><a href="#pill">Pill buttons</a></li>
     <li><a href="#striped-tables">Striped tables</a></li>
+    <li><a href="#hide-floating-button">Hide floating button</a></li>
     <li><a href="#smooth-scrolling">Smooth scrolling</a></li>
   </ul>
 
@@ -238,7 +239,19 @@
       }
     }
   </code></pre>
-  <p>If you want every other row to be striped, add the CSS rules above to your custom CSS  (the second rule is only necessary if you're supporting dark mode). This snippet will make the even rows striped. If you want the odd rows to be striped, change <code>even</code> to <code>odd</code>.</p>
+  <p>If you want every other row to be striped, add the CSS rules above to your custom CSS (the second rule is only necessary if you're supporting dark mode). This snippet will make the even rows striped. If you want the odd rows to be striped, change <code>even</code> to <code>odd</code>.</p>
+
+
+
+  <h2 id="hide-floating-button">Hide Floating Button</h2>
+  <p>If you want to hide the floating button on smaller screens, add the following code to your custom CSS. Feel free to change the number. If you want the floating button to be hidden on larger screens, change <code>max-width</code> to <code>min-width</code>.</p>
+  <pre><code class="lang-css">
+    @media (max-width: 576px) {
+      .button-floating {
+        display: none;
+      }
+    }
+  </code></pre>
 
 
 

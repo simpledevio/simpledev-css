@@ -71,14 +71,14 @@
     <li><a href="#sticky-navbar-and-message">Sticky navbar and navbar message</a></li>
     <li><a href="#rounded">Rounded corners</a></li>
     <li><a href="#pill">Pill buttons</a></li>
-    <li><a href="#striped-tables">Striped tables</a></li>
     <li><a href="#hide-floating-button">Hide floating button</a></li>
+    <li><a href="#striped-tables">Striped tables</a></li>
     <li><a href="#smooth-scrolling">Smooth scrolling</a></li>
   </ul>
 
 
 
-  <h2 id="container">Custom container width</h2>
+  <h2 id="container"><a href="#container">Custom container width</a></h2>
   <pre><code class="language-css">
     .container {
       max-width: 900px;
@@ -87,7 +87,7 @@
   <p>Use this snippet to change the max width of your containers. Feel free to change the number.</p>
 
 
-  <h2 id="sticky-navbar">Sticky navbar</h2>
+  <h2 id="sticky-navbar"><a href="#sticky-navbar">Sticky navbar</a></h2>
   <pre><code class="language-css">
     .navbar {
       position: sticky;
@@ -103,7 +103,7 @@
 
 
 
-  <h2 id="sticky-message">Sticky navbar message</h2>
+  <h2 id="sticky-message"><a href="#sticky-message">Sticky navbar message</a></h2>
   <pre><code class="language-css">
     .navbar-message {
       position: sticky;
@@ -119,7 +119,7 @@
 
 
 
-  <h2 id="sticky-navbar-and-message">Sticky navbar and navbar message</h2>
+  <h2 id="sticky-navbar-and-message"><a href="#sticky-navbar-and-message">Sticky navbar and navbar message</a></h2>
   <pre><code class="language-html">
     &lt;div class=&quot;navbar-group&quot;&gt;
       &lt;div class=&quot;navbar-message&quot;&gt;Test navbar message.&lt;/div&gt;
@@ -153,7 +153,7 @@
 
 
 
-  <h2 id="rounded">Rounded corners</h2>
+  <h2 id="rounded"><a href="#rounded">Rounded corners</a></h2>
   <a href="" class="button rounded">Anchor</a>
   <a href="" class="button-outline rounded">Anchor</a>
   <button type="button" class="rounded">Button</button>
@@ -190,7 +190,7 @@
 
 
 
-  <h2 id="pill">Pill buttons</h2>
+  <h2 id="pill"><a href="#pill">Pill buttons</a></h2>
 
   <a href="" class="button pill">Anchor</a>
   <a href="" class="button-outline pill">Anchor</a>
@@ -211,7 +211,19 @@
 
 
 
-  <h2 id="striped-tables">Striped tables</h2>
+  <h2 id="hide-floating-button"><a href="#hide-floating-button">Hide Floating Button</a></h2>
+  <p>If you want to hide the floating button on smaller screens, add the following code to your custom CSS. Feel free to change the number. If you want the floating button to be hidden on larger screens, change <code>max-width</code> to <code>min-width</code>.</p>
+  <pre><code class="lang-css">
+    @media (max-width: 576px) {
+      .button-floating {
+        display: none;
+      }
+    }
+  </code></pre>
+
+
+
+  <h2 id="striped-tables"><a href="#striped-tables">Striped tables</a></h2>
 
   <table>
     <caption>Caption text</caption>
@@ -243,20 +255,8 @@
 
 
 
-  <h2 id="hide-floating-button">Hide Floating Button</h2>
-  <p>If you want to hide the floating button on smaller screens, add the following code to your custom CSS. Feel free to change the number. If you want the floating button to be hidden on larger screens, change <code>max-width</code> to <code>min-width</code>.</p>
-  <pre><code class="lang-css">
-    @media (max-width: 576px) {
-      .button-floating {
-        display: none;
-      }
-    }
-  </code></pre>
-
-
-
   <!-- SMOOTH SCROLLING -->
-  <h2 id="smooth-scrolling">Smooth Scrolling</h2>
+  <h2 id="smooth-scrolling"><a href="#smooth-scrolling">Smooth Scrolling</a></h2>
   <p>Smooth scrolling is not enabled by default. If you want to enable smooth scrolling, you can add the following code snippet to your custom CSS file.</p>
   <pre><code class="lang-css">
   @media (prefers-reduced-motion: no-preference) {

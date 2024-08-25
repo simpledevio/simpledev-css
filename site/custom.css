@@ -40,6 +40,16 @@ code[class*="language-"] {
   border: 1px solid #111;
 }
 
+h2 > a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 /* DARK */
 @media (prefers-color-scheme: dark) {
   .grid > div {

@@ -73,6 +73,7 @@ h2 > a:hover {
 
   .navbar {
     background-color: var(--darkest-bg);
+  border-bottom: solid 1px #f8fafc0f;
   }
 }
 

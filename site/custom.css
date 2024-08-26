@@ -52,6 +52,16 @@ h2 > a:hover {
 
 /* DARK */
 @media (prefers-color-scheme: dark) {
+  h2 > a {
+    color: var(--light-gray);
+    text-decoration: none;
+  }
+
+  h2 > a:hover {
+    color: var(--light-gray);
+    text-decoration: underline;
+  }
+
   .grid > div {
     border-color: #fff;
     color: #fff;

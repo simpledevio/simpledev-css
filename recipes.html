@@ -90,6 +90,8 @@
   <h2 id="sticky-navbar"><a href="#sticky-navbar">Sticky navbar</a></h2>
   <pre><code class="language-css">
     .navbar {
+      background-color: #fff;
+      border-bottom: solid 1px #0f172a1a;
       position: sticky;
       top: 0px;
       z-index: 11;
@@ -99,7 +101,17 @@
       scroll-padding-top: 5rem;
     }
   </code></pre>
-  <p>Add this code to your custom CSS file to make the navbar stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
+  <pre><code class="language-css">
+    @media (prefers-color-scheme: dark) {
+      .navbar {
+        background-color: var(--darkest-bg);
+        border-bottom: solid 1px #f8fafc0f;
+      }
+    }
+  </code></pre>
+  <p>
+    Add this code to your custom CSS file to make the navbar stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens. Add the second snippet if you're using dark mode.
+  </p>
 
 
 
@@ -112,7 +124,7 @@
     }
 
     html {
-      scroll-padding-top: 5rem;
+      scroll-padding-top: 3rem;
     }
   </code></pre>
   <p>Add this code to your custom CSS file to make the navbar message stick to the top of the browser. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
@@ -145,11 +157,24 @@
       z-index: 11;
     }
 
+    .navbar {
+      background-color: #fff;
+      border-bottom: solid 1px #0f172a1a;
+    }
+
     html {
       scroll-padding-top: 5rem;
     }
   </code></pre>
-  <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap them in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rules to your custom CSS file. You can wrap this code in a media query to limit this behavior to only large or small screens.</p>
+  <pre><code class="language-css">
+    @media (prefers-color-scheme: dark) {
+      .navbar {
+        background-color: var(--darkest-bg);
+        border-bottom: solid 1px #f8fafc0f;
+      }
+    }
+  </code></pre>
+  <p>If you want the navbar and navbar message to stick to the top of the browser, first you should wrap them in a div and then give it a class. In our example, we called it <code>navbar-group</code>. Then add the rules to your custom CSS file. You can wrap this code in a media query to limit this behavior to only large or small screens. Add the last snippet if you're using dark mode.</p>
 
 
 
@@ -243,7 +268,9 @@
     tr:nth-child(even) {
       background-color: #f1f3f5;
     }
+  </code></pre>
 
+  <pre><code class="lang-css">
     /* Dark mode */
     @media (prefers-color-scheme: dark) {
       tr:nth-child(even) {
@@ -251,7 +278,7 @@
       }
     }
   </code></pre>
-  <p>If you want every other row to be striped, add the CSS rules above to your custom CSS (the second rule is only necessary if you're supporting dark mode). This snippet will make the even rows striped. If you want the odd rows to be striped, change <code>even</code> to <code>odd</code>.</p>
+  <p>If you want every other row to be striped, add the CSS rules above to your custom CSS (the second rule is only necessary if you're supporting dark mode). This snippet will make the even rows striped. If you want the odd rows to be striped, change <code>even</code> to <code>odd</code>. Add the second snippet if you're also using dark mode.</p>
 
 
 

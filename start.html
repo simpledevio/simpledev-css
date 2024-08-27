@@ -56,6 +56,9 @@
       <li><a href="#demo">Demo site</a></li>
     </ul>
 
+
+
+    <!-- LIGHT -->
     <h2 id="light"><a href="#light">Just Light Mode</a></h2>
     <p>If you don't want dark mode and want to have a light theme, just add the following code to your head element. Our main CSS file includes modern-normalize.css to help with any browser compatibility issues. Our JS file lets you open and close the navbar on smaller screens.</p>
     <pre><code class="lang-html">
@@ -66,6 +69,9 @@
       &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.7/dist/navbar.min.js&quot; defer&gt;&lt;/script&gt;
     </code></pre>
 
+
+
+    <!-- DARK -->
     <h2 id="dark"><a href="#dark">Just Dark Mode</a></h2>
     <p>If you don't want light mode and want to have a dark theme, add the following code to your head element.</p>
     <pre><code class="lang-html">
@@ -79,7 +85,9 @@
       &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.7/dist/navbar.min.js&quot; defer&gt;&lt;/script&gt;
     </code></pre>
 
-    <!-- ADD CSS AND JS -->
+
+
+    <!-- LIGHT AND DARK -->
     <h2 id="light-dark"><a href="#light-dark">Light and Dark Mode</a></h2>
     <p>If you want a light and dark mode depending on the user's system preferences, add the following code to your head element. Add the following meta element, link elements and script element inside your head element to add simpledev.css to your HTML file.</p>
 
@@ -96,6 +104,7 @@
 
 
 
+    <!-- NO JS -->
     <h2 id="no-js"><a href="#no-js">No JS</a></h2>
     <p>Currently, we only use JS for our navbar element. If you're not using our navbar element, or you're only using our simple navbar element (which doesn't require JS), you can delete the script element from the snippets above.</p>
     <pre><code class="lang-html">
@@ -105,8 +114,22 @@
 
 
 
+    <!-- DOWNLOAD FILES -->
     <h2 id="download"><a href="#download">Download Files</a></h2>
     <p>If you want to host the files yourself, you can <a href="dist/simpledev.css" download>download the latest version of simpledev.css</a>, <a href="dist/navbar.js" download>download the latest version of our JS file</a>, and <a href="dist/dark.css" download>download the latest version of dark.css</a>. If you want to download a specific version, you can visit our <a href="https://github.com/simpledevio/simpledev-css/releases">Releases page</a>.</p>
+    <p>Assuming you have a <code>css</code> folder and a <code>js</code> folder in your project folder, your HTML might look something like this:</p>
+    <pre><code class="lang-html">
+      &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
+
+      &lt;!-- CSS --&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;css/simpledev.css&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;css/dark.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;
+
+      &lt;!-- JS --&gt;
+      &lt;script src=&quot;js/navbar.js&quot; defer&gt;&lt;/script&gt;
+    </code></pre>
+
+
 
     <!-- ADD CUSTOM CSS -->
     <h2 id="custom-css"><a href="#custom-css">Add custom CSS</a></h2>

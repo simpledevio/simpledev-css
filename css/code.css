@@ -1,5 +1,9 @@
 /* code.css */
 
+pre > code {
+  padding-inline: 0;
+}
+
 .code {
   background-color: #e9ecef;
   color: #000;
@@ -19,4 +23,13 @@
 
 .zsh::before {
   content: '% ';
+}
+
+.dark {
+  background-color: #212529;
+  color: #fff;
+}
+
+.dark code {
+  color: #fff;
 }

@@ -7,9 +7,11 @@
   <title>Getting Started | simpledev.css</title>
 
   <meta name="color-scheme" content="light dark">
+
   <link rel="stylesheet" href="site/prism.css">
   <link rel="stylesheet" href="dist/simpledev.css">
   <link rel="stylesheet" href="dist/dark.css" media="(prefers-color-scheme: dark)">
+
   <link rel="stylesheet" href="site/custom.css">
 
   <!-- JS -->
@@ -239,15 +241,15 @@
     <!-- DEMO SITE -->
     <h2 id="demo"><a href="#demo">Demo Site</a></h2>
     <p>You can view a <a href="https://simpledevio.github.io/simpledev-css-demo/" target="_blank">demo site that uses simpledev.css on GitHub Pages</a>. You can also view the  <a href="https://github.com/simpledevio/simpledev-css-demo" target="_blank">demo site repo</a> on GitHub.</p>
-  </div>
 
   <!-- <h2>Dynamic</h2>
   <label for="select-id">Select</label>
   <select name="" id="select-id">
     <option value="light">Light</option>
     <option value="dark">Dark</option>
+    <option value="both">Both</option>
   </select>
-  <pre><code class="lang-html">
+  <pre><code class="lang-html" id="code">
     &lt;!DOCTYPE html&gt;
     &lt;html lang=&quot;en&quot;&gt;
     &lt;head&gt;
@@ -256,12 +258,16 @@
       &lt;title&gt;Template&lt;/title&gt;
 
       <span id="dynamic"></span>
+    &lt;/head&gt;
 
     &lt;body&gt;
       &lt;h1&gt;Template&lt;/h1&gt;
     &lt;/body&gt;
     &lt;/html&gt;
   </code></pre> -->
+</div>
+
+
   <a href="#" class="button-floating">Float</a>
 
   <footer class="footer">
@@ -277,22 +283,46 @@
 
   <!-- <script>
     const select = document.querySelector('#select-id');
-    // span.innerHTML = 'light';
+    const container = document.querySelector('#code');
 
     select.addEventListener('change', function(e) {
       console.log(e.target.value);
 
       if (e.target.value == 'light') {
         const span = document.querySelector('#dynamic');
-      console.log('inside light');
-        span.innerHTML = 'light';
+        console.log('inside light');
+        span.innerHTML = `
+  &lt;!-- CSS --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/simpledev.min.css&quot;&gt;
+
+  &lt;!-- JS --&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/navbar.min.js&quot; defer&gt;&lt;/script&gt;`;
+      Prism.highlightElement(container);
       } else if (e.target.value == 'dark') {
         const span = document.querySelector('#dynamic');
       console.log("inside dark");
-        span.innerHTML = 'dark';
-      }
-      span.innerHTML = 'light';
+        span.innerHTML = `&lt;meta name=&quot;color-scheme&quot; content=&quot;dark&quot;&gt;
 
+  &lt;!-- CSS --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/simpledev.min.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/dark.min.css&quot;&gt;
+
+  &lt;!-- JS --&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/navbar.min.js&quot; defer&gt;&lt;/script&gt;`;
+
+      Prism.highlightElement(container);
+      } else {
+        const span = document.querySelector('#dynamic');
+        span.innerHTML = `&lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
+
+  &lt;!-- CSS --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/simpledev.min.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/dark.min.css&quot; media=&quot;(prefers-color-scheme: dark)&quot;&gt;
+
+  &lt;!-- JS --&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/navbar.min.js&quot; defer&gt;&lt;/script&gt;`;
+      Prism.highlightElement(container);
+      }
     });
   </script> -->
 </body>

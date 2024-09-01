@@ -62,7 +62,7 @@
 
     <!-- LIGHT -->
     <h2 id="light"><a href="#light">Just Light Mode</a></h2>
-    <p>If you don't want dark mode and want to have a light theme, just add the following code to your head element. Our main CSS file includes modern-normalize.css to help with any browser compatibility issues. Our JS file lets you open and close the navbar on smaller screens.</p>
+    <p>If you don't want dark mode and want to have a light theme, just add the following code to your <code>&lt;head&gt;</code> element. Our main CSS file includes modern-normalize.css to help with any browser compatibility issues. Our JS file lets you open and close the navbar on smaller screens.</p>
     <pre><code class="lang-html">
       &lt;!-- CSS --&gt;
       &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/simpledev.min.css&quot;&gt;
@@ -75,7 +75,7 @@
 
     <!-- DARK -->
     <h2 id="dark"><a href="#dark">Just Dark Mode</a></h2>
-    <p>If you don't want light mode and want to have a dark theme, add the following code to your head element.</p>
+    <p>If you don't want light mode and want to have a dark theme, add the following code to your <code>&lt;head&gt;</code> element. This code adds a <code>&lt;meta&gt;</code> tag and a second <code>&lt;link&gt;</code> element.</p>
     <pre><code class="lang-html">
       &lt;meta name=&quot;color-scheme&quot; content=&quot;dark&quot;&gt;
 
@@ -91,7 +91,7 @@
 
     <!-- LIGHT AND DARK -->
     <h2 id="light-dark"><a href="#light-dark">Light and Dark Mode</a></h2>
-    <p>If you want a light and dark mode depending on the user's system preferences, add the following code to your head element. Add the following meta element, link elements and script element inside your head element to add simpledev.css to your HTML file.</p>
+    <p>If you want a light and dark mode depending on the user's system preferences, add the following code to your <code>&lt;head&gt;</code> element. This snippet looks similar to the last one, but it has a different value for the <code>content</code> attribute and a media query on the second <code>&lt;link&gt;</code> element.</p>
 
     <pre><code class="lang-html">
       &lt;meta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
@@ -108,7 +108,7 @@
 
     <!-- NO JS -->
     <h2 id="no-js"><a href="#no-js">No JS</a></h2>
-    <p>Currently, we only use JS for our navbar element. If you're not using our navbar element, or you're only using our simple navbar element (which doesn't require JS), you can delete the script element from the snippets above.</p>
+    <p>Currently, we only use JS for our navbar component. If you're not using our navbar component, or you're only using our simple navbar component (which doesn't require JS), you can delete the <code>&lt;script&gt;</code> element from the snippets above.</p>
     <pre><code class="lang-html">
       &lt;!-- DELETE THIS LINE IF YOU'RE NOT USING JS --&gt;
       &lt;script src=&quot;https://cdn.jsdelivr.net/gh/simpledevio/simpledev-css@v0.2.8/dist/navbar.min.js&quot; defer&gt;&lt;/script&gt;
@@ -137,7 +137,7 @@
     <h2 id="custom-css"><a href="#custom-css">Add custom CSS</a></h2>
     <p>Lastly, we encourage adding your own custom CSS using your own CSS file. You can technically just stick with the default styles, but we recommend adding your own colors and fonts to make your site unique.</p>
 
-    <p>For example, if you have a file called <code>custom.css</code> inside your css folder, you should add the following link element after the other two link elements we listed above. You can always name the file something else or put it in a different folder (just make sure the path is right).</p>
+    <p>For example, if you have a file called <code>custom.css</code> inside your css folder, you should add the following <code>&lt;link&gt;</code> element after the other two link elements we listed above. You can always name the file something else or put it in a different folder (just make sure the path is right).</p>
 
     <pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom.css&quot;&gt;</code></pre>
 
@@ -145,7 +145,7 @@
 
     <!-- BASIC TEMPLATE -->
     <h2 id="basic-template"><a href="#basic-template">Basic Template</a></h2>
-    <p>You can copy and paste this into an empty HTML file to quickly get started. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element and the color-scheme meta tag. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
+    <p>You can copy and paste this into an empty HTML file to quickly get started. This template also includes the dark mode <code>&lt;link&gt;</code> element. You can replace the code in the <code>&lt;head&gt;</code> element if you only want light mode or dark mode. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;en&quot;&gt;
@@ -174,7 +174,7 @@
 
     <!-- ADVANCED TEMPLATE -->
     <h2 id="advanced-template"><a href="#advanced-template">Advanced Template</a></h2>
-    <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode link element. If you don't want dark mode, you can simply delete that link element and the color-scheme meta tag.</p>
+    <p>Copy and paste this code into an empty HTML file if you want a template that already has a navbar, container, and footer. This template also includes the dark mode <code>&lt;link&gt;</code> element. You can replace the code in the <code>&lt;head&gt;</code> element if you only want light mode or dark mode. If you want to add custom CSS, you'll have to add the link element for that yourself.</p>
     <pre><code class="lang-html">
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;en&quot;&gt;

@@ -50,11 +50,14 @@ video {
 /* details + summary */
 details {
   border: solid 1px;
-  padding: .5rem;
+  padding: 1rem .5rem;
   margin-top: .5rem;
 }
 
 summary {
   cursor: pointer;
+}
+
+details[open] summary {
   margin-bottom: .5rem;
 }

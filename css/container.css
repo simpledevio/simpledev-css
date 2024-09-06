@@ -3,7 +3,7 @@
 .container {
   padding: 0 .75rem;
   max-width: 960px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .section {

@@ -354,13 +354,29 @@ video {
 /* details + summary */
 details {
   border: solid 1px;
-  padding: .5rem;
+  padding: 1rem .5rem;
   margin-top: .5rem;
+}
+
+details > *:last-child {
+  margin-bottom: 0;
 }
 
 summary {
   cursor: pointer;
+}
+
+details[open] summary {
   margin-bottom: .5rem;
+}
+
+blockquote {
+  margin-left: 0;
+}
+
+.blockquote {
+  border-left: solid #e9ecef 4px;
+  padding-left: 1rem;
 }
 /* buttons.css */
 
@@ -488,7 +504,7 @@ pre > code {
 .container {
   padding: 0 .75rem;
   max-width: 960px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .section {

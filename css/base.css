@@ -54,6 +54,10 @@ details {
   margin-top: .5rem;
 }
 
+details > *:last-child {
+  margin-bottom: 0;
+}
+
 summary {
   cursor: pointer;
 }

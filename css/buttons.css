@@ -2,7 +2,6 @@
 
 /* BUTTON */
 .button,
-.button-floating,
 button {
   background-color: #f1f3f5;
   border: solid 1px #f1f3f5;
@@ -17,7 +16,6 @@ button {
 }
 
 .button:hover,
-.button-floating:hover,
 button:hover {
   background-color: #e9ecef;
   border-color: #e9ecef;
@@ -50,7 +48,7 @@ button:disabled {
 
 
 /* FLOATING BUTTON */
-.button-floating {
+.floating {
   position: fixed;
   bottom: .75rem;
   right: .75rem;
@@ -59,11 +57,14 @@ button:disabled {
   border-color: #dee2e6;
 }
 
-.button-floating:hover {
+.floating:hover {
   background-color: #ced4da;
   border-color: #ced4da;
 }
 
+
+
+/* LARGE */
 .large {
   padding-block: .5rem;
   padding-inline: 1rem;

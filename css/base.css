@@ -65,3 +65,12 @@ summary {
 details[open] summary {
   margin-bottom: .5rem;
 }
+
+blockquote {
+  margin-left: 0;
+}
+
+.blockquote {
+  border-left: solid #e9ecef 4px;
+  padding-left: 1rem;
+}

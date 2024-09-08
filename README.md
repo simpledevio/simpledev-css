@@ -45,5 +45,5 @@ Use the file `_simpledev.css` when you're testing out new code. This file uses i
 Then use the following command in your terminal to combine the individual CSS files into one final CSS file. (You don't have to `cd` into your CSS folder.)
 
 ```
-cat css/*.css > dist/simpledev.css
+bash combine_css.sh
 ```

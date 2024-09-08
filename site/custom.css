@@ -48,6 +48,14 @@ h2 > a:hover {
   text-decoration: underline;
 }
 
+.navbar-message a {
+  color: #444;
+}
+
+.navbar-message a:hover {
+  color: black;
+}
+
 /* DARK */
 @media (prefers-color-scheme: dark) {
   h2 > a {
@@ -72,6 +80,14 @@ h2 > a:hover {
   .navbar {
     background-color: var(--darkest-bg);
     border-bottom: solid 1px #f8fafc0f;
+  }
+
+  .navbar-message a {
+    color: #dee2e6;
+  }
+
+  .navbar-message a:hover {
+    color: white;
   }
 }
 

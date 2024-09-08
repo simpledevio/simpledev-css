@@ -1,0 +1,15 @@
+/* skip-link.css */
+
+.skip-link {
+  background: #fff;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  transform: translateY(10%);
+}

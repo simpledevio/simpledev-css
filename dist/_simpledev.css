@@ -7,15 +7,26 @@ Just change simpledev.css to _simpledev.css in index.html and start.html.
 Make sure you change it back simpledev.css before committing.
 */
 
-@import "../css/_modern-normalize.css";
-@import "../css/accessibility.css";
-@import "../css/base.css";
-@import "../css/base-forms.css";
-@import "../css/base-tables.css";
-@import "../css/buttons.css";
+@import "../css/base/_modern-normalize.css";
+@import "../css/base/base.css";
+@import "../css/base/forms.css";
+@import "../css/base/tables.css";
+
+@import "../css/accessibility/skip-link.css";
+@import "../css/accessibility/visually-hidden.css";
+
+@import "../css/button/button.css";
+@import "../css/button/button-outline.css";
+@import "../css/button/button-mods.css";
+
 @import "../css/code.css";
 @import "../css/container.css";
+@import "../css/layout.css";
 @import "../css/footer.css";
 @import "../css/grid.css";
-@import "../css/navbar.css";
+
+@import "../css/navbar/navbar.css";
+@import "../css/navbar/navbar-message.css";
+@import "../css/navbar/navbar-simple.css";
+
 @import "../css/utilities.css";

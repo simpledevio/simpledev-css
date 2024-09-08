@@ -1,0 +1,36 @@
+/* button-mods.css */
+
+/* FLOATING BUTTON */
+.floating {
+  position: fixed;
+  bottom: .75rem;
+  right: .75rem;
+  z-index: 11;
+  background-color: #dee2e6;
+  border-color: #dee2e6;
+}
+
+.floating:hover {
+  background-color: #ced4da;
+  border-color: #ced4da;
+}
+
+/* LARGE */
+.large {
+  padding-block: .5rem;
+  padding-inline: 1rem;
+  font-size: 1.25rem;
+}
+
+/* LINK */
+.link {
+  background-color: transparent;
+  border: 0;
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.link:hover {
+  background-color: transparent;
+  color: #0a58ca;
+}

@@ -1,0 +1,27 @@
+/* button.css */
+
+.button,
+button {
+  background-color: #f1f3f5;
+  border: solid 1px #f1f3f5;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button:hover,
+button:hover {
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+  color: #000;
+}
+
+button:disabled {
+  opacity: .65;
+  pointer-events: none;
+}

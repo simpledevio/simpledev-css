@@ -1,0 +1,18 @@
+/* button-outline.css */
+
+.button-outline {
+  background-color: transparent;
+  border: solid 1px #dee2e6;
+  color: #000;
+  display: inline-block;
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button-outline:hover {
+  background-color: #f1f3f5;
+  border-color: #f1f3f5;
+  color: #000;
+}

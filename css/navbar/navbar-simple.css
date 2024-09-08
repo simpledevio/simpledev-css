@@ -1,0 +1,42 @@
+/* navbar-simple.css */
+
+.navbar-simple {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding-block: .625rem;
+  padding-inline: .25rem;
+  align-items: center;
+}
+
+.navbar-simple a {
+  color: #555;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navbar-simple a:hover {
+  color: #000;
+}
+
+.navbar-simple a:first-child {
+  color: #000;
+  margin-right: auto;
+  font-weight: bold;
+  padding-left: .5rem;
+}
+
+.navbar-simple a:last-child {
+  padding-right: .5rem;
+}
+
+.navbar-simple .button {
+  border: 0;
+  padding: .5rem;
+  margin-right: .5rem;
+}
+
+/* active class for links */
+.navbar-simple .active {
+  color: #000;
+}

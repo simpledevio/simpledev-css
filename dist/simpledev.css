@@ -213,95 +213,6 @@ Add the correct display in Chrome and Safari.
 summary {
 	display: list-item;
 }
-/* accessibility.css */
-
-.skip-link {
-  background: #fff;
-  padding: .5rem;
-  position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-  z-index: 999;
-}
-
-.skip-link:focus {
-  transform: translateY(10%);
-}
-
-/* VISUALLY HIDDEN */
-.visually-hidden:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-/* base-forms.css */
-
-input, select, textarea {
-  display: block;
-  margin-bottom: .5rem;
-  padding: .375rem .75rem;
-}
-
-input, textarea {
-  line-height: 1.5;
-  border-radius: 0;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  display: initial;
-}
-
-input:disabled, textarea:disabled {
-  background-color: #e9ecef;
-}
-
-textarea:not([cols]) {
-  width: 100%;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 2rem;
-}
-
-label {
-  display: inline-block;
-  margin-bottom: .25rem;
-}
-
-/* from sanitize.css */
-:where(button, input, textarea) {
-  border: 1px solid #aaa;
-}
-
-input[type="file"] {
-  border: 0;
-  padding: .375rem 0;
-}
-
-input[type="file"]:disabled {
-  background-color: transparent;
-}
-/* base-tables.css */
-
-table {
-  border-collapse: collapse;
-  caption-side: bottom;
-}
-
-td, th {
-  border: solid 1px;
-  padding: .75rem;
-}
-
-caption {
-  margin-top: .5rem;
-}
 /* base.css */
 /* This file contains all of the classless CSS rules */
 
@@ -378,9 +289,98 @@ blockquote {
   border-left: solid #e9ecef 4px;
   padding-left: 1rem;
 }
-/* buttons.css */
+/* forms.css */
 
-/* BUTTON */
+input, select, textarea {
+  display: block;
+  margin-bottom: .5rem;
+  padding: .375rem .75rem;
+}
+
+input, textarea {
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: initial;
+}
+
+input:disabled, textarea:disabled {
+  background-color: #e9ecef;
+}
+
+textarea:not([cols]) {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .25rem;
+}
+
+/* from sanitize.css */
+:where(button, input, textarea) {
+  border: 1px solid #aaa;
+}
+
+input[type="file"] {
+  border: 0;
+  padding: .375rem 0;
+}
+
+input[type="file"]:disabled {
+  background-color: transparent;
+}
+/* tables.css */
+
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+td, th {
+  border: solid 1px;
+  padding: .75rem;
+}
+
+caption {
+  margin-top: .5rem;
+}
+/* skip-link.css */
+
+.skip-link {
+  background: #fff;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  transform: translateY(10%);
+}
+/* visually-hidden.css */
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+/* button.css */
+
 .button,
 button {
   background-color: #f1f3f5;
@@ -406,8 +406,8 @@ button:disabled {
   opacity: .65;
   pointer-events: none;
 }
+/* button-outline.css */
 
-/* BUTTON OUTLINE */
 .button-outline {
   background-color: transparent;
   border: solid 1px #dee2e6;
@@ -424,8 +424,7 @@ button:disabled {
   border-color: #f1f3f5;
   color: #000;
 }
-
-
+/* button-mods.css */
 
 /* FLOATING BUTTON */
 .floating {
@@ -442,16 +441,12 @@ button:disabled {
   border-color: #ced4da;
 }
 
-
-
 /* LARGE */
 .large {
   padding-block: .5rem;
   padding-inline: 1rem;
   font-size: 1.25rem;
 }
-
-
 
 /* LINK */
 .link {
@@ -465,153 +460,8 @@ button:disabled {
   background-color: transparent;
   color: #0a58ca;
 }
-/* code.css */
-
-pre > code {
-  padding-inline: 0;
-}
-
-.code {
-  background-color: #e9ecef;
-  color: #000;
-  line-height: 1.5;
-  overflow-x: auto;
-  padding: .75rem;
-}
-
-.code code {
-  background-color: inherit;
-  color: #000;
-}
-
-.bash::before {
-  content: '$ ';
-}
-
-.zsh::before {
-  content: '% ';
-}
-
-.dark {
-  background-color: #212529;
-  color: #fff;
-}
-
-.dark code {
-  color: #fff;
-}
-/* container.css */
-
-.container {
-  padding: 0 .75rem;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.section {
-  padding-block: 2.5rem;
-}
-
-.background {
-  background-color: #e9ecef;
-}
-
-.bottom-banner {
-  position: sticky;
-  bottom: 0;
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 2px;
-}
-/* footer.css */
-
-.footer {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse; */
-  text-align: center;
-  padding: .75rem;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-links a {
-  color: #555;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-/* Grid */
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  }
-}
 /* navbar.css */
 
-/* NAVBAR MESSAGE */
-/* A message that goes above the navbar */
-.navbar-message {
-  background-color: #dee2e6;
-  padding-block: .25rem;
-  text-align: center;
-}
-
-/* NAVBAR-SIMPLE */
-.navbar-simple {
-  display: flex;
-  justify-content: space-between;
-  line-height: 1.5;
-  padding-block: .625rem;
-  padding-inline: .25rem;
-  align-items: center;
-}
-
-.navbar-simple a {
-  color: #555;
-  text-decoration: none;
-  padding: 1rem;
-}
-
-.navbar-simple a:hover {
-  color: #000;
-}
-
-.navbar-simple a:first-child {
-  color: #000;
-  margin-right: auto;
-  font-weight: bold;
-  padding-left: .5rem;
-}
-
-.navbar-simple a:last-child {
-  padding-right: .5rem;
-}
-
-.navbar-simple .button {
-  border: 0;
-  padding: .5rem;
-  margin-right: .5rem;
-}
-
-/* NAVBAR */
 /* for the navbar */
 .navbar {
   padding-block: .625rem;
@@ -689,7 +539,7 @@ pre > code {
 }
 
 /* active class for links */
-.navbar .active, .navbar-simple .active {
+.navbar .active {
   color: #000;
 }
 
@@ -735,6 +585,156 @@ ul.block {
   .navbar li:last-child a:not(.button, .button-outline) {
     padding-right: .25rem;
     margin-top: 0;
+  }
+}
+/* navbar-message.css */
+/* A message that goes above the navbar */
+
+.navbar-message {
+  background-color: #dee2e6;
+  padding-block: .25rem;
+  text-align: center;
+}
+/* navbar-simple.css */
+
+.navbar-simple {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding-block: .625rem;
+  padding-inline: .25rem;
+  align-items: center;
+}
+
+.navbar-simple a {
+  color: #555;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navbar-simple a:hover {
+  color: #000;
+}
+
+.navbar-simple a:first-child {
+  color: #000;
+  margin-right: auto;
+  font-weight: bold;
+  padding-left: .5rem;
+}
+
+.navbar-simple a:last-child {
+  padding-right: .5rem;
+}
+
+.navbar-simple .button {
+  border: 0;
+  padding: .5rem;
+  margin-right: .5rem;
+}
+
+/* active class for links */
+.navbar-simple .active {
+  color: #000;
+}
+/* code.css */
+
+pre > code {
+  padding-inline: 0;
+}
+
+.code {
+  background-color: #e9ecef;
+  color: #000;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: .75rem;
+}
+
+.code code {
+  background-color: inherit;
+  color: #000;
+}
+
+.bash::before {
+  content: '$ ';
+}
+
+.zsh::before {
+  content: '% ';
+}
+
+.dark {
+  background-color: #212529;
+  color: #fff;
+}
+
+.dark code {
+  color: #fff;
+}
+/* container.css */
+
+.container {
+  padding: 0 .75rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* layout.css */
+
+.section {
+  padding-block: 2.5rem;
+}
+
+.background {
+  background-color: #e9ecef;
+}
+
+.bottom-banner {
+  position: sticky;
+  bottom: 0;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 2px;
+}
+/* footer.css */
+
+.footer {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse; */
+  text-align: center;
+  padding: .75rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 /* utilities.css */

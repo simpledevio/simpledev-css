@@ -49,11 +49,11 @@ h2 > a:hover {
 }
 
 .navbar-message a {
-  color: #444;
+  color: black;
 }
 
 .navbar-message a:hover {
-  color: black;
+  color: #444;
 }
 
 /* DARK */

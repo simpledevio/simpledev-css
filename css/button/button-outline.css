@@ -1,10 +1,10 @@
 /* button-outline.css */
 
 .button-outline {
-  background-color: transparent;
-  border: solid 1px var(--button-border-color);
+  background-color: var(--button-outline-bg);
+  border: solid 1px var(--button-outline-border-color);
   border-radius: var(--element-radius);
-  color: #000;
+  color: var(--button-outline-color);
   display: inline-block;
   line-height: 1.5;
   padding: .375rem .75rem;
@@ -13,7 +13,7 @@
 }
 
 .button-outline:hover {
-  background-color: var(--button-bg);
-  border-color: var(--button-bg);
-  color: #000;
+  background-color: var(--button-outline-bg-hover);
+  border-color: var(--button-outline-bg-hover);
+  color: var(--button-outline-color-hover);
 }

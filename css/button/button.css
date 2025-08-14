@@ -5,7 +5,7 @@ button {
   background-color: var(--button-bg);
   border: solid 1px var(--button-bg);
   border-radius: var(--element-radius);
-  color: #000;
+  color: var(--button-color);
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -19,7 +19,7 @@ button {
 button:hover {
   background-color: var(--button-bg-hover);
   border-color: var(--button-bg-hover);
-  color: #000;
+  color: var(--button-color-hover);
 }
 
 button:disabled {

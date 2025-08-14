@@ -124,13 +124,23 @@ summary {
 :root {
   --scroll-behavior: auto;
   --container-width: 960px;
+
   --button-bg: #f1f3f5;
   --button-bg-hover: #e9ecef;
-  --button-border-color: #dee2e6;
-  --element-radius: .375rem;
-  --big-element-radius: .375rem;
+  --button-color: #000;
+  --button-color-hover: #000;
+
+  --button-outline-bg: transparent;
+  --button-outline-bg-hover: #f1f3f5;
+  --button-outline-border-color: #dee2e6;
+  --button-outline-color: #000;
+  --button-outline-color-hover: #000;
+
   --link-color: #0d6efd;
   --link-color-hover: #0a58ca;
+
+  --element-radius: .375rem;
+  --big-element-radius: .375rem;
 }
 
 a {
@@ -315,7 +325,7 @@ button {
   background-color: var(--button-bg);
   border: solid 1px var(--button-bg);
   border-radius: var(--element-radius);
-  color: #000;
+  color: var(--button-color);
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -329,7 +339,7 @@ button {
 button:hover {
   background-color: var(--button-bg-hover);
   border-color: var(--button-bg-hover);
-  color: #000;
+  color: var(--button-color-hover);
 }
 
 button:disabled {
@@ -339,10 +349,10 @@ button:disabled {
 /* button-outline.css */
 
 .button-outline {
-  background-color: transparent;
-  border: solid 1px var(--button-border-color);
+  background-color: var(--button-outline-bg);
+  border: solid 1px var(--button-outline-border-color);
   border-radius: var(--element-radius);
-  color: #000;
+  color: var(--button-outline-color);
   display: inline-block;
   line-height: 1.5;
   padding: .375rem .75rem;
@@ -351,9 +361,9 @@ button:disabled {
 }
 
 .button-outline:hover {
-  background-color: var(--button-bg);
-  border-color: var(--button-bg);
-  color: #000;
+  background-color: var(--button-outline-bg-hover);
+  border-color: var(--button-outline-bg-hover);
+  color: var(--button-outline-color-hover);
 }
 /* button-mods.css */
 

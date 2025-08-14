@@ -14,6 +14,6 @@
 
 .button-outline:hover {
   background-color: var(--button-outline-bg-hover);
-  border-color: var(--button-outline-bg-hover);
+  border-color: var(--button-outline-border-color-hover);
   color: var(--button-outline-color-hover);
 }

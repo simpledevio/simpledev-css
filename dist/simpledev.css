@@ -133,6 +133,7 @@ summary {
   --button-outline-bg: transparent;
   --button-outline-bg-hover: #f1f3f5;
   --button-outline-border-color: #dee2e6;
+  --button-outline-border-color-hover: #f1f3f5;
   --button-outline-color: #000;
   --button-outline-color-hover: #000;
 
@@ -362,7 +363,7 @@ button:disabled {
 
 .button-outline:hover {
   background-color: var(--button-outline-bg-hover);
-  border-color: var(--button-outline-bg-hover);
+  border-color: var(--button-outline-border-color-hover);
   color: var(--button-outline-color-hover);
 }
 /* button-mods.css */

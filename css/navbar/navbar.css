@@ -22,7 +22,7 @@
 
 /* for the navbar menu button */
 .navbar-menu {
-  border: solid 1px #dee2e6;
+  border: solid 1px var(--button-border-color);
   background-color: initial;
   margin-right: .25rem;
 }

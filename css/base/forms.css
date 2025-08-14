@@ -8,7 +8,10 @@ input, select, textarea {
 
 input, textarea {
   line-height: 1.5;
-  border-radius: 0;
+}
+
+input {
+  border-radius: var(--element-radius);
 }
 
 input[type='checkbox'],
@@ -27,6 +30,7 @@ textarea:not([cols]) {
 textarea {
   resize: vertical;
   min-height: 2rem;
+  border-radius: var(--big-element-radius);
 }
 
 label {

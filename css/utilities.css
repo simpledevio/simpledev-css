@@ -21,4 +21,5 @@
 .text-start { text-align: start !important; }
 .text-end { text-align: end !important; }
 
-.highlight { background-color: #e9ecef; }
+.highlight { background-color: #e9ecef !important; }
+.grayscale { filter: grayscale(100%) !important; }

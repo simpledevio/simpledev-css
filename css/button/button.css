@@ -2,8 +2,9 @@
 
 .button,
 button {
-  background-color: #f1f3f5;
-  border: solid 1px #f1f3f5;
+  background-color: var(--button-bg);
+  border: solid 1px var(--button-bg);
+  border-radius: var(--element-radius);
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -16,8 +17,8 @@ button {
 
 .button:hover,
 button:hover {
-  background-color: #e9ecef;
-  border-color: #e9ecef;
+  background-color: var(--button-bg-hover);
+  border-color: var(--button-bg-hover);
   color: #000;
 }
 

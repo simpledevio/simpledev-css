@@ -8,22 +8,14 @@
   --darker-bg: #2b3035;
   --darkest-bg: #212529;
 
-  --a-color: #6ea8fe;
-  --a-color-hover: #8bb9fe;
+  --link-color: #6ea8fe;
+  --link-color-hover: #8bb9fe;
 }
 
 /* BASE */
 body {
   background-color: var(--darkest-bg);
   color: var(--light-gray);
-}
-
-a {
-  color: var(--a-color);
-}
-
-a:hover {
-  color: var(--a-color-hover);
 }
 
 code {

@@ -2,15 +2,6 @@
 
 /*! modern-normalize v3.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
 *,
 ::before,
 ::after {
@@ -18,7 +9,6 @@ Use a better box model (opinionated).
 }
 
 html {
-	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
 	font-family:
 		system-ui,
 		'Segoe UI',
@@ -33,33 +23,14 @@ html {
 	tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
 }
 
-/*
-Sections
-========
-*/
-
 body {
 	margin: 0; /* Remove the margin in all browsers. */
 }
-
-/*
-Text-level semantics
-====================
-*/
-
-/**
-Add the correct font weight in Chrome and Safari.
-*/
 
 b,
 strong {
 	font-weight: bolder;
 }
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
 
 code,
 kbd,
@@ -75,17 +46,9 @@ pre {
 	font-size: 1em; /* 2 */
 }
 
-/**
-Add the correct font size in all browsers.
-*/
-
 small {
 	font-size: 80%;
 }
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
 
 sub,
 sup {
@@ -103,28 +66,9 @@ sup {
 	top: -0.5em;
 }
 
-/*
-Tabular data
-============
-*/
-
-/**
-Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-
 table {
 	border-color: currentcolor;
 }
-
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
 
 button,
 input,
@@ -137,10 +81,6 @@ textarea {
 	margin: 0; /* 2 */
 }
 
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
 button,
 [type='button'],
 [type='reset'],
@@ -148,67 +88,32 @@ button,
 	-webkit-appearance: button;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-
 legend {
 	padding: 0;
 }
 
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
 progress {
 	vertical-align: baseline;
 }
-
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
 	height: auto;
 }
 
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
 [type='search'] {
 	-webkit-appearance: textfield; /* 1 */
 	outline-offset: -2px; /* 2 */
 }
 
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
 ::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
 
 ::-webkit-file-upload-button {
 	-webkit-appearance: button; /* 1 */
 	font: inherit; /* 2 */
 }
-
-/*
-Interactive
-===========
-*/
-
-/*
-Add the correct display in Chrome and Safari.
-*/
 
 summary {
 	display: list-item;
@@ -216,12 +121,24 @@ summary {
 /* base.css */
 /* This file contains all of the classless CSS rules */
 
+:root {
+  --scroll-behavior: auto;
+  --container-width: 960px;
+  --button-bg: #f1f3f5;
+  --button-bg-hover: #e9ecef;
+  --button-border-color: #dee2e6;
+  --element-radius: .375rem;
+  --big-element-radius: .375rem;
+  --link-color: #0d6efd;
+  --link-color-hover: #0a58ca;
+}
+
 a {
-  color: #0d6efd;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #0a58ca;
+  color: var(--link-color-hover);
 }
 
 code {
@@ -264,7 +181,8 @@ video {
 
 /* details + summary */
 details {
-  border: solid 1px;
+  border: solid #aaa 1px;
+  border-radius: var(--element-radius);
   padding: 1rem .5rem;
   margin-top: .5rem;
 }
@@ -289,6 +207,12 @@ blockquote {
   border-left: solid #e9ecef 4px;
   padding-left: 1rem;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: var(--scroll-behavior);
+  }
+}
 /* forms.css */
 
 input, select, textarea {
@@ -299,7 +223,10 @@ input, select, textarea {
 
 input, textarea {
   line-height: 1.5;
-  border-radius: 0;
+}
+
+input {
+  border-radius: var(--element-radius);
 }
 
 input[type='checkbox'],
@@ -318,6 +245,7 @@ textarea:not([cols]) {
 textarea {
   resize: vertical;
   min-height: 2rem;
+  border-radius: var(--big-element-radius);
 }
 
 label {
@@ -383,8 +311,9 @@ caption {
 
 .button,
 button {
-  background-color: #f1f3f5;
-  border: solid 1px #f1f3f5;
+  background-color: var(--button-bg);
+  border: solid 1px var(--button-bg);
+  border-radius: var(--element-radius);
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -397,8 +326,8 @@ button {
 
 .button:hover,
 button:hover {
-  background-color: #e9ecef;
-  border-color: #e9ecef;
+  background-color: var(--button-bg-hover);
+  border-color: var(--button-bg-hover);
   color: #000;
 }
 
@@ -410,7 +339,8 @@ button:disabled {
 
 .button-outline {
   background-color: transparent;
-  border: solid 1px #dee2e6;
+  border: solid 1px var(--button-border-color);
+  border-radius: var(--element-radius);
   color: #000;
   display: inline-block;
   line-height: 1.5;
@@ -420,8 +350,8 @@ button:disabled {
 }
 
 .button-outline:hover {
-  background-color: #f1f3f5;
-  border-color: #f1f3f5;
+  background-color: var(--button-bg);
+  border-color: var(--button-bg);
   color: #000;
 }
 /* button-mods.css */
@@ -452,13 +382,13 @@ button:disabled {
 .link {
   background-color: transparent;
   border: 0;
-  color: #0d6efd;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
 .link:hover {
   background-color: transparent;
-  color: #0a58ca;
+  color: var(--link-color-hover);
 }
 /* navbar.css */
 
@@ -484,7 +414,7 @@ button:disabled {
 
 /* for the navbar menu button */
 .navbar-menu {
-  border: solid 1px #dee2e6;
+  border: solid 1px var(--button-border-color);
   background-color: initial;
   margin-right: .25rem;
 }
@@ -649,6 +579,7 @@ pre > code {
   line-height: 1.5;
   overflow-x: auto;
   padding: .75rem;
+  border-radius: var(--big-element-radius);
 }
 
 .code code {
@@ -676,7 +607,7 @@ pre > code {
 
 .container {
   padding: 0 .75rem;
-  max-width: 960px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 /* layout.css */
@@ -760,4 +691,5 @@ pre > code {
 .text-start { text-align: start !important; }
 .text-end { text-align: end !important; }
 
-.highlight { background-color: #e9ecef; }
+.highlight { background-color: #e9ecef !important; }
+.grayscale { filter: grayscale(100%) !important; }

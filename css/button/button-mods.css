@@ -26,11 +26,11 @@
 .link {
   background-color: transparent;
   border: 0;
-  color: #0d6efd;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
 .link:hover {
   background-color: transparent;
-  color: #0a58ca;
+  color: var(--link-color-hover);
 }

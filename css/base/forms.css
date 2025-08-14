@@ -45,6 +45,7 @@ label {
 
 input[type="file"] {
   border: 0;
+  border-radius: 0;
   padding: .375rem 0;
 }
 

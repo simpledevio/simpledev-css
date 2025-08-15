@@ -426,9 +426,16 @@ button:disabled {
 
 /* for the navbar menu button */
 .navbar-menu {
-  border: solid 1px var(--button-border-color);
+  border: solid 1px var(--button-outline-border-color);
+  color: var(--button-outline-color);
   background-color: initial;
   margin-right: .25rem;
+}
+
+.navbar-menu:hover {
+  background-color: var(--button-outline-bg-hover);
+  border: solid 1px var(--button-outline-border-color-hover);
+  color: var(--button-outline-color-hover);
 }
 
 /* for the navbar links */
@@ -463,12 +470,16 @@ button:disabled {
 }
 
 .navbar .button {
-  color: #000;
+  color: var(--button-color);
   display: inline-block;
   margin-top: .5rem;
   margin-left: .25rem;
   margin-right: .25rem;
   padding: .375rem .5rem;
+}
+
+.navbar .button:hover {
+  color: var(--button-color-hover);
 }
 
 .navbar .button-outline {

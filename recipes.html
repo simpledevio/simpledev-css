@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="site/custom.css">
 
   <style>
-    .rounded {
-      border-radius: .375rem;
+    .square {
+      border-radius: 0rem;
     }
 
     .pill {
@@ -70,7 +70,7 @@
     <li><a href="#sticky-navbar">Sticky navbar</a></li>
     <li><a href="#sticky-message">Sticky navbar message</a></li>
     <li><a href="#sticky-navbar-and-message">Sticky navbar and navbar message</a></li>
-    <li><a href="#rounded">Rounded corners</a></li>
+    <li><a href="#square">Square corners</a></li>
     <li><a href="#pill">Pill buttons</a></li>
     <li><a href="#hide-floating-button">Hide floating button</a></li>
     <li><a href="#striped-tables">Striped tables</a></li>
@@ -180,26 +180,26 @@
 
 
 
-  <h2 id="rounded"><a href="#rounded">Rounded corners</a></h2>
-  <a href="" class="button rounded">Anchor</a>
-  <a href="" class="button-outline rounded">Anchor</a>
-  <button type="button" class="rounded">Button</button>
-  <button type="button" class="rounded" disabled>Button</button>
-  <button type="button" class="button-outline rounded">Button</button>
-  <button type="button" class="button-outline rounded" disabled>Button</button>
+  <h2 id="square"><a href="#square">Square corners</a></h2>
+  <a href="" class="button square">Anchor</a>
+  <a href="" class="button-outline square">Anchor</a>
+  <button type="button" class="square">Button</button>
+  <button type="button" class="square" disabled>Button</button>
+  <button type="button" class="button-outline square">Button</button>
+  <button type="button" class="button-outline square" disabled>Button</button>
 
-  <pre class="code rounded"><code>echo "hello world"</code></pre>
+  <pre class="code square"><code>echo "hello world"</code></pre>
 
-  <details class="rounded">
+  <details class="square">
     <summary>Summary text</summary>
     Details text
   </details>
 
   <label for="">Input</label>
-  <input type="text" class="rounded">
+  <input type="text" class="square">
 
   <label for="">Textarea</label>
-  <textarea name="" id="" class="rounded"></textarea>
+  <textarea name="" id="" class="square"></textarea>
 
   <pre><code class="lang-css">
     .button,
@@ -210,7 +210,7 @@
     textarea,
     details,
     .code {
-      border-radius: .375rem;
+      border-radius: 0;
     }
   </code></pre>
   <p>Add this code to your custom CSS file if you want rounded corners instead of square corners. You can change the value depending on how round you want your corners to be. This snippet will give other elements rounded corners as well. You can delete the bottom four selectors if you only want the buttons to have rounded corners.</p>
@@ -238,7 +238,7 @@
 
 
 
-  <h2 id="hide-floating-button"><a href="#hide-floating-button">Hide Floating Button</a></h2>
+  <h2 id="hide-floating-button"><a href="#hide-floating-button">Hide floating button</a></h2>
   <p>If you want to hide the floating button on smaller screens, add the following code to your custom CSS. Feel free to change the number. If you want the floating button to be hidden on larger screens, change <code>max-width</code> to <code>min-width</code>.</p>
   <pre><code class="lang-css">
     @media (max-width: 575.98px) {
@@ -285,7 +285,7 @@
 
 
   <!-- SMOOTH SCROLLING -->
-  <h2 id="smooth-scrolling"><a href="#smooth-scrolling">Smooth Scrolling</a></h2>
+  <h2 id="smooth-scrolling"><a href="#smooth-scrolling">Smooth scrolling</a></h2>
   <p>Smooth scrolling is not enabled by default. If you want to enable smooth scrolling, you can add the following code snippet to your custom CSS file.</p>
   <pre><code class="lang-css">
   @media (prefers-reduced-motion: no-preference) {

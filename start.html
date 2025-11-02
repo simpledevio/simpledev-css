@@ -57,6 +57,7 @@
       <li><a href="#github-template">GitHub template</a></li>
       <li><a href="#codepen">CodePen</a></li>
       <li><a href="#demo">Demo site</a></li>
+      <li><a href="#custom-build">Custom build</a></li>
     </ul>
 
 
@@ -131,7 +132,7 @@
       &lt;!-- JS --&gt;
       &lt;script src=&quot;js/navbar.js&quot; defer&gt;&lt;/script&gt;
     </code></pre>
-
+    <p>You can also go to the repo and copy or download the code for individual components (like the buttons or navbars).</p>
 
 
     <!-- ADD CUSTOM CSS -->
@@ -242,6 +243,40 @@
     <!-- DEMO SITE -->
     <h2 id="demo"><a href="#demo">Demo Site</a></h2>
     <p>You can view a <a href="https://simpledevio.github.io/simpledev-css-demo/" target="_blank">demo site that uses simpledev.css on GitHub Pages</a>. You can also view the  <a href="https://github.com/simpledevio/simpledev-css-demo" target="_blank">demo site repo</a> on GitHub.</p>
+
+
+
+    <!-- CUSTOM BUILD -->
+    <h2 id="custom-build"><a href="#custom-build">Custom Build</a></h2>
+    <p>If you want to create a custom build of the framework, you can download the repo and edit the <code>combine_css.sh</code> script. Just comment out the files you want to exclude from the list at the top (or add more files to the bottom). Just add a <code>#</code> symbol to comment out the file. As an example, lets say you wanted to comment out the <code>navbar.css</code> file because you're not going to use it. That would look something like this:</p>
+    <pre><code class="lang-bash">
+      #!/bin/bash
+
+      # Define an array of CSS file paths
+      css_files=(
+          "css/base/_modern-normalize.css"
+          "css/base/base.css"
+          "css/base/forms.css"
+          "css/base/tables.css"
+          "css/accessibility/skip-link.css"
+          "css/accessibility/visually-hidden.css"
+          "css/button/button.css"
+          "css/button/button-outline.css"
+          "css/button/button-mods.css"
+          # "css/navbar/navbar.css"
+          "css/navbar/navbar-message.css"
+          "css/navbar/navbar-simple.css"
+          "css/code.css"
+          "css/container.css"
+          "css/layout.css"
+          "css/footer.css"
+          "css/grid.css"
+          "css/utilities.css"
+          # Add more file paths as needed
+      )
+    </code></pre>
+
+    <p>You can also delete the line entirely instead of commenting it. The rest of the script should remain unchanged. Just run <code>bash combine_css.sh</code> in the root of the folder to concatenate all of the files in the array.</p>
 
   <!-- <h2>Dynamic</h2>
   <label for="select-id">Select</label>
